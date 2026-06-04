@@ -7,7 +7,7 @@ export const SITE = {
     'Blog rund um ganzheitliche Gesundheit und Naturkosmetik: wasserfreie Kosmetik, Entgiften und natürliche Schönheit ohne Chemie – von einer gelernten Kosmetikerin.',
   // Später die echte Domain eintragen (auch in astro.config.mjs):
   url: 'https://ganzheitlich-vital-gesund.de',
-  author: 'Elli',
+  author: 'Gaby',
 };
 
 // Hauptnavigation (Reihenfolge = Anzeige im Menü)
@@ -25,7 +25,7 @@ export const NAV: { label: string; href: string }[] = [
 
 // Kurzbio für die Sidebar-Autorenbox
 export const AUTHOR = {
-  name: 'Elli',
+  name: 'Gaby',
   role: 'Gelernte Kosmetikerin',
   bio: 'Ich befasse mich seit Jahren mit natürlicher Schönheit ganz ohne Chemie. Als gelernte Kosmetikerin zeige ich dir hier, wie ganzheitliche Gesundheit, wasserfreie Kosmetik und sanftes Entgiften zusammenspielen.',
 };
