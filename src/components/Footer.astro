@@ -1,0 +1,39 @@
+---
+import { SITE, NAV } from '../consts';
+import { CATEGORIES } from '../categories';
+const year = Astro.url ? new Date().getFullYear() : 2026;
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>{SITE.name}</h4>
+        <p>{SITE.description}</p>
+      </div>
+      <div>
+        <h4>Themen</h4>
+        <ul>
+          {CATEGORIES.map((c) => (
+            <li><a href={`/kategorie/${c.slug}/`}>{c.title}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h4>Seiten</h4>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+          <li><a href="/rss.xml">RSS-Feed</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {year} {SITE.name}. Alle Rechte vorbehalten.</span>
+      <nav aria-label="Rechtliches">
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
+      </nav>
+    </div>
+  </div>
+</footer>

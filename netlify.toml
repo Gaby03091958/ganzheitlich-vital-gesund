@@ -1,0 +1,12 @@
+# Netlify-Konfiguration für die Astro-Website
+# Netlify nutzt diese Werte automatisch beim Deploy.
+
+[build]
+  # Befehl, mit dem Netlify die Seite baut
+  command = "npm run build"
+  # Ordner, der nach dem Build veröffentlicht wird
+  publish = "dist"
+
+[build.environment]
+  # Node-Version für den Build (stabil und aktuell)
+  NODE_VERSION = "20"

@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+---
+<BaseLayout title="Kontakt" description="Schreib mir – ich freue mich über deine Nachricht.">
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Schreib mir</h1>
+      <p>Du hast eine Frage, einen Themenwunsch oder möchtest einfach Hallo sagen? Ich freue mich!</p>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <div class="layout__main article prose">
+      <p>
+        Am einfachsten erreichst du mich per E-Mail unter
+        <a href="mailto:hallo@ganzheitlich-vital-gesund.de">hallo@ganzheitlich-vital-gesund.de</a>
+        (Platzhalter – bitte durch deine echte Adresse ersetzen).
+      </p>
+
+      <h2>Nachricht senden</h2>
+      <p style="font-size:0.92rem;color:var(--muted);">
+        Hinweis: Dieses Formular ist ein Platzhalter ohne Versandfunktion. Für echten
+        Versand brauchst du einen Form-Dienst (z. B. Formspree, Netlify Forms) – sag
+        Bescheid, dann binde ich das ein.
+      </p>
+      <form style="display:grid;gap:1rem;max-width:520px;" onsubmit="return false;">
+        <label>Name<br /><input type="text" name="name" style="width:100%;padding:0.7em;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:1rem;" /></label>
+        <label>E-Mail<br /><input type="email" name="email" style="width:100%;padding:0.7em;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:1rem;" /></label>
+        <label>Nachricht<br /><textarea name="message" rows="5" style="width:100%;padding:0.7em;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:1rem;"></textarea></label>
+        <button class="btn" type="submit">Absenden</button>
+      </form>
+    </div>
+    <Sidebar />
+  </div>
+</BaseLayout>

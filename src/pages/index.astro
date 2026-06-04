@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import PostCard from '../components/PostCard.astro';
+import ImagePlaceholder from '../components/ImagePlaceholder.astro';
+import { SITE } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const latest = posts.slice(0, 6);
+---
+<BaseLayout>
+  <section class="hero">
+    <div class="container hero__inner">
+      <div>
+        <p class="eyebrow">Willkommen</p>
+        <h1>{SITE.tagline}</h1>
+        <p class="hero__lead">
+          Schön und gesund mit dem, was die Natur schenkt: Ich teile mein Wissen
+          rund um wasserfreie Kosmetik, sanftes Entgiften und ganzheitliches
+          Wohlbefinden – ehrlich, alltagstauglich und ganz ohne Chemie.
+        </p>
+        <a class="btn" href="/blog/">Zum Blog</a>
+      </div>
+      <div>
+        <ImagePlaceholder label="Großes Startseiten-Bild (z. B. Naturkosmetik / Kräuter)" variant="hero" />
+      </div>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <div class="layout__main">
+      <div class="section-title">
+        <h2>Neueste Beiträge</h2>
+        <a href="/blog/">Alle ansehen →</a>
+      </div>
+      <div class="post-grid">
+        {latest.map((post) => <PostCard id={post.id} {...post.data} />)}
+      </div>
+    </div>
+    <Sidebar />
+  </div>
+</BaseLayout>

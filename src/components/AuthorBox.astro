@@ -1,0 +1,12 @@
+---
+import { AUTHOR } from '../consts';
+import ImagePlaceholder from './ImagePlaceholder.astro';
+---
+<div class="widget author-box">
+  <h3 class="widget__title">Über mich</h3>
+  <ImagePlaceholder label="Porträtfoto" variant="round" />
+  <div class="author-box__name">{AUTHOR.name}</div>
+  <div class="author-box__role">{AUTHOR.role}</div>
+  <p class="author-box__bio">{AUTHOR.bio}</p>
+  <a class="btn" href="/ueber-mich/">Mehr über mich</a>
+</div>

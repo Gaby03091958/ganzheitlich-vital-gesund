@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import PostCard from '../../components/PostCard.astro';
+import { CATEGORIES, getCategory } from '../../categories';
+
+export async function getStaticPaths() {
+  return CATEGORIES.map((c) => ({ params: { category: c.slug } }));
+}
+
+const { category } = Astro.params;
+const cat = getCategory(category!);
+const posts = (await getCollection('blog'))
+  .filter((p) => p.data.category === category)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<BaseLayout title={cat?.title} description={cat?.intro}>
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Kategorie</p>
+      <h1>{cat?.title}</h1>
+      <p>{cat?.intro}</p>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <div class="layout__main">
+      {posts.length > 0 ? (
+        <div class="post-grid">
+          {posts.map((post) => <PostCard id={post.id} {...post.data} />)}
+        </div>
+      ) : (
+        <p>In dieser Kategorie gibt es noch keine Beiträge. Schau bald wieder vorbei!</p>
+      )}
+    </div>
+    <Sidebar />
+  </div>
+</BaseLayout>

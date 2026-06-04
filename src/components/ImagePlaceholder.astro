@@ -1,0 +1,23 @@
+---
+// Bild-Platzhalter. Zeigt eine beschriftete Fläche, solange kein echtes Bild
+// gesetzt ist. Sobald du ein Bild hast: lege es z. B. unter /public/bilder/ ab
+// und übergib den Pfad als `src` (oder im Markdown-Frontmatter `heroImage`).
+interface Props {
+  label?: string;       // Beschriftung des Platzhalters
+  variant?: 'hero' | 'card' | 'round';
+  src?: string;         // echter Bildpfad (überschreibt den Platzhalter)
+  alt?: string;         // Alt-Text fürs echte Bild (wichtig für SEO/Barrierefreiheit)
+}
+const { label = 'Bild einfügen', variant = 'card', src, alt = '' } = Astro.props;
+const variantClass =
+  variant === 'hero' ? 'img-ph--hero' : variant === 'round' ? 'img-ph--round' : '';
+---
+{
+  src ? (
+    <img class={variantClass} src={src} alt={alt} />
+  ) : (
+    <div class={`img-ph ${variantClass}`} role="img" aria-label={`Platzhalter: ${label}`}>
+      <span class="img-ph__label">📷 {label}</span>
+    </div>
+  )
+}

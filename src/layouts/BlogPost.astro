@@ -1,0 +1,44 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import ImagePlaceholder from '../components/ImagePlaceholder.astro';
+import { getCategory } from '../categories';
+import { AUTHOR } from '../consts';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  category: string;
+  heroAlt?: string;
+  heroImage?: string;
+}
+const { title, description, pubDate, category, heroAlt, heroImage } = Astro.props;
+const cat = getCategory(category);
+const dateStr = pubDate.toLocaleDateString('de-DE', {
+  day: '2-digit', month: 'long', year: 'numeric',
+});
+---
+<BaseLayout title={title} description={description} image={heroImage}>
+  <div class="container layout">
+    <article class="layout__main article">
+      <header class="article__header">
+        <p class="article__meta">
+          {cat && <a href={`/kategorie/${cat.slug}/`}>{cat.title}</a>}
+          <span> · {dateStr} · von {AUTHOR.name}</span>
+        </p>
+        <h1>{title}</h1>
+      </header>
+
+      <ImagePlaceholder label={heroAlt || title} variant="hero" src={heroImage} alt={heroAlt || title} />
+
+      <div class="prose">
+        <slot />
+      </div>
+    </article>
+
+    <aside class="layout__aside">
+      <AuthorBox />
+    </aside>
+  </div>
+</BaseLayout>

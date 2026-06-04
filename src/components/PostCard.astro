@@ -1,0 +1,31 @@
+---
+import ImagePlaceholder from './ImagePlaceholder.astro';
+import { getCategory } from '../categories';
+
+interface Props {
+  id: string;
+  title: string;
+  description: string;
+  pubDate: Date;
+  category: string;
+  heroAlt?: string;
+  heroImage?: string;
+}
+const { id, title, description, pubDate, category, heroAlt, heroImage } = Astro.props;
+const cat = getCategory(category);
+const dateStr = pubDate.toLocaleDateString('de-DE', {
+  day: '2-digit', month: 'long', year: 'numeric',
+});
+const url = `/blog/${id}/`;
+---
+<article class="card">
+  <a href={url} aria-label={title}>
+    <ImagePlaceholder label={heroAlt || title} variant="card" src={heroImage} alt={heroAlt || title} />
+  </a>
+  <div class="card__body">
+    {cat && <a class="card__cat" href={`/kategorie/${cat.slug}/`}>{cat.title}</a>}
+    <h3 class="card__title"><a href={url}>{title}</a></h3>
+    <p class="card__excerpt">{description}</p>
+    <div class="card__meta">{dateStr}</div>
+  </div>
+</article>

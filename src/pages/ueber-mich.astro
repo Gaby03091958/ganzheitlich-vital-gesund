@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import ImagePlaceholder from '../components/ImagePlaceholder.astro';
+import { AUTHOR } from '../consts';
+---
+<BaseLayout title="Über mich" description="Lerne Elli kennen – gelernte Kosmetikerin mit Herz für natürliche Schönheit ohne Chemie.">
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Über mich</p>
+      <h1>Hallo, ich bin {AUTHOR.name}</h1>
+      <p>{AUTHOR.role} – mit Herz für natürliche Schönheit ohne Chemie.</p>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <article class="layout__main article prose">
+      <ImagePlaceholder label="Foto von dir (z. B. im Atelier / in der Natur)" variant="hero" />
+
+      <h2>Wie alles begann</h2>
+      <p>
+        Schon während meiner Ausbildung zur Kosmetikerin hat mich eine Frage nicht
+        losgelassen: Warum stecken in so vielen Pflegeprodukten Inhaltsstoffe, die
+        ich nicht aussprechen – geschweige denn verstehen – kann? Seitdem widme ich
+        mich der natürlichen Schönheit ganz <strong>ohne Chemie</strong>.
+      </p>
+
+      <h2>Wofür ich stehe</h2>
+      <p>
+        Ich glaube an einen ganzheitlichen Blick: Schöne Haut entsteht nicht nur
+        von außen, sondern auch durch das, was wir essen, wie wir leben und wie wir
+        mit uns selbst umgehen. Auf diesem Blog verbinde ich beides – praktische
+        Rezepte für <a href="/kategorie/wasserfreie-kosmetik/">wasserfreie Kosmetik</a>
+        und Impulse für <a href="/kategorie/ganzheitliche-gesundheit/">ganzheitliche Gesundheit</a>.
+      </p>
+
+      <blockquote>
+        Natürliche Schönheit ist kein Produkt – sie ist ein Lebensgefühl.
+      </blockquote>
+
+      <h2>Was dich hier erwartet</h2>
+      <ul>
+        <li>Erprobte Rezepte für wasserfreie Kosmetik</li>
+        <li>Sanfte Wege, den Körper beim Entgiften zu unterstützen</li>
+        <li>Wissen über natürliche Inhaltsstoffe</li>
+        <li>Impulse für Achtsamkeit und Wohlbefinden</li>
+      </ul>
+
+      <p><em>Dieser Text ist ein Platzhalter – ersetze ihn gern durch deine eigene Geschichte.</em></p>
+    </article>
+    <Sidebar />
+  </div>
+</BaseLayout>
