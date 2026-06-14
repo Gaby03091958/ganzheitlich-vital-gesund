@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Sidebar from '../components/Sidebar.astro';
 import PostCard from '../components/PostCard.astro';
-import ImagePlaceholder from '../components/ImagePlaceholder.astro';
 import { SITE } from '../consts';
 
 const posts = (await getCollection('blog')).sort(
@@ -23,9 +22,6 @@ const latest = posts.slice(0, 6);
           Wohlbefinden – ehrlich, alltagstauglich und ganz ohne Chemie.
         </p>
         <a class="btn" href="/blog/">Zum Blog</a>
-      </div>
-      <div>
-        <ImagePlaceholder label="Großes Startseiten-Bild (z. B. Naturkosmetik / Kräuter)" variant="hero" />
       </div>
     </div>
   </section>
