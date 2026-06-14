@@ -206,7 +206,7 @@ hr {
 }
 .hero__inner {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 2.5rem;
   align-items: center;
   padding-top: 3.5rem;
