@@ -3,7 +3,8 @@ title: "Warum Wasser in Cremes ein Problem ist – und was viele Hersteller vers
 description: "Die meisten Cremes bestehen zum Großteil aus Wasser. Warum das Konservierungsmittel nötig macht, Wirkstoffe verdünnt – und wofür wasserfreie Pflege die bessere Wahl ist."
 pubDate: 2026-06-04
 category: "wasserfreie-kosmetik"
-heroAlt: "Cremetiegel mit Wassertropfen daneben auf hellem Untergrund"
+heroAlt: "Offener Cremetiegel mit cremiger Naturkosmetik und rosa Hibiskusblüten"
+heroImage: "/bilder/cremetiegel.jpg"
 ---
 
 Dreh einmal deine Tagescreme um und lies die Zutatenliste. An allererster Stelle steht mit großer Wahrscheinlichkeit ein einziges Wort: **Aqua**. Das ist Latein für Wasser – und es ist in vielen Cremes der Hauptbestandteil. Bei manchen Produkten machen Wasser und wässrige Auszüge **bis zu 80 %** des Inhalts aus.

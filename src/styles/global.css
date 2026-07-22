@@ -305,6 +305,8 @@ hr {
 .img-ph--hero { aspect-ratio: 16 / 9; border-radius: var(--radius); border: 1px solid var(--line); }
 /* Echtes Hero-Bild: füllt den 16:9-Rahmen ohne Verzerrung */
 img.img-ph--hero { width: 100%; object-fit: cover; object-position: center; display: block; }
+/* Echtes Karten-Bild: gleicher Zuschnitt wie der Platzhalter (16:10) */
+img.img-ph--card { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center; display: block; }
 .img-ph--round { aspect-ratio: 1; border-radius: 50%; border: 1px solid var(--line); }
 /* Echtes Foto im runden Rahmen: füllt den Kreis ohne Verzerrung */
 img.img-ph--round { object-fit: cover; object-position: center; display: block; }

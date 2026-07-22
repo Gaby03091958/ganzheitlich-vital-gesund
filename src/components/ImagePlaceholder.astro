@@ -10,7 +10,7 @@ interface Props {
 }
 const { label = 'Bild einfügen', variant = 'card', src, alt = '' } = Astro.props;
 const variantClass =
-  variant === 'hero' ? 'img-ph--hero' : variant === 'round' ? 'img-ph--round' : '';
+  variant === 'hero' ? 'img-ph--hero' : variant === 'round' ? 'img-ph--round' : 'img-ph--card';
 ---
 {
   src ? (
