@@ -3,7 +3,8 @@ title: "Wasserfreie Bodybutter selbst gemacht – das Grundrezept"
 description: "Reichhaltige Bodybutter ganz ohne Wasser: konservierungsfrei, langlebig und mit nur drei Zutaten. So gelingt das Grundrezept garantiert."
 pubDate: 2026-05-28
 category: "wasserfreie-kosmetik"
-heroAlt: "Cremige Bodybutter im Tiegel mit Sheabutter und Kakaobutter"
+heroAlt: "Fläschchen mit natürlichem Öl neben frischem Rosmarin"
+heroImage: "/bilder/oel-kraeuter.jpg"
 ---
 
 Wasserfreie Kosmetik hat einen großen Vorteil: Wo kein Wasser ist, können sich auch keine Keime vermehren – das heißt, du brauchst **keine Konservierungsmittel**. Dieses Grundrezept für Bodybutter ist der perfekte Einstieg.

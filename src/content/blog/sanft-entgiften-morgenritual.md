@@ -3,7 +3,8 @@ title: "Sanft entgiften: Mein Morgenritual für mehr Energie"
 description: "Wie du deinen Körper morgens auf natürliche Weise beim Entgiften unterstützt – mit warmem Wasser, Trockenbürsten und einem ruhigen Start in den Tag."
 pubDate: 2026-05-20
 category: "entgiften"
-heroAlt: "Glas mit warmem Zitronenwasser am sonnigen Fenster"
+heroAlt: "Bunte Bowl mit frischem Gemüse, Avocado und Tomaten"
+heroImage: "/bilder/gemuese-bowl.jpg"
 ---
 
 Entgiften muss keine strenge Kur sein. Unser Körper entgiftet jeden Tag von ganz allein – wir können ihn nur sanft dabei unterstützen. Hier ist mein einfaches Morgenritual.
