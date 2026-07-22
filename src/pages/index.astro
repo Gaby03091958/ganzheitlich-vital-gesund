@@ -9,7 +9,7 @@ import { SITE } from '../consts';
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-const latest = posts.slice(0, 6);
+const latest = posts.slice(0, 4);
 ---
 <BaseLayout>
   <section class="hero">
