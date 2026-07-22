@@ -3,7 +3,8 @@ title: "Wasserfreie Creme: selbst machen oder fertig kaufen – was lohnt sich w
 description: "Lohnt sich das Selbstrühren von wasserfreier Creme, oder ist die fertige Variante die bessere Wahl? Ein ehrlicher Vergleich von Aufwand, Kosten, Haltbarkeit und Ergebnis."
 pubDate: 2026-06-03
 category: "wasserfreie-kosmetik"
-heroAlt: "Selbstgerührte Creme neben einem fertigen Cremetiegel im Vergleich"
+heroAlt: "Offener Cremetiegel mit weißer Creme und rosa Blüten auf hellem Holz"
+heroImage: "/bilder/cremetiegel-2.jpg"
 ---
 
 Wasserfreie Pflege kannst du grundsätzlich selbst herstellen – die Rezepte hier auf dem Blog zeigen, dass es kein Hexenwerk ist. Trotzdem werde ich oft gefragt: *„Lohnt sich das Selbermachen überhaupt, oder kaufe ich besser eine fertige Creme?"*
