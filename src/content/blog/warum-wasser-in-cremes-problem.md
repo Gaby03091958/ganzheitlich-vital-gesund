@@ -1,6 +1,6 @@
 ---
 title: "Warum Wasser in Cremes ein Problem ist – und was viele Hersteller verschweigen"
-description: "Die meisten Cremes bestehen zum Großteil aus Wasser. Warum das Konservierungsmittel nötig macht, Wirkstoffe verdünnt – und wofür wasserfreie Pflege die bessere Wahl ist."
+description: "Die meisten Cremes bestehen zum Großteil aus Wasser. Warum das Konservierungsmittel nötig macht, Wirkstoffe verdünnt und über hormonell wirksame Stoffe wie Parabene sogar unseren Hormonhaushalt belasten kann – und wofür wasserfreie Pflege die bessere Wahl ist."
 pubDate: 2026-06-04
 category: "wasserfreie-kosmetik"
 heroAlt: "Offener Cremetiegel mit cremiger Naturkosmetik und rosa Hibiskusblüten"
@@ -24,6 +24,24 @@ Damit das nicht passiert, **muss** jede wasserhaltige Creme konserviert werden. 
 Manche davon stehen seit Jahren in der Diskussion, weil sie Allergien oder Hautreizungen auslösen können. Das Konservierungsmittel ist also kein Wunsch des Herstellers – es ist die **zwangsläufige Folge** davon, dass Wasser in der Creme steckt.
 
 > Kein Wasser, keine Keime, kein Konservierungsmittel. So einfach ist die Rechnung bei wasserfreier Pflege.
+
+## Das unterschätzte Problem: Konservierungsstoffe und deine Hormone
+
+Es gibt aber noch einen Punkt, der weit über Hautreizungen hinausgeht – und über den erstaunlich wenig gesprochen wird: Manche Konservierungsstoffe stehen im Verdacht, in unseren **Hormonhaushalt** einzugreifen.
+
+Fachleute nennen solche Substanzen **endokrine Disruptoren** – also Stoffe, die im Körper ähnlich wie körpereigene Hormone wirken können. Besonders die Gruppe der **Parabene** wird hier immer wieder genannt: Studien deuten darauf hin, dass einige Parabene eine **schwach östrogenartige Wirkung** haben können – sie ahmen also unter Umständen das Hormon Östrogen nach.
+
+Warum das relevant ist? Weil unsere Haut keine dichte Mauer ist. Ein Teil von dem, was wir auftragen, wird aufgenommen. Und Creme benutzen wir nicht ein einziges Mal, sondern **täglich, oft über Jahre** – morgens, abends, am ganzen Körper.
+
+### Der Cocktail-Effekt
+
+Dazu kommt: Es bleibt selten bei einer Creme. Tagespflege, Nachtcreme, Bodylotion, Duschgel, Make-up, Deo – in vielen dieser Produkte stecken konservierende Stoffe. Auch wenn die Menge in jedem einzelnen Produkt klein und gesetzlich begrenzt ist, summiert sich die tägliche Belastung aus vielen Quellen. Fachleute sprechen vom **Cocktail-Effekt** – und dieser lässt sich nur schwer abschätzen.
+
+> Was für sich genommen als „unbedenklich" gilt, ergibt in der Summe des Alltags oft ein anderes Bild. Genau da setzt für mich das Vorsorgeprinzip an.
+
+Ehrlichkeit ist mir dabei wichtig: Die Forschung ist hier **noch nicht abgeschlossen**, und Behörden haben für viele dieser Stoffe Höchstmengen festgelegt oder einzelne Parabene inzwischen eingeschränkt. Es besteht kein Grund zur Panik. Aber gerade in **sensiblen Lebensphasen** – etwa in der Schwangerschaft, bei hormonellen Beschwerden oder bei Kindern – entscheiden sich viele bewusst dafür, hormonell wirksame Stoffe **vorsorglich zu meiden**.
+
+Und genau hier schließt sich der Kreis: **Wo kein Wasser ist, braucht es kein Konservierungsmittel** – und damit stellt sich die Frage nach hormonell wirksamen Konservierern gar nicht erst. Wasserfreie Pflege umgeht dieses Thema von vornherein.
 
 ## Du bezahlst Wirkstoffe – und bekommst Wasser
 
