@@ -350,6 +350,71 @@ img.img-ph--round { object-fit: cover; object-position: center; display: block; 
 .prose h3 { margin-top: 1.5em; }
 .prose img { border-radius: var(--radius); margin: 1.5em 0; }
 
+/* Tabellen im Artikel */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8em 0;
+  font-size: 0.98rem;
+}
+.prose th,
+.prose td {
+  text-align: left;
+  padding: 0.7em 0.9em;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.prose thead th {
+  font-family: var(--font-head);
+  color: var(--ink);
+  background: var(--bg-soft);
+  border-bottom: 2px solid var(--ink);
+}
+.prose tbody tr:nth-child(even) { background: #faf9f9; }
+.prose small { color: var(--muted); font-size: 0.85rem; }
+
+/* Produkt-/Partner-Empfehlung (Call-to-Action) */
+.cta {
+  margin: 2.5em 0;
+  padding: 1.8em 1.8em 1.6em;
+  background: var(--bg-soft);
+  border: 1px solid #f3d9e6;
+  border-left: 5px solid var(--accent);
+  border-radius: var(--radius);
+}
+.cta__eyebrow {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.3em;
+}
+.cta__title { margin: 0 0 0.5em; }
+.cta p { margin: 0 0 0.9em; }
+.cta .btn { margin: 0.2em 0 0.4em; }
+.cta__code {
+  font-size: 0.95rem;
+  background: #fff;
+  border: 1px dashed var(--accent);
+  border-radius: 8px;
+  padding: 0.6em 0.9em;
+}
+.cta__code code {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--accent-dark);
+  background: var(--bg-soft);
+  padding: 0.1em 0.45em;
+  border-radius: 5px;
+}
+.cta__ad {
+  font-size: 0.72rem !important;
+  color: var(--muted);
+  margin: 0.4em 0 0 !important;
+}
+
 /* ---------- Seiten-Intro (Kategorie / statische Seiten) ---------- */
 .page-intro {
   background: var(--bg-soft);

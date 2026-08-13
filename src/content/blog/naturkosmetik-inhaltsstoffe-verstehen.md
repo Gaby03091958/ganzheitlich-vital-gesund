@@ -32,4 +32,4 @@ Klärt, mattiert und ist ideal für Masken. Ein echtes Multitalent aus der Erde.
 
 > Eine kurze Zutatenliste, die du verstehst, ist oft das beste Qualitätsmerkmal.
 
-Lust, gleich loszulegen? Dann schau dir mein Rezept für [wasserfreie Bodybutter](/blog/wasserfreie-bodybutter/) an.
+Lust auf mehr? Dann lies, ob sich [Selbermachen oder Fertigkaufen](/blog/selbst-machen-vs-fertig-kaufen/) für dich lohnt.

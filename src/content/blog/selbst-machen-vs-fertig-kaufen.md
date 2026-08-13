@@ -49,12 +49,4 @@ Für viele rechnet sich das. Für andere ist es genau der Punkt, an dem sie merk
 
 > Selbermachen ist ein schönes Hobby. Aber eine gute Creme zu benutzen sollte kein Projekt sein – sondern einfach gut tun.
 
-## Mein Weg: das Beste aus beidem
-
-Genau deshalb stelle ich meine Creme **in Heilqualität** her: mit sorgfältig ausgewählten, geprüften Zutaten, im richtigen Verhältnis und mit durchdachter Haltbarkeit – damit du den ganzen Aufwand nicht selbst tragen musst, aber trotzdem ehrliche, wasserfreie Pflege bekommst.
-
-Du bekommst also das gute Gefühl von „nur das, was die Haut braucht" – ohne Waage, Wasserbad und Restmengen im Schrank.
-
-> Neugierig auf die fertige Creme? Schreib mir einfach über die [Kontaktseite](/kontakt/) – ich berate dich gern.
-
-*Du möchtest es trotzdem selbst probieren? Dann starte mit meinem [Grundrezept für wasserfreie Bodybutter](/blog/wasserfreie-bodybutter/).*
+*Du möchtest es trotzdem selbst probieren? Dann taste dich mit hochwertigen, gut ausgewählten Zutaten langsam heran – und sei bei den ersten Versuchen geduldig mit dir.*

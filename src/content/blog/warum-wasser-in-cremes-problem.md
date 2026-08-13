@@ -76,6 +76,6 @@ Wasser in Cremes ist kein Pflegewirkstoff – es ist günstiger Füllstoff, der 
 
 Genau deshalb setze ich auf **wasserfreie Pflege in Heilqualität**: konzentriert, ehrlich und ohne unnötige Zusätze – nur das, was deine Haut wirklich nährt.
 
-> Du möchtest wasserfreie Pflege ausprobieren, ohne selbst zu rühren? Meine fertige Creme in Heilqualität bekommst du direkt über die [Kontaktseite](/kontakt/) – schreib mir einfach.
+> Du möchtest wasserfreie Pflege ausprobieren, ohne selbst zu rühren? Dann kann ich dir eine Creme ganz besonders empfehlen.
 
 *Mehr über meinen Weg zu wasserfreier Kosmetik liest du auf der Seite [Über mich](/ueber-mich/).*
