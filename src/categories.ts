@@ -2,12 +2,6 @@
 // muss mit dem "category"-Feld in den Markdown-Artikeln übereinstimmen.
 export const CATEGORIES: { slug: string; title: string; intro: string }[] = [
   {
-    slug: 'wasserfreie-kosmetik',
-    title: 'Wasserfreie Kosmetik',
-    intro:
-      'Pflege ganz ohne Wasser – konservierungsmittelfrei, ergiebig und hautfreundlich. Hier findest du Rezepte und Wissen rund um wasserfreie Kosmetik.',
-  },
-  {
     slug: 'entgiften',
     title: 'Entgiften',
     intro:
