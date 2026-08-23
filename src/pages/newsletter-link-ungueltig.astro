@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
+---
+<BaseLayout
+  title="Link nicht mehr gültig"
+  description="Der Bestätigungslink konnte nicht zugeordnet werden."
+>
+  <section class="page-intro">
+    <div class="container"><p class="eyebrow">Newsletter</p><h1>Der Link hat nicht funktioniert</h1></div>
+  </section>
+  <div class="container" style="max-width:760px;padding-top:2.5rem;padding-bottom:4rem;">
+    <div class="prose">
+      <p>
+        Das kann zwei Gründe haben: Der Link wurde beim Weiterleiten
+        auseinandergerissen, oder er wurde bereits verwendet.
+      </p>
+      <p>
+        Am einfachsten meldest du dich hier gleich noch einmal an – dann bekommst
+        du eine frische Bestätigungsmail.
+      </p>
+    </div>
+    <div style="margin-top:2rem;">
+      <NewsletterSignup />
+    </div>
+    <div class="prose" style="margin-top:2rem;">
+      <p>
+        Klappt es wieder nicht? Dann schreib mir kurz über das
+        <a href="/kontakt/">Kontaktformular</a> – ich trage dich von Hand ein.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
