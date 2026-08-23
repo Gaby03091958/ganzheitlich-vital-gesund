@@ -3,7 +3,8 @@ title: "Zeolith & Bentonit: Was können die Ur-Mineralien wirklich?"
 description: "Vulkanmineralien als sanfte Begleiter beim Entgiften: Wie Zeolith und Bentonit im Darm wirken, worauf du bei Qualität und Einnahme achten solltest – ehrlich erklärt."
 pubDate: 2026-08-22
 category: "entgiften"
-heroAlt: "Feines helles Mineralpulver in einer Holzschale mit Holzlöffel"
+heroAlt: "Feines helles Mineralpulver in einer Schale mit Holzlöffel"
+heroImage: "/bilder/mineralpulver.jpg"
 affiliate: true
 ---
 

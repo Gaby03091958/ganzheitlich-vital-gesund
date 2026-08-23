@@ -3,7 +3,8 @@ title: "Gelenkprobleme beim Hund natürlich unterstützen"
 description: "Dein Hund steht morgens steif auf oder mag nicht mehr springen? Wie du seine Gelenke ganzheitlich unterstützt – mit Bewegung, Gewicht, Grünlippmuschel und MSM."
 pubDate: 2026-08-20
 category: "tiergesundheit"
-heroAlt: "Älterer Hund liegt entspannt auf einer Wiese in der Sonne"
+heroAlt: "Schäferhund liegt entspannt auf einer Blumenwiese in der Sonne"
+heroImage: "/bilder/hund-wiese.jpg"
 affiliate: true
 ---
 
