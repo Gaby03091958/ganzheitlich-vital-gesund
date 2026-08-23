@@ -462,6 +462,22 @@ img.img-ph--round { object-fit: cover; object-position: center; display: block; 
   outline: 2px solid var(--accent);
   border-color: transparent;
 }
+.newsletter__status {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0.9em 0 0;
+  padding: 0.7em 0.9em;
+  border-radius: 8px;
+}
+.newsletter__status[data-art='ok'] {
+  background: #f6e9f1;
+  color: #8a2664;
+}
+.newsletter__status[data-art='fehler'] {
+  background: #fbeaea;
+  color: #9b2c2c;
+}
+
 .newsletter__consent {
   font-size: 0.75rem;
   color: var(--muted);

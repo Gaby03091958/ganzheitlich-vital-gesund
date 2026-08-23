@@ -1,11 +1,13 @@
 ---
-// Newsletter-Anmeldung über Netlify Forms: Einsendungen erscheinen im
-// Netlify-Dashboard unter "Forms" und können von dort exportiert werden
-// (später z. B. an Brevo o. Ä. anbindbar).
+// Newsletter-Anmeldung über Brevo mit Double-Opt-in.
+// Das Formular geht an die Netlify-Funktion netlify/functions/newsletter.mjs
+// (erreichbar unter /api/newsletter); die meldet die Adresse bei Brevo an und
+// löst dort die Bestätigungsmail aus. Ohne Bestätigung passiert nichts.
 interface Props {
   compact?: boolean;
 }
 const { compact = false } = Astro.props;
+const id = compact ? 'c' : 'a';
 ---
 <div class:list={['newsletter', { 'newsletter--compact': compact }]}>
   {!compact && <p class="newsletter__eyebrow">Newsletter</p>}
@@ -14,33 +16,76 @@ const { compact = false } = Astro.props;
     Rezepte, sanfte Entgiftungs-Tipps und natürliche Tiergesundheit – etwa
     zweimal im Monat, jederzeit abbestellbar.
   </p>
-  <form
-    name="newsletter"
-    method="POST"
-    action="/danke/"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-    class="newsletter__form"
-  >
-    <input type="hidden" name="form-name" value="newsletter" />
+  <form method="POST" action="/api/newsletter" class="newsletter__form js-newsletter">
     <p class="visually-hidden" aria-hidden="true">
-      <label>Bitte nicht ausfüllen: <input name="bot-field" /></label>
+      <label>Bitte nicht ausfüllen: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
     </p>
     <div class="newsletter__row">
-      <label class="visually-hidden" for={`nl-email-${compact ? 'c' : 'a'}`}>E-Mail-Adresse</label>
+      <label class="visually-hidden" for={`nl-email-${id}`}>E-Mail-Adresse</label>
       <input
-        id={`nl-email-${compact ? 'c' : 'a'}`}
+        id={`nl-email-${id}`}
         type="email"
         name="email"
         placeholder="deine@email.de"
+        autocomplete="email"
         required
       />
       <button class="btn" type="submit">Anmelden</button>
     </div>
+    <p class="newsletter__status" role="status" aria-live="polite" hidden></p>
     <p class="newsletter__consent">
       Mit der Anmeldung stimmst du zu, dass ich dir E-Mails mit Tipps und
-      gelegentlichen Produktempfehlungen sende. Hinweise zum Datenschutz findest
-      du in der <a href="/datenschutz/">Datenschutzerklärung</a>.
+      gelegentlichen Produktempfehlungen sende. Du bekommst zuerst eine
+      Bestätigungsmail – erst nach deinem Klick darin bist du angemeldet.
+      Hinweise zum Datenschutz findest du in der
+      <a href="/datenschutz/">Datenschutzerklärung</a>.
     </p>
   </form>
 </div>
+
+<script>
+  // Absenden ohne Seitenwechsel. Ist JavaScript aus, schickt der Browser das
+  // Formular ganz normal ab und die Funktion leitet auf /danke/ weiter.
+  document.querySelectorAll<HTMLFormElement>('form.js-newsletter').forEach((form) => {
+    const status = form.querySelector<HTMLParagraphElement>('.newsletter__status');
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    if (!status || !button) return;
+
+    const zeige = (text: string, art: 'ok' | 'fehler') => {
+      status.textContent = text;
+      status.dataset.art = art;
+      status.hidden = false;
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      button.disabled = true;
+      const beschriftung = button.textContent;
+      button.textContent = 'Moment …';
+      status.hidden = true;
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          headers: { accept: 'application/json' },
+          body: new FormData(form),
+        });
+        const daten = await res.json().catch(() => ({}));
+        if (res.ok && daten.ok) {
+          form.reset();
+          zeige(
+            'Fast geschafft! Ich habe dir eine E-Mail geschickt – bitte bestätige darin einmal kurz deine Anmeldung.',
+            'ok'
+          );
+        } else {
+          zeige(daten.error || 'Das hat leider nicht geklappt. Bitte versuch es später noch einmal.', 'fehler');
+        }
+      } catch {
+        zeige('Keine Verbindung. Bitte versuch es später noch einmal.', 'fehler');
+      } finally {
+        button.disabled = false;
+        button.textContent = beschriftung;
+      }
+    });
+  });
+</script>
