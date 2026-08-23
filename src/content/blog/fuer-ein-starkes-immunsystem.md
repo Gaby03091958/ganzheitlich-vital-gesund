@@ -5,6 +5,7 @@ pubDate: 2026-05-28
 category: "ganzheitliche-gesundheit"
 heroAlt: "Buntes Obst und Gemüse – Orange, Kiwi, Rote Bete, Ingwer und Knoblauch – mit dem Schild „Boost Immunity“"
 heroImage: "/bilder/boost.png"
+affiliate: true
 ---
 
 Kaum wird es draußen kühler, hört man es überall: „Ich glaube, ich werde krank." Dabei können wir unsere Abwehrkräfte das ganze Jahr über sanft und ganz natürlich stärken – mit dem, was uns die Natur ohnehin schenkt. Ich zeige dir, worauf es dabei wirklich ankommt.

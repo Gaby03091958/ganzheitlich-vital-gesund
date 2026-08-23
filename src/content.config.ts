@@ -14,6 +14,9 @@ const blog = defineCollection({
     heroAlt: z.string().default('Platzhalterbild'),
     // optional: Pfad zu einem echten Bild in /public, z. B. '/bilder/artikel.jpg'
     heroImage: z.string().optional(),
+    // true, wenn der Artikel Affiliate-/Werbelinks enthält
+    // (zeigt automatisch den Pflicht-Hinweis am Artikelanfang)
+    affiliate: z.boolean().default(false),
   }),
 });
 

@@ -415,6 +415,72 @@ img.img-ph--round { object-fit: cover; object-position: center; display: block; 
   margin: 0.4em 0 0 !important;
 }
 
+/* Pflicht-Hinweis am Anfang von Artikeln mit Affiliate-Links */
+.affiliate-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0.8em 0 0;
+}
+.affiliate-note a { color: var(--muted); text-decoration: underline; }
+
+/* ---------- Newsletter-Anmeldung ---------- */
+.newsletter {
+  margin: 2.5em 0 0;
+  padding: 1.8em;
+  background: var(--bg-soft);
+  border: 1px solid #f3d9e6;
+  border-radius: var(--radius);
+}
+.newsletter--compact { margin: 0; padding: 0; background: none; border: none; }
+.newsletter__eyebrow {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.3em;
+}
+.newsletter__title { margin: 0 0 0.5em; }
+.newsletter--compact .newsletter__title { font-size: 1rem; }
+.newsletter__text { margin: 0 0 1em; font-size: 0.95rem; }
+.newsletter--compact .newsletter__text { font-size: 0.92rem; }
+.newsletter__row {
+  display: flex;
+  gap: 0.6em;
+  flex-wrap: wrap;
+}
+.newsletter__row input[type='email'] {
+  flex: 1 1 200px;
+  padding: 0.7em 1em;
+  font: inherit;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+}
+.newsletter__row input[type='email']:focus {
+  outline: 2px solid var(--accent);
+  border-color: transparent;
+}
+.newsletter__consent {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0.9em 0 0;
+}
+.newsletter__consent a { color: var(--muted); text-decoration: underline; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---------- Seiten-Intro (Kategorie / statische Seiten) ---------- */
 .page-intro {
   background: var(--bg-soft);

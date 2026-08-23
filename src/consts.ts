@@ -2,9 +2,9 @@
 
 export const SITE = {
   name: 'Ganzheitlich vital & gesund',
-  tagline: 'Natürliche Schönheit & ganzheitliche Gesundheit – ohne Chemie',
+  tagline: 'Natürliche Gesundheit – für dich und deine Tiere',
   description:
-    'Blog rund um ganzheitliche Gesundheit und Naturkosmetik: wasserfreie Kosmetik, Entgiften und natürliche Schönheit ohne Chemie – von einer gelernten Kosmetikerin.',
+    'Blog rund um ganzheitliche Gesundheit und Naturkosmetik: wasserfreie Kosmetik, Entgiften, natürliche Schönheit ohne Chemie und natürliche Tiergesundheit für Hund, Katze und Pferd.',
   // Später die echte Domain eintragen (auch in astro.config.mjs):
   url: 'https://ganzheitlich-vital-gesund.de',
   author: 'Gaby',
@@ -19,6 +19,7 @@ export const NAV: { label: string; href: string }[] = [
   { label: 'Ganzheitliche Gesundheit', href: '/kategorie/ganzheitliche-gesundheit/' },
   { label: 'Naturkosmetik', href: '/kategorie/naturkosmetik/' },
   { label: 'Achtsamkeit', href: '/kategorie/achtsamkeit/' },
+  { label: 'Tiergesundheit', href: '/kategorie/tiergesundheit/' },
   { label: 'Über mich', href: '/ueber-mich/' },
   { label: 'Kontakt', href: '/kontakt/' },
 ];

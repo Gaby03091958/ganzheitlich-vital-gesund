@@ -1,5 +1,6 @@
 ---
 import AuthorBox from './AuthorBox.astro';
+import NewsletterSignup from './NewsletterSignup.astro';
 import { CATEGORIES } from '../categories';
 ---
 <aside class="layout__aside">
@@ -16,7 +17,6 @@ import { CATEGORIES } from '../categories';
 
   <div class="widget">
     <h3 class="widget__title">Newsletter</h3>
-    <p style="font-size:0.92rem;">Hol dir Rezepte & Impulse für natürliche Schönheit direkt ins Postfach.</p>
-    <a class="btn" href="/kontakt/">Jetzt anmelden</a>
+    <NewsletterSignup compact />
   </div>
 </aside>

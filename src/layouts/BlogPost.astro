@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import AuthorBox from '../components/AuthorBox.astro';
 import ImagePlaceholder from '../components/ImagePlaceholder.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
 import { getCategory } from '../categories';
 import { AUTHOR } from '../consts';
 
@@ -12,8 +13,9 @@ interface Props {
   category: string;
   heroAlt?: string;
   heroImage?: string;
+  affiliate?: boolean;
 }
-const { title, description, pubDate, category, heroAlt, heroImage } = Astro.props;
+const { title, description, pubDate, category, heroAlt, heroImage, affiliate } = Astro.props;
 const cat = getCategory(category);
 const dateStr = pubDate.toLocaleDateString('de-DE', {
   day: '2-digit', month: 'long', year: 'numeric',
@@ -28,6 +30,12 @@ const dateStr = pubDate.toLocaleDateString('de-DE', {
           <span> · {dateStr} · von {AUTHOR.name}</span>
         </p>
         <h1>{title}</h1>
+        {affiliate && (
+          <p class="affiliate-note">
+            Dieser Artikel enthält Werbelinks (Affiliate-Links). Was das bedeutet,
+            erfährst du auf der Seite <a href="/transparenz/">Transparenz</a>.
+          </p>
+        )}
       </header>
 
       <ImagePlaceholder label={heroAlt || title} variant="hero" src={heroImage} alt={heroAlt || title} />
@@ -35,6 +43,8 @@ const dateStr = pubDate.toLocaleDateString('de-DE', {
       <div class="prose">
         <slot />
       </div>
+
+      <NewsletterSignup />
     </article>
 
     <aside class="layout__aside">

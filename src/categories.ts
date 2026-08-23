@@ -31,6 +31,12 @@ export const CATEGORIES: { slug: string; title: string; intro: string }[] = [
     intro:
       'Zur Ruhe kommen, bewusst leben, Schönheit von innen. Impulse für mehr Achtsamkeit im Alltag.',
   },
+  {
+    slug: 'tiergesundheit',
+    title: 'Tiergesundheit',
+    intro:
+      'Ganzheitliche Gesundheit hört nicht beim Menschen auf: natürliche Unterstützung für Hund, Katze und Pferd – von Gelenken über Verdauung bis Haut & Fell.',
+  },
 ];
 
 export function getCategory(slug: string) {

@@ -27,6 +27,7 @@ pubDate: 2026-06-04
 category: "naturkosmetik"   # muss zu einem Slug in src/categories.ts passen
 heroAlt: "Beschreibung des Titelbilds"
 # heroImage: "/bilder/mein-bild.jpg"   # optional: echtes Bild statt Platzhalter
+# affiliate: true   # wenn der Artikel Werbelinks enthält (zeigt den Pflicht-Hinweis)
 ---
 
 Hier dein Text in **Markdown**. Überschriften mit `##`, Listen mit `-` usw.
@@ -34,6 +35,35 @@ Hier dein Text in **Markdown**. Überschriften mit `##`, Listen mit `-` usw.
 
 Übersicht, Startseite, Kategorie-Seiten, RSS-Feed und Sitemap aktualisieren sich
 automatisch.
+
+## Affiliate-Empfehlungskasten einfügen
+
+In Artikeln mit Produktempfehlung (Waldkraft-Partnerprogramm) diesen Block ans
+Artikelende setzen und im Frontmatter `affiliate: true` ergänzen:
+
+```html
+<div class="cta">
+  <p class="cta__eyebrow">Meine Empfehlung</p>
+  <h3 class="cta__title">Titel der Empfehlung</h3>
+  <p>Kurzer, ehrlicher Empfehlungstext.</p>
+  <p><a class="btn" href="https://www.waldkraft.bio/?sPartner=beste-gesundheit" target="_blank" rel="sponsored noopener">Zu den Produkten bei Waldkraft &rarr;</a></p>
+  <p class="cta__code">Bei deiner Erstbestellung bekommst du <strong>10&nbsp;%&nbsp;Rabatt</strong> mit dem Gutscheincode <code>beste-gesundheit</code>.</p>
+  <p class="cta__ad">Werbung · Partnerlink</p>
+</div>
+```
+
+> **Wichtig:** Link (`?sPartner=…`) und Gutscheincode sind noch **Platzhalter**.
+> Sobald der echte Partnerlink/Code von Waldkraft da ist (Bewerbung über
+> waldkraft.bio/partnerfb), in allen Artikeln ersetzen — zu finden per Suche
+> nach `sPartner`.
+
+## Newsletter
+
+Die Anmeldeformulare (Sidebar + unter jedem Artikel, Komponente
+`src/components/NewsletterSignup.astro`) laufen über **Netlify Forms**:
+Einsendungen erscheinen nach dem Deploy im Netlify-Dashboard unter „Forms"
+(Formular `newsletter`) und können dort exportiert werden. Später ist ein
+Umzug zu einem Newsletter-Dienst (z. B. Brevo) möglich.
 
 ## Bilder einsetzen (Platzhalter ersetzen)
 
