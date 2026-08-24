@@ -12,6 +12,22 @@ import { BREVO, brevo, heute, jsonOderWeiterleitung } from './_brevo.mjs';
 export const config = { path: '/api/newsletter' };
 
 export default async (req) => {
+  // Vorübergehende Diagnose: verrät nur, OB der Schlüssel in der Funktion
+  // ankommt – niemals seinen Wert. Wird nach der Fehlersuche wieder entfernt.
+  if (req.method === 'GET') {
+    const url = new URL(req.url);
+    if (url.searchParams.get('pruefen') !== 'kraut-2608') {
+      return new Response('Nur POST', { status: 405 });
+    }
+    const k = process.env.BREVO_API_KEY;
+    return Response.json({
+      schluessel_vorhanden: Boolean(k),
+      laenge: k ? k.length : 0,
+      laenge_ohne_rand: k ? k.trim().length : 0,
+      variablennamen_mit_brevo: Object.keys(process.env).filter((n) => /brevo/i.test(n)),
+    });
+  }
+
   if (req.method !== 'POST') return new Response('Nur POST', { status: 405 });
 
   const antwort = jsonOderWeiterleitung(req);
@@ -40,7 +56,7 @@ export default async (req) => {
 
   if (!process.env.BREVO_API_KEY) {
     console.error('BREVO_API_KEY fehlt in den Netlify-Umgebungsvariablen.');
-    return antwort.fehler('Die Anmeldung ist gerade nicht erreichbar.', 500);
+    return antwort.fehler('Der Zugang zum Newsletter-Dienst ist nicht eingerichtet.', 500);
   }
 
   try {
@@ -86,7 +102,7 @@ export default async (req) => {
     return antwort.ok();
   } catch (err) {
     console.error('Unerwarteter Fehler bei der Anmeldung:', err);
-    return antwort.fehler('Die Anmeldung ist gerade nicht erreichbar.', 502);
+    return antwort.fehler('Der Newsletter-Dienst antwortet gerade nicht.', 502);
   }
 };
 
