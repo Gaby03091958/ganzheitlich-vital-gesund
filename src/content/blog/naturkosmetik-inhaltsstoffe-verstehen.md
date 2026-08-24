@@ -3,7 +3,8 @@ title: "Naturkosmetik-Inhaltsstoffe verstehen: 5 Helfer aus der Natur"
 description: "Sheabutter, Jojobaöl & Co. – diese fünf natürlichen Inhaltsstoffe gehören in jede Naturkosmetik und was sie für deine Haut tun."
 pubDate: 2026-05-04
 category: "naturkosmetik"
-heroAlt: "Verschiedene natürliche Öle und Buttern in kleinen Glasschalen"
+heroAlt: "Kokosöl und Kokosbutter mit einem Fläschchen natürlichem Öl auf Holz"
+heroImage: "/bilder/oele-naturkosmetik.jpg"
 ---
 
 „Natürlich" steht heute auf vielen Verpackungen – aber was steckt wirklich drin? Hier sind fünf Inhaltsstoffe, die ihren Platz in echter Naturkosmetik verdient haben.
