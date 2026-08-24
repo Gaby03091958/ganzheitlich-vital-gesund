@@ -72,6 +72,12 @@ Zwei Funktionen im Ordner `api/` erledigen das:
 | `api/newsletter-bestaetigen.mjs` | `/api/newsletter-bestaetigen` | prüft den Link aus der Mail, trägt in Liste 3 ein |
 | `api/_brevo.mjs` | — | gemeinsame Helfer (Unterstrich = keine eigene Adresse) |
 
+Abgefragt werden **E-Mail** (Pflicht) und **Vorname** (freiwillig). Der Vorname
+landet bei Brevo im Feld `VORNAME` und wird für die Anrede benutzt — die
+Bestätigungsvorlage setzt dafür `{{ params.anrede }}` ein, was ohne Eingabe
+schlicht „Hallo" ergibt und mit Eingabe „Hallo Gaby". Eine spätere Anmeldung
+ohne Vornamen löscht einen früher gespeicherten Namen **nicht**.
+
 Brevo-Seite: Liste **3** „Newsletter – Ganzheitlich vital & gesund",
 Bestätigungsvorlage **1**, Absenderdomain ist authentifiziert (DKIM).
 Nötige Umgebungsvariable bei Vercel: **`BREVO_API_KEY`**.
