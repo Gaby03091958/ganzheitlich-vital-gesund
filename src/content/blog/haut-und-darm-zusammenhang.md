@@ -3,7 +3,8 @@ title: "Schöne Haut beginnt im Darm – der ganzheitliche Blick"
 description: "Warum gesunde Haut viel mit der Verdauung zu tun hat und wie du mit Ernährung und Lebensstil von innen heraus strahlst."
 pubDate: 2026-05-12
 category: "ganzheitliche-gesundheit"
-heroAlt: "Bunte Schüssel mit fermentiertem Gemüse und frischen Kräutern"
+heroAlt: "Bunte Schüssel mit frischem Gemüse, Kidneybohnen und Kräutern auf dunklem Untergrund"
+heroImage: "/bilder/gemuese-darm.jpg"
 ---
 
 Als Kosmetikerin habe ich gelernt: Die schönste Pflege von außen kann nur so gut wirken, wie der Körper von innen mitspielt. Besonders eng verbunden sind **Haut und Darm**.
