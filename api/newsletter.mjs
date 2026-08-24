@@ -7,26 +7,9 @@
 //
 // Nötige Umgebungsvariable bei Vercel: BREVO_API_KEY
 
-import { BREVO, brevo, felder, heute, jsonOderWeiterleitung, seitenAdresse, sendeJson } from './_brevo.mjs';
+import { BREVO, brevo, felder, heute, jsonOderWeiterleitung, seitenAdresse } from './_brevo.mjs';
 
 export default async function handler(req, res) {
-  // Vorübergehende Diagnose: verrät nur, OB der Schlüssel in der Funktion
-  // ankommt – niemals seinen Wert. Wird nach dem Umzug wieder entfernt.
-  if (req.method === 'GET') {
-    if ((req.query?.pruefen ?? '') !== 'kraut-2608') {
-      res.statusCode = 405;
-      return res.end('Nur POST');
-    }
-    const k = process.env.BREVO_API_KEY;
-    return sendeJson(res, 200, {
-      schluessel_vorhanden: Boolean(k),
-      laenge: k ? k.length : 0,
-      laenge_ohne_rand: k ? k.trim().length : 0,
-      umgebung: process.env.VERCEL_ENV || null,
-      seitenadresse: seitenAdresse(),
-    });
-  }
-
   if (req.method !== 'POST') {
     res.statusCode = 405;
     return res.end('Nur POST');
