@@ -3,7 +3,8 @@ title: "Hautpflege als Achtsamkeits-Ritual – langsamer wird schöner"
 description: "Wie du deine tägliche Pflegeroutine in ein kleines Achtsamkeitsritual verwandelst und dabei nicht nur deine Haut, sondern auch deinen Geist pflegst."
 pubDate: 2026-04-26
 category: "achtsamkeit"
-heroAlt: "Ruhiger Moment mit Kerze, Tee und Pflegeprodukten"
+heroAlt: "Ruhiger Spa-Moment mit Kerzen, rosa Cremetiegeln und Orchidee"
+heroImage: "/bilder/achtsamkeit-ritual.jpg"
 ---
 
 Wir cremen uns oft im Vorbeigehen ein – zwischen Zähneputzen und Tür-aus-der-Hand. Dabei steckt in der täglichen Pflege ein wunderbarer Moment für Achtsamkeit.
