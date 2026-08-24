@@ -21,6 +21,17 @@ const id = compact ? 'c' : 'a';
       <label>Bitte nicht ausfüllen: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
     </p>
     <div class="newsletter__row">
+      <label class="visually-hidden" for={`nl-vorname-${id}`}>Vorname (freiwillig)</label>
+      <input
+        id={`nl-vorname-${id}`}
+        type="text"
+        name="vorname"
+        placeholder="Vorname (freiwillig)"
+        autocomplete="given-name"
+        maxlength="60"
+      />
+    </div>
+    <div class="newsletter__row">
       <label class="visually-hidden" for={`nl-email-${id}`}>E-Mail-Adresse</label>
       <input
         id={`nl-email-${id}`}

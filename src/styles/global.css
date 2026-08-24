@@ -445,12 +445,17 @@ img.img-ph--round { object-fit: cover; object-position: center; display: block; 
 .newsletter--compact .newsletter__title { font-size: 1rem; }
 .newsletter__text { margin: 0 0 1em; font-size: 0.95rem; }
 .newsletter--compact .newsletter__text { font-size: 0.92rem; }
+.newsletter__form {
+  display: grid;
+  gap: 0.6em;
+}
 .newsletter__row {
   display: flex;
   gap: 0.6em;
   flex-wrap: wrap;
 }
-.newsletter__row input[type='email'] {
+.newsletter__row input[type='email'],
+.newsletter__row input[type='text'] {
   flex: 1 1 200px;
   padding: 0.7em 1em;
   font: inherit;
@@ -458,7 +463,8 @@ img.img-ph--round { object-fit: cover; object-position: center; display: block; 
   border-radius: var(--radius);
   background: #fff;
 }
-.newsletter__row input[type='email']:focus {
+.newsletter__row input[type='email']:focus,
+.newsletter__row input[type='text']:focus {
   outline: 2px solid var(--accent);
   border-color: transparent;
 }

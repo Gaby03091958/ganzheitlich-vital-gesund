@@ -19,6 +19,8 @@ export default async function handler(req, res) {
   const data = felder(req);
 
   const email = String(data.email || '').trim().toLowerCase();
+  // Der Vorname ist freiwillig; er dient nur der Anrede in den Mails.
+  const vorname = String(data.vorname || '').trim().slice(0, 60);
 
   // Bots füllen das versteckte Feld aus – wir tun so, als hätte es geklappt.
   if (String(data['bot-field'] || '').trim()) return antwort.ok();
@@ -47,7 +49,14 @@ export default async function handler(req, res) {
       body: {
         email,
         updateEnabled: true,
-        attributes: { NL_TOKEN: token, NL_STATUS: 'offen', NL_ANGEFRAGT: heute() },
+        attributes: {
+          NL_TOKEN: token,
+          NL_STATUS: 'offen',
+          NL_ANGEFRAGT: heute(),
+          // Nur setzen, wenn wirklich einer eingetragen wurde – sonst würde ein
+          // leeres Feld einen früher gespeicherten Vornamen überschreiben.
+          ...(vorname ? { VORNAME: vorname } : {}),
+        },
       },
     });
     if (!angelegt.ok && angelegt.status !== 204) {
@@ -62,9 +71,15 @@ export default async function handler(req, res) {
     const gesendet = await brevo('/smtp/email', {
       method: 'POST',
       body: {
-        to: [{ email }],
+        to: [{ email, ...(vorname ? { name: vorname } : {}) }],
         templateId: BREVO.TEMPLATE_ID,
-        params: { bestaetigungsUrl: url.toString() },
+        // "anrede" ist so gebaut, dass die Vorlage sie immer einsetzen kann:
+        // mit Vornamen "Hallo Gaby", ohne Vornamen einfach "Hallo".
+        params: {
+          bestaetigungsUrl: url.toString(),
+          vorname,
+          anrede: vorname ? `Hallo ${vorname}` : 'Hallo',
+        },
       },
     });
     if (!gesendet.ok) {
