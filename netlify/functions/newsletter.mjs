@@ -24,7 +24,14 @@ export default async (req) => {
       schluessel_vorhanden: Boolean(k),
       laenge: k ? k.length : 0,
       laenge_ohne_rand: k ? k.trim().length : 0,
-      variablennamen_mit_brevo: Object.keys(process.env).filter((n) => /brevo/i.test(n)),
+      // Welches Projekt / welcher Deploy antwortet hier eigentlich?
+      projekt: process.env.SITE_NAME || null,
+      projekt_id: process.env.SITE_ID || null,
+      kontext: process.env.CONTEXT || null,
+      branch: process.env.BRANCH || null,
+      deploy: process.env.DEPLOY_ID || null,
+      // Nur die NAMEN aller Variablen, nie deren Werte.
+      alle_variablennamen: Object.keys(process.env).sort(),
     });
   }
 
