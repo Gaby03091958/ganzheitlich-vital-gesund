@@ -5,52 +5,35 @@
 // Link (siehe newsletter-bestaetigen.mjs) trägt die Adresse in die Liste ein.
 // Das ist das gesetzlich vorgeschriebene Double-Opt-in.
 //
-// Nötige Umgebungsvariable bei Netlify: BREVO_API_KEY
+// Nötige Umgebungsvariable bei Vercel: BREVO_API_KEY
 
-import { BREVO, brevo, heute, jsonOderWeiterleitung } from './_brevo.mjs';
+import { BREVO, brevo, felder, heute, jsonOderWeiterleitung, seitenAdresse, sendeJson } from './_brevo.mjs';
 
-export const config = { path: '/api/newsletter' };
-
-export default async (req) => {
+export default async function handler(req, res) {
   // Vorübergehende Diagnose: verrät nur, OB der Schlüssel in der Funktion
-  // ankommt – niemals seinen Wert. Wird nach der Fehlersuche wieder entfernt.
+  // ankommt – niemals seinen Wert. Wird nach dem Umzug wieder entfernt.
   if (req.method === 'GET') {
-    const url = new URL(req.url);
-    if (url.searchParams.get('pruefen') !== 'kraut-2608') {
-      return new Response('Nur POST', { status: 405 });
+    if ((req.query?.pruefen ?? '') !== 'kraut-2608') {
+      res.statusCode = 405;
+      return res.end('Nur POST');
     }
     const k = process.env.BREVO_API_KEY;
-    return Response.json({
+    return sendeJson(res, 200, {
       schluessel_vorhanden: Boolean(k),
       laenge: k ? k.length : 0,
       laenge_ohne_rand: k ? k.trim().length : 0,
-      // Welches Projekt / welcher Deploy antwortet hier eigentlich?
-      projekt: process.env.SITE_NAME || null,
-      projekt_id: process.env.SITE_ID || null,
-      kontext: process.env.CONTEXT || null,
-      branch: process.env.BRANCH || null,
-      deploy: process.env.DEPLOY_ID || null,
-      // Nur die NAMEN aller Variablen, nie deren Werte.
-      alle_variablennamen: Object.keys(process.env).sort(),
+      umgebung: process.env.VERCEL_ENV || null,
+      seitenadresse: seitenAdresse(),
     });
   }
 
-  if (req.method !== 'POST') return new Response('Nur POST', { status: 405 });
-
-  const antwort = jsonOderWeiterleitung(req);
-
-  let data = {};
-  try {
-    const contentType = req.headers.get('content-type') || '';
-    if (contentType.includes('application/json')) {
-      data = await req.json();
-    } else {
-      const form = await req.formData();
-      for (const [key, value] of form) data[key] = value;
-    }
-  } catch {
-    return antwort.fehler('Die Anfrage konnte nicht gelesen werden.', 400);
+  if (req.method !== 'POST') {
+    res.statusCode = 405;
+    return res.end('Nur POST');
   }
+
+  const antwort = jsonOderWeiterleitung(req, res);
+  const data = felder(req);
 
   const email = String(data.email || '').trim().toLowerCase();
 
@@ -62,7 +45,7 @@ export default async (req) => {
   }
 
   if (!process.env.BREVO_API_KEY) {
-    console.error('BREVO_API_KEY fehlt in den Netlify-Umgebungsvariablen.');
+    console.error('BREVO_API_KEY fehlt in den Vercel-Umgebungsvariablen.');
     return antwort.fehler('Der Zugang zum Newsletter-Dienst ist nicht eingerichtet.', 500);
   }
 
@@ -89,7 +72,7 @@ export default async (req) => {
       return antwort.fehler('Das hat leider nicht geklappt. Bitte versuch es später noch einmal.', 502);
     }
 
-    const url = new URL(`${BREVO.SITE}/api/newsletter-bestaetigen`);
+    const url = new URL(`${seitenAdresse()}/api/newsletter-bestaetigen`);
     url.searchParams.set('e', email);
     url.searchParams.set('t', token);
 
@@ -111,7 +94,7 @@ export default async (req) => {
     console.error('Unerwarteter Fehler bei der Anmeldung:', err);
     return antwort.fehler('Der Newsletter-Dienst antwortet gerade nicht.', 502);
   }
-};
+}
 
 function neuerToken() {
   return [...crypto.getRandomValues(new Uint8Array(24))]

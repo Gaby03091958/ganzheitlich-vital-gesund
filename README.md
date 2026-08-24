@@ -60,10 +60,24 @@ Artikelende setzen und im Frontmatter `affiliate: true` ergänzen:
 ## Newsletter
 
 Die Anmeldeformulare (Sidebar + unter jedem Artikel, Komponente
-`src/components/NewsletterSignup.astro`) laufen über **Netlify Forms**:
-Einsendungen erscheinen nach dem Deploy im Netlify-Dashboard unter „Forms"
-(Formular `newsletter`) und können dort exportiert werden. Später ist ein
-Umzug zu einem Newsletter-Dienst (z. B. Brevo) möglich.
+`src/components/NewsletterSignup.astro`) laufen über **Brevo** mit
+**Double-Opt-in** — der Anmeldung folgt eine Bestätigungsmail, erst der Klick
+darin trägt die Adresse in den Verteiler ein (rechtlich vorgeschrieben).
+
+Zwei Funktionen im Ordner `api/` erledigen das:
+
+| Datei | Adresse | Aufgabe |
+| ----- | ------- | ------- |
+| `api/newsletter.mjs` | `/api/newsletter` | nimmt das Formular an, legt den Kontakt an, schickt die Bestätigungsmail |
+| `api/newsletter-bestaetigen.mjs` | `/api/newsletter-bestaetigen` | prüft den Link aus der Mail, trägt in Liste 3 ein |
+| `api/_brevo.mjs` | — | gemeinsame Helfer (Unterstrich = keine eigene Adresse) |
+
+Brevo-Seite: Liste **3** „Newsletter – Ganzheitlich vital & gesund",
+Bestätigungsvorlage **1**, Absenderdomain ist authentifiziert (DKIM).
+Nötige Umgebungsvariable bei Vercel: **`BREVO_API_KEY`**.
+
+Ergebnisseiten: `/danke/` (bitte bestätigen) und `/newsletter-bestaetigt/`
+(geschafft), bei kaputtem Link `/newsletter-link-ungueltig/`.
 
 ## Bilder einsetzen (Platzhalter ersetzen)
 

@@ -4,35 +4,32 @@
 // wandert die Adresse in die Verteilerliste und der Zeitpunkt der Bestätigung
 // wird als Nachweis gespeichert.
 
-import { BREVO, brevo, heute } from './_brevo.mjs';
+import { BREVO, brevo, heute, leiteWeiter } from './_brevo.mjs';
 
-export const config = { path: '/api/newsletter-bestaetigen' };
+export default async function handler(req, res) {
+  const email = String(req.query?.e || '').trim().toLowerCase();
+  const token = String(req.query?.t || '').trim();
 
-export default async (req) => {
-  const url = new URL(req.url);
-  const email = String(url.searchParams.get('e') || '').trim().toLowerCase();
-  const token = String(url.searchParams.get('t') || '').trim();
-
-  if (!email || !token) return zurueck('/newsletter-link-ungueltig/');
+  if (!email || !token) return leiteWeiter(res, '/newsletter-link-ungueltig/');
 
   if (!process.env.BREVO_API_KEY) {
-    console.error('BREVO_API_KEY fehlt in den Netlify-Umgebungsvariablen.');
-    return zurueck('/newsletter-link-ungueltig/');
+    console.error('BREVO_API_KEY fehlt in den Vercel-Umgebungsvariablen.');
+    return leiteWeiter(res, '/newsletter-link-ungueltig/');
   }
 
   try {
-    const res = await brevo(`/contacts/${encodeURIComponent(email)}`);
-    if (!res.ok) return zurueck('/newsletter-link-ungueltig/');
+    const antwort = await brevo(`/contacts/${encodeURIComponent(email)}`);
+    if (!antwort.ok) return leiteWeiter(res, '/newsletter-link-ungueltig/');
 
-    const kontakt = await res.json();
+    const kontakt = await antwort.json();
     const attribute = kontakt.attributes || {};
 
     // Schon bestätigt: Der Token ist dann gelöscht. Trotzdem freundlich bleiben,
     // falls jemand den Link ein zweites Mal anklickt.
-    if (attribute.NL_STATUS === 'bestaetigt') return zurueck('/newsletter-bestaetigt/');
+    if (attribute.NL_STATUS === 'bestaetigt') return leiteWeiter(res, '/newsletter-bestaetigt/');
 
     if (!attribute.NL_TOKEN || attribute.NL_TOKEN !== token) {
-      return zurueck('/newsletter-link-ungueltig/');
+      return leiteWeiter(res, '/newsletter-link-ungueltig/');
     }
 
     const aktualisiert = await brevo(`/contacts/${encodeURIComponent(email)}`, {
@@ -50,16 +47,12 @@ export default async (req) => {
 
     if (!aktualisiert.ok && aktualisiert.status !== 204) {
       console.error('Bestätigung fehlgeschlagen', aktualisiert.status, await aktualisiert.text());
-      return zurueck('/newsletter-link-ungueltig/');
+      return leiteWeiter(res, '/newsletter-link-ungueltig/');
     }
 
-    return zurueck('/newsletter-bestaetigt/');
+    return leiteWeiter(res, '/newsletter-bestaetigt/');
   } catch (err) {
     console.error('Unerwarteter Fehler bei der Bestätigung:', err);
-    return zurueck('/newsletter-link-ungueltig/');
+    return leiteWeiter(res, '/newsletter-link-ungueltig/');
   }
-};
-
-function zurueck(pfad) {
-  return new Response(null, { status: 303, headers: { location: `${BREVO.SITE}${pfad}` } });
 }

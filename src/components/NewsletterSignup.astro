@@ -1,8 +1,8 @@
 ---
 // Newsletter-Anmeldung über Brevo mit Double-Opt-in.
-// Das Formular geht an die Netlify-Funktion netlify/functions/newsletter.mjs
-// (erreichbar unter /api/newsletter); die meldet die Adresse bei Brevo an und
-// löst dort die Bestätigungsmail aus. Ohne Bestätigung passiert nichts.
+// Das Formular geht an die Funktion api/newsletter.mjs (erreichbar unter
+// /api/newsletter); die meldet die Adresse bei Brevo an und löst dort die
+// Bestätigungsmail aus. Ohne Bestätigung passiert nichts.
 interface Props {
   compact?: boolean;
 }
@@ -65,10 +65,15 @@ const id = compact ? 'c' : 'a';
       status.hidden = true;
 
       try {
+        // Als normales Formularformat senden (nicht FormData): so liest die
+        // Funktion die Felder auf demselben Weg wie beim Absenden ohne JavaScript.
         const res = await fetch(form.action, {
           method: 'POST',
-          headers: { accept: 'application/json' },
-          body: new FormData(form),
+          headers: {
+            accept: 'application/json',
+            'content-type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams(new FormData(form) as any).toString(),
         });
         const daten = await res.json().catch(() => ({}));
         if (res.ok && daten.ok) {
