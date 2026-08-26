@@ -3,7 +3,8 @@ title: "Das Immunsystem deines Hundes gut durch den Herbst begleiten"
 description: "Nasse Spaziergänge, durchgefrorener Hund – solltest du jetzt etwas zufüttern? Was im Herbst wirklich zählt, bevor irgendein Produkt ins Haus kommt."
 pubDate: 2026-08-26
 category: "tiergesundheit"
-heroAlt: "Hund im Herbstlaub auf einem nassen Waldweg, im Hintergrund Nebel zwischen den Bäumen"
+heroAlt: "Hund frisst aus einem Napf im Wohnzimmer"
+heroImage: "/bilder/hund-immunsystem-herbst.jpg"
 affiliate: true
 ---
 
