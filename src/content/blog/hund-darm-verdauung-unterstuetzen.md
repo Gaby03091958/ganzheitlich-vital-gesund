@@ -3,7 +3,8 @@ title: "Weicher Kot, Gluckern, Grasfressen: den Darm deines Hundes sanft unterst
 description: "Mal weicher Kot, Blähungen, Bauchgluckern? Wann du den Darm deines Hundes selbst unterstützen kannst, wann der Tierarzt dran ist – und was Probiotika taugen."
 pubDate: 2026-08-26
 category: "tiergesundheit"
-heroAlt: "Hund liegt entspannt auf der Seite, eine Hand streichelt sanft seinen Bauch"
+heroAlt: "Beagle frisst Gras auf einer Wiese"
+heroImage: "/bilder/hund-darm-verdauung.jpg"
 affiliate: true
 ---
 

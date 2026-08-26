@@ -3,7 +3,8 @@ title: "Ab wann ist mein Hund ein Senior – und was ändert sich dann wirklich?
 description: "Dein Hund wird sieben, ist fit – und trotzdem merkst du Kleinigkeiten. Ab wann er als Senior gilt, was sich verändert und was du jetzt sinnvoll anpasst."
 pubDate: 2026-08-26
 category: "tiergesundheit"
-heroAlt: "Älterer Hund mit grauer Schnauze liegt entspannt im Herbstlicht und schaut aufmerksam"
+heroAlt: "Älterer schwarzer Hund mit grauer Schnauze steht aufmerksam auf einer herbstlichen Wiese"
+heroImage: "/bilder/hund-senior.jpg"
 affiliate: true
 ---
 

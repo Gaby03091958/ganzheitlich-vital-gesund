@@ -3,7 +3,8 @@ title: "Fellwechsel im Herbst: So unterstützt du deinen Hund"
 description: "Dein Hund haart plötzlich wie verrückt und wirkt etwas matt? Warum der Fellwechsel im Herbst normal ist – und wie du deinen Hund jetzt sinnvoll unterstützt."
 pubDate: 2026-08-26
 category: "tiergesundheit"
-heroAlt: "Hund wird im Herbstlaub gebürstet, eine Handvoll loser Unterwolle daneben"
+heroAlt: "Langhaariger Hund steht im Herbstlaub, Blätter wehen ihm um Kopf und Fell"
+heroImage: "/bilder/hund-fellwechsel-herbst.jpg"
 affiliate: true
 ---
 

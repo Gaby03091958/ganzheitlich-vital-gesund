@@ -3,7 +3,8 @@ title: "Wenn dein Hund sich ständig kratzt: Haut und Fell ganzheitlich unterst�
 description: "Nächtliches Kratzen, stumpfes Fell, Schuppen? Warum Juckreiz beim Hund ein Symptom ist, wie du Ursachen eingrenzt und die Hautbarriere unterstützen kannst."
 pubDate: 2026-08-26
 category: "tiergesundheit"
-heroAlt: "Hund kratzt sich mit der Hinterpfote am Hals, im Hintergrund eine herbstliche Wiese"
+heroAlt: "Heller Hund kratzt sich mit der Hinterpfote hinter dem Ohr"
+heroImage: "/bilder/hund-haut-juckreiz.jpg"
 affiliate: true
 ---
 
