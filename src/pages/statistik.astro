@@ -1,0 +1,635 @@
+---
+// Internes Statistik-Dashboard (nur mit Schlüssel nutzbar, für Suchmaschinen gesperrt).
+//
+// Zeigt: Besucher & Seitenaufrufe (eigene cookiefreie Zählung über /api/zaehl),
+// Top-Inhalte, Herkunftsquellen, Klicks auf Partnerlinks, Newsletter-Stand –
+// und eine Pinterest-Auswertung auf Basis des CSV-Exports aus Pinterest Analytics.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const artikel = await getCollection('blog');
+const artikelAnzahl = artikel.length;
+---
+<BaseLayout title="Statistik" description="Internes Dashboard" minimalHeader noindex>
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Intern</p>
+      <h1>Statistik</h1>
+      <p>Besucher, Klicks und Pinterest-Auswertung für „Ganzheitlich vital &amp; gesund“.</p>
+    </div>
+  </section>
+
+  <div class="container dash" data-artikel={artikelAnzahl}>
+
+    <!-- Anmeldung -->
+    <div id="anmeldung" class="karte anmeldung" hidden>
+      <h2>Schlüssel eingeben</h2>
+      <p>Diese Seite ist nur für dich. Gib den Statistik-Schlüssel ein – er wird auf diesem Gerät gemerkt.</p>
+      <form id="anmeldeform">
+        <input type="password" id="schluessel" placeholder="Statistik-Schlüssel" autocomplete="off" />
+        <button type="submit" class="knopf">Öffnen</button>
+      </form>
+      <p id="anmeldefehler" class="fehler" hidden>Der Schlüssel stimmt nicht.</p>
+    </div>
+
+    <div id="laden" class="karte" hidden><p>Lade Zahlen …</p></div>
+
+    <!-- Dashboard -->
+    <div id="inhalt-dash" hidden>
+
+      <div class="hinweis">
+        <strong>Geduld ist Teil des Plans:</strong> Pinterest und Google brauchen 2–3 Monate Anlauf.
+        Kleine Zahlen bis Ende November sind normal und kein Grund, die Strategie zu ändern.
+        Der verabredete erste ehrliche Blick auf Ergebnisse bleibt der <strong>23.11.2026 (Tag 90)</strong> —
+        bis dahin zählt vor allem: regelmäßig Artikel und Pins veröffentlichen.
+      </div>
+
+      <div class="zeile-kopf">
+        <h2>Website</h2>
+        <div class="umschalter" role="group" aria-label="Zeitraum">
+          <button data-tage="30" class="aktiv">30 Tage</button>
+          <button data-tage="90">90 Tage</button>
+        </div>
+      </div>
+
+      <div class="kacheln" id="kacheln"></div>
+
+      <div class="karte">
+        <h3>Besucher pro Tag</h3>
+        <div class="legende" id="legende"></div>
+        <div class="chart-halter"><div id="verlauf"></div><div id="tooltip" class="tooltip" hidden></div></div>
+        <details class="tabelle-details">
+          <summary>Zahlen als Tabelle</summary>
+          <div class="scrollbox"><table id="verlauf-tabelle"></table></div>
+        </details>
+      </div>
+
+      <div class="spalten">
+        <div class="karte"><h3>Meistbesuchte Seiten</h3><div id="topseiten" class="balkenliste"></div></div>
+        <div class="karte"><h3>Woher die Besuche kommen</h3><div id="quellen" class="balkenliste"></div></div>
+      </div>
+
+      <div class="spalten">
+        <div class="karte">
+          <h3>Klicks auf Partnerlinks</h3>
+          <p class="klein">Jeder Klick auf einen Waldkraft-/Fourth-Era-Link wird gezählt — ob daraus eine Bestellung wurde, zeigt nur das Waldkraft-Partnerkonto.</p>
+          <div id="klicks" class="balkenliste"></div>
+          <h4 class="mt">… von welcher Seite aus</h4>
+          <div id="klickseiten" class="balkenliste"></div>
+        </div>
+        <div class="karte">
+          <h3>Ankünfte über Pin-Links</h3>
+          <p class="klein">Zählt Besuche über Links mit <code>?pin=…</code>. Bekommen neue Pins so eine Kennung im Ziel-Link, siehst du hier, welcher Pin wirklich Besucher bringt.</p>
+          <div id="pins-ankunft" class="balkenliste"></div>
+        </div>
+      </div>
+
+      <!-- Pinterest -->
+      <div class="zeile-kopf mt-gross"><h2>Pinterest-Pins</h2><span id="pinterest-stand" class="klein"></span></div>
+
+      <div class="karte">
+        <p><strong>So kommen die Zahlen hierher:</strong> Auf Pinterest anmelden → <em>Analytics → Übersicht</em> →
+        oben den Zeitraum wählen (am besten „Letzte 90 Tage“) → rechts <em>„Exportieren“</em> → die CSV-Datei hier ablegen.
+        Die Auswertung bleibt auf diesem Gerät gespeichert, bis du eine neuere Datei importierst.</p>
+        <label id="ablage" class="ablage">
+          <input type="file" id="csvdatei" accept=".csv,text/csv" hidden />
+          CSV-Datei hierher ziehen oder klicken zum Auswählen
+        </label>
+        <p id="csvfehler" class="fehler" hidden></p>
+      </div>
+
+      <div id="pinterest-auswertung" hidden>
+        <div class="kacheln" id="pin-kacheln"></div>
+        <div class="karte">
+          <h3>Empfehlungen</h3>
+          <div id="empfehlungen" class="empfehlungen"></div>
+        </div>
+        <div class="karte">
+          <h3>Alle Pins im Vergleich</h3>
+          <p class="klein">Klick auf eine Spaltenüberschrift sortiert. CTR = Klicks zur Website geteilt durch Impressionen.</p>
+          <div class="scrollbox"><table id="pin-tabelle"></table></div>
+        </div>
+      </div>
+
+      <!-- Einstellungen -->
+      <div class="karte mt-gross">
+        <h3>Einstellungen</h3>
+        <label class="schalter"><input type="checkbox" id="nicht-zaehlen" /> Besuche von diesem Gerät nicht mitzählen (empfohlen — sonst zählst du dich selbst)</label>
+        <p class="klein">Gilt nur für diesen Browser. Auf dem Handy einmal <code>/statistik/</code> öffnen, dann ist es dort auch aus.</p>
+        <button id="abmelden" class="knopf-leise">Schlüssel auf diesem Gerät vergessen</button>
+      </div>
+
+      <p class="klein stand" id="stand"></p>
+    </div>
+  </div>
+
+  <script is:inline>
+  (function () {
+    'use strict';
+    // ---------- Grundlagen ----------
+    var FARBE_A = '#ef4297'; // Seitenaufrufe (Pink der Website)
+    var FARBE_B = '#2563eb'; // Besuche (Blau, farbfehlsichtig-sicher geprüft)
+    var $ = function (id) { return document.getElementById(id); };
+    var daten = null;        // Antwort von /api/statistik
+    var zeitraum = 30;
+
+    // Eigenes Gerät beim ersten Öffnen automatisch von der Zählung ausnehmen.
+    try { if (!localStorage.getItem('statistik-aus')) localStorage.setItem('statistik-aus', '1'); } catch (e) {}
+
+    function zahl(n) { return (n || 0).toLocaleString('de-DE'); }
+    function prozent(n) { return (n * 100).toLocaleString('de-DE', { maximumFractionDigits: 1 }) + ' %'; }
+
+    function seitenName(pfad) {
+      if (pfad === '/') return 'Startseite';
+      var p = pfad.replace(/\/$/, '');
+      if (p === '/blog') return 'Blog-Übersicht';
+      if (p === '/10-minuten-check') return 'Freebie: 10-Minuten-Check';
+      return p.replace('/blog/', '').replace('/kategorie/', 'Kategorie: ').replace(/^\//, '').replace(/-/g, ' ');
+    }
+    function zielName(ziel) {
+      if (/waldkraft/i.test(ziel)) return 'Waldkraft';
+      if (/fourthera/i.test(ziel)) return 'Fourth Era';
+      return ziel.replace(/^https?:\/\//, '');
+    }
+
+    // ---------- Anmeldung ----------
+    function gemerkterSchluessel() { try { return localStorage.getItem('statistik-schluessel') || ''; } catch (e) { return ''; } }
+
+    function start() {
+      var s = gemerkterSchluessel();
+      if (s) { laden(s); } else { $('anmeldung').hidden = false; }
+    }
+
+    $('anmeldeform').addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var s = $('schluessel').value.trim();
+      if (s) laden(s);
+    });
+
+    $('abmelden') && $('abmelden').addEventListener('click', function () {
+      try { localStorage.removeItem('statistik-schluessel'); } catch (e) {}
+      location.reload();
+    });
+
+    function laden(schluessel) {
+      $('anmeldung').hidden = true; $('laden').hidden = false;
+      fetch('/api/statistik?token=' + encodeURIComponent(schluessel))
+        .then(function (a) { return a.json().then(function (j) { return { status: a.status, j: j }; }); })
+        .then(function (r) {
+          $('laden').hidden = true;
+          if (r.status !== 200 || !r.j.ok) {
+            try { localStorage.removeItem('statistik-schluessel'); } catch (e) {}
+            $('anmeldung').hidden = false;
+            $('anmeldefehler').hidden = false;
+            return;
+          }
+          try { localStorage.setItem('statistik-schluessel', schluessel); } catch (e) {}
+          daten = r.j;
+          $('inhalt-dash').hidden = false;
+          zeichneAlles();
+        })
+        .catch(function () {
+          $('laden').hidden = true; $('anmeldung').hidden = false; $('anmeldefehler').hidden = false;
+        });
+    }
+
+    // ---------- Website-Auswertung ----------
+    function tageListe(n) {
+      // Lückenlose Liste der letzten n Tage (leere Tage = 0), Schlüssel JJJJ-MM-TT.
+      var liste = [];
+      var heute = daten.heute;
+      var d = new Date(heute + 'T12:00:00Z');
+      for (var i = n - 1; i >= 0; i--) {
+        var t = new Date(d.getTime() - i * 86400000).toISOString().slice(0, 10);
+        liste.push({ tag: t, werte: daten.tage[t] || null });
+      }
+      return liste;
+    }
+
+    function summe(liste, feld) {
+      var s = {};
+      liste.forEach(function (e) {
+        if (!e.werte || !e.werte[feld]) return;
+        Object.keys(e.werte[feld]).forEach(function (k) { s[k] = (s[k] || 0) + e.werte[feld][k]; });
+      });
+      return s;
+    }
+    function summeZahl(liste, feld) {
+      return liste.reduce(function (a, e) { return a + (e.werte ? e.werte[feld] || 0 : 0); }, 0);
+    }
+    function sortiert(obj) {
+      return Object.keys(obj).map(function (k) { return [k, obj[k]]; }).sort(function (a, b) { return b[1] - a[1]; });
+    }
+
+    function kachel(wert, name, hinweis) {
+      return '<div class="kachel"><div class="wert">' + wert + '</div><div class="name">' + name + '</div>' +
+        (hinweis ? '<div class="unter">' + hinweis + '</div>' : '') + '</div>';
+    }
+
+    function balkenliste(ziel, paare, benenner) {
+      if (!paare.length) { ziel.innerHTML = '<p class="klein leer">Noch nichts gezählt — die Zählung läuft erst seit dem 01.09.2026.</p>'; return; }
+      var max = paare[0][1];
+      ziel.innerHTML = paare.slice(0, 10).map(function (p) {
+        var breite = Math.max(2, Math.round((p[1] / max) * 100));
+        return '<div class="balkenzeile" title="' + p[0] + '">' +
+          '<span class="bl-name">' + (benenner ? benenner(p[0]) : p[0]) + '</span>' +
+          '<span class="bl-balken"><span style="width:' + breite + '%"></span></span>' +
+          '<span class="bl-wert">' + zahl(p[1]) + '</span></div>';
+      }).join('');
+    }
+
+    function zeichneAlles() {
+      var liste = tageListe(zeitraum);
+      var gesamtListe = Object.keys(daten.tage).sort().map(function (t) { return { tag: t, werte: daten.tage[t] }; });
+
+      var aufrufe = summeZahl(liste, 'aufrufe');
+      var besuche = summeZahl(liste, 'besuche');
+      var klicks = sortiert(summe(liste, 'klicks'));
+      var klicksGesamt = klicks.reduce(function (a, p) { return a + p[1]; }, 0);
+      var abonnenten = daten.newsletterAbonnenten;
+      var artikelZahl = document.querySelector('.dash').getAttribute('data-artikel');
+
+      $('kacheln').innerHTML =
+        kachel(zahl(aufrufe), 'Seitenaufrufe', 'seit Start: ' + zahl(summeZahl(gesamtListe, 'aufrufe'))) +
+        kachel(zahl(besuche), 'Besuche', 'seit Start: ' + zahl(summeZahl(gesamtListe, 'besuche'))) +
+        kachel(zahl(klicksGesamt), 'Partnerlink-Klicks', 'seit Start: ' + zahl(sortiert(summe(gesamtListe, 'klicks')).reduce(function (a, p) { return a + p[1]; }, 0))) +
+        kachel(abonnenten === null ? '–' : zahl(abonnenten), 'Newsletter-Abonnenten', 'bestätigt, laut Brevo') +
+        kachel(zahl(Number(artikelZahl)), 'Artikel online', 'zählt sich beim Deploy selbst');
+
+      zeichneVerlauf(liste);
+      balkenliste($('topseiten'), sortiert(summe(liste, 'seiten')), seitenName);
+      balkenliste($('quellen'), sortiert(summe(liste, 'quellen')));
+      balkenliste($('klicks'), klicks, zielName);
+      balkenliste($('klickseiten'), sortiert(summe(liste, 'klickSeiten')), seitenName);
+      balkenliste($('pins-ankunft'), sortiert(summe(liste, 'pins')));
+
+      $('stand').textContent = 'Stand: ' + new Date(daten.stand).toLocaleString('de-DE') +
+        ' Uhr · Zählung läuft seit 01.09.2026, ohne Cookies, ohne IP-Speicherung.';
+    }
+
+    // Zeitraum-Umschalter
+    document.querySelectorAll('.umschalter button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('.umschalter button').forEach(function (x) { x.classList.remove('aktiv'); });
+        b.classList.add('aktiv');
+        zeitraum = Number(b.getAttribute('data-tage'));
+        if (daten) zeichneAlles();
+      });
+    });
+
+    // ---------- Verlaufs-Diagramm (SVG, mit Berühr-Tooltip) ----------
+    function zeichneVerlauf(liste) {
+      var halter = $('verlauf');
+      var breite = halter.clientWidth || 600;
+      var hoehe = 220, oben = 12, unten = 24, links = 34, rechts = 8;
+      var innenB = breite - links - rechts, innenH = hoehe - oben - unten;
+
+      var reihen = [
+        { name: 'Seitenaufrufe', farbe: FARBE_A, werte: liste.map(function (e) { return e.werte ? e.werte.aufrufe || 0 : 0; }) },
+        { name: 'Besuche', farbe: FARBE_B, werte: liste.map(function (e) { return e.werte ? e.werte.besuche || 0 : 0; }) }
+      ];
+      var max = Math.max(4, Math.max.apply(null, reihen[0].werte.concat(reihen[1].werte)));
+      max = Math.ceil(max / 4) * 4;
+
+      var x = function (i) { return links + (liste.length === 1 ? innenB / 2 : (i / (liste.length - 1)) * innenB); };
+      var y = function (v) { return oben + innenH - (v / max) * innenH; };
+
+      var s = '<svg width="' + breite + '" height="' + hoehe + '" role="img" aria-label="Seitenaufrufe und Besuche pro Tag">';
+      for (var g = 0; g <= 4; g++) {
+        var gy = y((max / 4) * g);
+        s += '<line x1="' + links + '" y1="' + gy + '" x2="' + (breite - rechts) + '" y2="' + gy + '" stroke="#ececec" stroke-width="1"/>';
+        s += '<text x="' + (links - 6) + '" y="' + (gy + 3) + '" text-anchor="end" font-size="10" fill="#7c828a">' + (max / 4) * g + '</text>';
+      }
+      var schritt = Math.max(1, Math.round(liste.length / 6));
+      liste.forEach(function (e, i) {
+        if (i % schritt === 0 || i === liste.length - 1) {
+          var t = e.tag.slice(8, 10) + '.' + e.tag.slice(5, 7) + '.';
+          s += '<text x="' + x(i) + '" y="' + (hoehe - 6) + '" text-anchor="middle" font-size="10" fill="#7c828a">' + t + '</text>';
+        }
+      });
+      reihen.forEach(function (r) {
+        var pfad = r.werte.map(function (v, i) { return (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1); }).join(' ');
+        s += '<path d="' + pfad + '" fill="none" stroke="' + r.farbe + '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>';
+      });
+      s += '<line id="kreuz" x1="0" y1="' + oben + '" x2="0" y2="' + (oben + innenH) + '" stroke="#c8ccd2" stroke-width="1" visibility="hidden"/>';
+      reihen.forEach(function (r, ri) {
+        s += '<circle id="punkt' + ri + '" r="4" fill="' + r.farbe + '" stroke="#fff" stroke-width="2" visibility="hidden"/>';
+      });
+      s += '</svg>';
+      halter.innerHTML = s;
+
+      $('legende').innerHTML = reihen.map(function (r) {
+        return '<span class="chip"><span class="punkt" style="background:' + r.farbe + '"></span>' + r.name + '</span>';
+      }).join('');
+
+      // Tabelle (Alternative zum Diagramm)
+      var t = '<tr><th>Tag</th><th>Seitenaufrufe</th><th>Besuche</th></tr>';
+      liste.forEach(function (e, i) {
+        t += '<tr><td>' + e.tag + '</td><td>' + reihen[0].werte[i] + '</td><td>' + reihen[1].werte[i] + '</td></tr>';
+      });
+      $('verlauf-tabelle').innerHTML = t;
+
+      // Tooltip
+      var svg = halter.querySelector('svg');
+      var tip = $('tooltip');
+      function zeige(ev) {
+        var box = svg.getBoundingClientRect();
+        var mx = (ev.touches ? ev.touches[0].clientX : ev.clientX) - box.left;
+        var i = Math.round(((mx - links) / innenB) * (liste.length - 1));
+        i = Math.max(0, Math.min(liste.length - 1, i));
+        var e = liste[i];
+        svg.querySelector('#kreuz').setAttribute('x1', x(i)); svg.querySelector('#kreuz').setAttribute('x2', x(i));
+        svg.querySelector('#kreuz').setAttribute('visibility', 'visible');
+        reihen.forEach(function (r, ri) {
+          var p = svg.querySelector('#punkt' + ri);
+          p.setAttribute('cx', x(i)); p.setAttribute('cy', y(r.werte[i])); p.setAttribute('visibility', 'visible');
+        });
+        var datum = e.tag.slice(8, 10) + '.' + e.tag.slice(5, 7) + '.' + e.tag.slice(0, 4);
+        tip.innerHTML = '<strong>' + datum + '</strong><br>Seitenaufrufe: ' + reihen[0].werte[i] + '<br>Besuche: ' + reihen[1].werte[i];
+        tip.hidden = false;
+        var tx = x(i) + 12; if (tx + 140 > breite) tx = x(i) - 152;
+        tip.style.left = tx + 'px'; tip.style.top = '20px';
+      }
+      function weg() {
+        tip.hidden = true;
+        svg.querySelector('#kreuz').setAttribute('visibility', 'hidden');
+        reihen.forEach(function (_, ri) { svg.querySelector('#punkt' + ri).setAttribute('visibility', 'hidden'); });
+      }
+      svg.addEventListener('mousemove', zeige);
+      svg.addEventListener('touchstart', zeige);
+      svg.addEventListener('touchmove', zeige);
+      svg.addEventListener('mouseleave', weg);
+    }
+    var wartezeit;
+    window.addEventListener('resize', function () {
+      clearTimeout(wartezeit);
+      wartezeit = setTimeout(function () { if (daten && !$('inhalt-dash').hidden) zeichneVerlauf(tageListe(zeitraum)); }, 200);
+    });
+
+    // ---------- Pinterest: CSV einlesen ----------
+    function csvZerlegen(text) {
+      // Trennzeichen erraten (Pinterest liefert je nach Sprache , oder ;)
+      var kopf = text.slice(0, text.indexOf('\n'));
+      var trenner = (kopf.split(';').length > kopf.split(',').length) ? ';' : ',';
+      var zeilen = [], zeile = [], feld = '', inAnf = false;
+      for (var i = 0; i < text.length; i++) {
+        var z = text[i];
+        if (inAnf) {
+          if (z === '"' && text[i + 1] === '"') { feld += '"'; i++; }
+          else if (z === '"') { inAnf = false; }
+          else feld += z;
+        } else if (z === '"') inAnf = true;
+        else if (z === trenner) { zeile.push(feld); feld = ''; }
+        else if (z === '\n' || z === '\r') {
+          if (z === '\r' && text[i + 1] === '\n') i++;
+          zeile.push(feld); feld = '';
+          if (zeile.some(function (f) { return f !== ''; })) zeilen.push(zeile);
+          zeile = [];
+        } else feld += z;
+      }
+      if (feld !== '' || zeile.length) { zeile.push(feld); if (zeile.some(function (f) { return f !== ''; })) zeilen.push(zeile); }
+      return zeilen;
+    }
+
+    function spaltenFinden(kopfzeile) {
+      var wo = {};
+      kopfzeile.forEach(function (name, i) {
+        var n = name.toLowerCase().replace(/[^a-zäöüß]/g, '');
+        if (wo.titel === undefined && (n.indexOf('titel') >= 0 || n.indexOf('title') >= 0 || n === 'pin' || n === 'name')) wo.titel = i;
+        if (wo.impressionen === undefined && n.indexOf('impression') >= 0) wo.impressionen = i;
+        if (wo.outbound === undefined && (n.indexOf('outbound') >= 0 || n.indexOf('klicksauflinks') >= 0 || n.indexOf('linkklick') >= 0)) wo.outbound = i;
+        if (wo.pinklicks === undefined && (n.indexOf('pinklick') >= 0 || n.indexOf('pinclick') >= 0)) wo.pinklicks = i;
+        if (wo.merken === undefined && (n.indexOf('merken') >= 0 || n.indexOf('save') >= 0 || n.indexOf('speicher') >= 0)) wo.merken = i;
+        if (wo.link === undefined && (n === 'link' || n === 'url' || n.indexOf('ziellink') >= 0)) wo.link = i;
+        if (wo.datum === undefined && (n.indexOf('erstellt') >= 0 || n.indexOf('created') >= 0 || n.indexOf('datum') >= 0 || n.indexOf('date') >= 0)) wo.datum = i;
+      });
+      return wo;
+    }
+
+    function alsZahl(text) {
+      var t = String(text || '').trim().replace(/\s/g, '');
+      if (t.indexOf(',') >= 0 && t.indexOf('.') >= 0) t = t.replace(/\./g, '').replace(',', '.');
+      else t = t.replace(',', '.');
+      var n = parseFloat(t);
+      return isNaN(n) ? 0 : n;
+    }
+
+    function csvVerarbeiten(text, dateiname) {
+      var zeilen = csvZerlegen(text);
+      if (zeilen.length < 2) throw new Error('Die Datei enthält keine Datenzeilen.');
+      var wo = spaltenFinden(zeilen[0]);
+      if (wo.impressionen === undefined || wo.titel === undefined) {
+        throw new Error('Spalten nicht erkannt (gefunden: ' + zeilen[0].join(' | ') + '). Erwartet wird der Export aus Pinterest Analytics.');
+      }
+      var pins = zeilen.slice(1).map(function (z) {
+        return {
+          titel: (z[wo.titel] || '(ohne Titel)').trim().slice(0, 120),
+          impressionen: alsZahl(z[wo.impressionen]),
+          outbound: wo.outbound !== undefined ? alsZahl(z[wo.outbound]) : 0,
+          pinklicks: wo.pinklicks !== undefined ? alsZahl(z[wo.pinklicks]) : 0,
+          merken: wo.merken !== undefined ? alsZahl(z[wo.merken]) : 0,
+          link: wo.link !== undefined ? String(z[wo.link] || '').trim() : '',
+          datum: wo.datum !== undefined ? String(z[wo.datum] || '').trim() : ''
+        };
+      }).filter(function (p) { return p.titel !== '(ohne Titel)' || p.impressionen > 0; });
+      if (!pins.length) throw new Error('Keine Pins in der Datei gefunden.');
+      var paket = { stand: new Date().toISOString(), datei: dateiname, pins: pins };
+      try { localStorage.setItem('pinterest-analyse', JSON.stringify(paket)); } catch (e) {}
+      return paket;
+    }
+
+    // ---------- Pinterest: Auswertung ----------
+    function median(werte) {
+      if (!werte.length) return 0;
+      var s = werte.slice().sort(function (a, b) { return a - b; });
+      var m = Math.floor(s.length / 2);
+      return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+    }
+    function p75(werte) {
+      if (!werte.length) return 0;
+      var s = werte.slice().sort(function (a, b) { return a - b; });
+      return s[Math.min(s.length - 1, Math.floor(s.length * 0.75))];
+    }
+
+    function bewerten(pins) {
+      var medImp = median(pins.map(function (p) { return p.impressionen; }));
+      var topOut = Math.max(2, p75(pins.map(function (p) { return p.outbound; })));
+      var ctrs = pins.filter(function (p) { return p.impressionen > 0; }).map(function (p) { return p.outbound / p.impressionen; });
+      var medCtr = median(ctrs);
+      pins.forEach(function (p) {
+        p.ctr = p.impressionen > 0 ? p.outbound / p.impressionen : 0;
+        if (p.outbound >= topOut && p.outbound > 0) { p.note = 'top'; p.noteText = '🏆 Läuft'; }
+        else if (p.impressionen >= medImp && p.impressionen >= 50 && p.ctr < Math.max(medCtr, 0.002)) { p.note = 'ueberarbeiten'; p.noteText = '🔧 Überarbeiten'; }
+        else if (p.impressionen < Math.max(medImp, 30)) { p.note = 'frueh'; p.noteText = '🌱 Zu früh'; }
+        else { p.note = 'ok'; p.noteText = '👍 In Ordnung'; }
+      });
+      return pins;
+    }
+
+    var pinSortierung = { feld: 'outbound', richtung: -1 };
+
+    function zeigePinterest(paket) {
+      var pins = bewerten(paket.pins);
+      $('pinterest-auswertung').hidden = false;
+      $('pinterest-stand').textContent = 'Import vom ' + new Date(paket.stand).toLocaleDateString('de-DE') +
+        (paket.datei ? ' (' + paket.datei + ')' : '') + ' · ' + pins.length + ' Pins';
+
+      var impSumme = pins.reduce(function (a, p) { return a + p.impressionen; }, 0);
+      var outSumme = pins.reduce(function (a, p) { return a + p.outbound; }, 0);
+      var merkSumme = pins.reduce(function (a, p) { return a + p.merken; }, 0);
+      $('pin-kacheln').innerHTML =
+        kachel(zahl(impSumme), 'Impressionen', 'wie oft Pins angezeigt wurden') +
+        kachel(zahl(outSumme), 'Klicks zur Website', 'Outbound-Klicks') +
+        kachel(impSumme ? prozent(outSumme / impSumme) : '–', 'Durchschnittliche CTR', 'Klicks ÷ Impressionen') +
+        kachel(zahl(merkSumme), 'Gemerkt', 'auf Pinnwände gespeichert');
+
+      // Empfehlungen
+      var top = pins.filter(function (p) { return p.note === 'top'; }).sort(function (a, b) { return b.outbound - a.outbound; }).slice(0, 3);
+      var neu = pins.filter(function (p) { return p.note === 'ueberarbeiten'; }).sort(function (a, b) { return b.impressionen - a.impressionen; }).slice(0, 3);
+      var e = '';
+      e += '<div class="empf empf-top"><h4>🏆 Nochmal nutzen</h4>' + (top.length
+        ? '<p>Diese Themen ziehen. Erstelle je eine <strong>neue Grafik mit anderem Titel</strong> zur selben Zielseite und pinne sie (frühestens 2 Wochen nach dem Original, gern auf eine andere passende Pinnwand):</p><ul>'
+          + top.map(function (p) { return '<li>' + p.titel + ' <span class="klein">(' + zahl(p.outbound) + ' Klicks)</span></li>'; }).join('') + '</ul>'
+        : '<p>Noch kein Pin mit klar überdurchschnittlichen Klicks — bei jungen Konten völlig normal.</p>') + '</div>';
+      e += '<div class="empf empf-neu"><h4>🔧 Titel oder Bild überarbeiten</h4>' + (neu.length
+        ? '<p>Diese Pins werden angezeigt, aber kaum geklickt. Meist hilft: konkreterer Nutzen im Titel („3 Zeichen, dass …“), besser lesbarer Text auf der Grafik:</p><ul>'
+          + neu.map(function (p) { return '<li>' + p.titel + ' <span class="klein">(' + zahl(p.impressionen) + ' Impressionen, CTR ' + prozent(p.ctr) + ')</span></li>'; }).join('') + '</ul>'
+        : '<p>Derzeit kein Pin, der viel gesehen und wenig geklickt wird.</p>') + '</div>';
+      e += '<div class="empf"><h4>🌱 Geduld</h4><p>' + pins.filter(function (p) { return p.note === 'frueh'; }).length +
+        ' Pins haben noch zu wenige Impressionen für ein Urteil. Pinterest testet neue Pins über Monate — nicht löschen, nicht anfassen.</p></div>';
+      $('empfehlungen').innerHTML = e;
+
+      zeichnePinTabelle(pins);
+    }
+
+    function zeichnePinTabelle(pins) {
+      var spalten = [
+        ['titel', 'Pin'], ['impressionen', 'Impressionen'], ['outbound', 'Klicks'],
+        ['ctr', 'CTR'], ['merken', 'Gemerkt'], ['noteText', 'Bewertung']
+      ];
+      var sortierte = pins.slice().sort(function (a, b) {
+        var f = pinSortierung.feld;
+        var av = a[f], bv = b[f];
+        if (typeof av === 'string') return pinSortierung.richtung * av.localeCompare(bv, 'de');
+        return pinSortierung.richtung * (av - bv);
+      });
+      var html = '<tr>' + spalten.map(function (sp) {
+        var pfeil = pinSortierung.feld === sp[0] ? (pinSortierung.richtung < 0 ? ' ↓' : ' ↑') : '';
+        return '<th data-feld="' + sp[0] + '">' + sp[1] + pfeil + '</th>';
+      }).join('') + '</tr>';
+      sortierte.forEach(function (p) {
+        html += '<tr><td class="pin-titel">' + p.titel + '</td><td>' + zahl(p.impressionen) + '</td><td>' + zahl(p.outbound) +
+          '</td><td>' + prozent(p.ctr) + '</td><td>' + zahl(p.merken) + '</td><td><span class="note note-' + p.note + '">' + p.noteText + '</span></td></tr>';
+      });
+      var tabelle = $('pin-tabelle');
+      tabelle.innerHTML = html;
+      tabelle.querySelectorAll('th').forEach(function (th) {
+        th.addEventListener('click', function () {
+          var feld = th.getAttribute('data-feld');
+          if (pinSortierung.feld === feld) pinSortierung.richtung *= -1;
+          else { pinSortierung.feld = feld; pinSortierung.richtung = feld === 'titel' || feld === 'noteText' ? 1 : -1; }
+          zeichnePinTabelle(pins);
+        });
+      });
+    }
+
+    // Datei-Import (Klick + Ziehen)
+    $('csvdatei').addEventListener('change', function () { if (this.files[0]) dateiLesen(this.files[0]); });
+    var ablage = $('ablage');
+    ['dragover', 'dragenter'].forEach(function (n) { ablage.addEventListener(n, function (ev) { ev.preventDefault(); ablage.classList.add('aktiv'); }); });
+    ['dragleave', 'drop'].forEach(function (n) { ablage.addEventListener(n, function (ev) { ev.preventDefault(); ablage.classList.remove('aktiv'); }); });
+    ablage.addEventListener('drop', function (ev) {
+      if (ev.dataTransfer.files && ev.dataTransfer.files[0]) dateiLesen(ev.dataTransfer.files[0]);
+    });
+    function dateiLesen(datei) {
+      $('csvfehler').hidden = true;
+      var leser = new FileReader();
+      leser.onload = function () {
+        try { zeigePinterest(csvVerarbeiten(String(leser.result), datei.name)); }
+        catch (fehler) { $('csvfehler').textContent = String(fehler.message || fehler); $('csvfehler').hidden = false; }
+      };
+      leser.readAsText(datei, 'utf-8');
+    }
+
+    // Gespeicherte Pinterest-Auswertung wieder anzeigen
+    try {
+      var gespeichert = localStorage.getItem('pinterest-analyse');
+      if (gespeichert) zeigePinterest(JSON.parse(gespeichert));
+    } catch (e) {}
+
+    // Einstellungs-Schalter
+    var schalter = $('nicht-zaehlen');
+    try { schalter.checked = !!localStorage.getItem('statistik-aus'); } catch (e) {}
+    schalter.addEventListener('change', function () {
+      try {
+        if (schalter.checked) localStorage.setItem('statistik-aus', '1');
+        else localStorage.removeItem('statistik-aus');
+      } catch (e) {}
+    });
+
+    start();
+  })();
+  </script>
+
+  {/* is:global, weil ein Großteil der Elemente per JavaScript erzeugt wird
+      und Astros automatisch "gescopte" Styles dort nicht greifen würden. */}
+  <style is:global>
+    .dash { max-width: 980px; padding-top: 2rem; padding-bottom: 4rem; }
+    .karte { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.2rem 1.4rem; margin-bottom: 1.2rem; }
+    .karte h3 { margin: 0 0 0.6rem; font-size: 1.05rem; }
+    .karte h4 { margin: 0.4rem 0 0.3rem; font-size: 0.95rem; }
+    .anmeldung { max-width: 420px; margin: 2rem auto; }
+    .anmeldung form { display: flex; gap: 0.5rem; margin-top: 0.6rem; }
+    .anmeldung input { flex: 1; padding: 0.55rem 0.7rem; border: 1px solid var(--line); border-radius: 6px; font: inherit; }
+    .knopf { background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 0.55rem 1rem; font: inherit; cursor: pointer; }
+    .knopf:hover { background: var(--accent-dark); }
+    .knopf-leise { background: none; border: 1px solid var(--line); border-radius: 6px; padding: 0.4rem 0.8rem; font: inherit; font-size: 0.85rem; color: var(--muted); cursor: pointer; margin-top: 0.6rem; }
+    .fehler { color: #b4232c; font-size: 0.9rem; }
+    .hinweis { background: var(--bg-soft); border-left: 4px solid var(--accent); border-radius: 6px; padding: 0.8rem 1rem; font-size: 0.92rem; margin-bottom: 1.4rem; }
+    .zeile-kopf { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 0.4rem 0 0.8rem; flex-wrap: wrap; }
+    .zeile-kopf h2 { margin: 0; font-size: 1.35rem; }
+    .mt { margin-top: 1rem; } .mt-gross { margin-top: 2.2rem; }
+    .umschalter button { background: #fff; border: 1px solid var(--line); padding: 0.35rem 0.8rem; font: inherit; font-size: 0.85rem; cursor: pointer; color: var(--text); }
+    .umschalter button:first-child { border-radius: 6px 0 0 6px; }
+    .umschalter button:last-child { border-radius: 0 6px 6px 0; margin-left: -1px; }
+    .umschalter button.aktiv { background: var(--ink); color: #fff; border-color: var(--ink); }
+    .kacheln { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem; margin-bottom: 1.2rem; }
+    .kachel { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 0.9rem 1rem; }
+    .kachel .wert { font-family: var(--font-head); font-size: 1.7rem; font-weight: 700; color: var(--ink); line-height: 1.1; }
+    .kachel .name { font-size: 0.85rem; color: var(--text); margin-top: 0.2rem; }
+    .kachel .unter { font-size: 0.75rem; color: var(--muted); margin-top: 0.15rem; }
+    .spalten { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    @media (max-width: 760px) { .spalten { grid-template-columns: 1fr; } }
+    .legende { display: flex; gap: 1rem; font-size: 0.85rem; margin-bottom: 0.4rem; }
+    .chip { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text); }
+    .chip .punkt { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+    .chart-halter { position: relative; }
+    .tooltip { position: absolute; background: #fff; border: 1px solid var(--line); border-radius: 6px; box-shadow: var(--shadow); padding: 0.4rem 0.6rem; font-size: 0.8rem; pointer-events: none; min-width: 130px; z-index: 5; }
+    .tabelle-details summary { font-size: 0.85rem; color: var(--muted); cursor: pointer; margin-top: 0.5rem; }
+    .scrollbox { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.88rem; margin-top: 0.5rem; }
+    th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    th { cursor: pointer; user-select: none; font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+    td.pin-titel { white-space: normal; min-width: 220px; max-width: 380px; }
+    .balkenliste { display: flex; flex-direction: column; gap: 0.45rem; }
+    .balkenzeile { display: grid; grid-template-columns: minmax(110px, 42%) 1fr auto; align-items: center; gap: 0.6rem; font-size: 0.86rem; }
+    .bl-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text); }
+    .bl-balken { background: var(--bg-gray); border-radius: 4px; height: 10px; overflow: hidden; }
+    .bl-balken span { display: block; height: 100%; background: var(--accent); border-radius: 0 4px 4px 0; }
+    .bl-wert { font-variant-numeric: tabular-nums; color: var(--ink); }
+    .klein { font-size: 0.82rem; color: var(--muted); }
+    .leer { padding: 0.4rem 0; }
+    .ablage { display: block; border: 2px dashed var(--line); border-radius: var(--radius); padding: 1.4rem; text-align: center; color: var(--muted); cursor: pointer; margin-top: 0.8rem; }
+    .ablage.aktiv, .ablage:hover { border-color: var(--accent); color: var(--accent); }
+    .empfehlungen { display: grid; gap: 0.8rem; }
+    .empf { border-left: 3px solid var(--line); padding: 0.2rem 0 0.2rem 0.9rem; font-size: 0.92rem; }
+    .empf-top { border-color: #1b8a5a; } .empf-neu { border-color: #b45309; }
+    .empf ul { margin: 0.3rem 0 0; padding-left: 1.1rem; }
+    .note { font-size: 0.78rem; padding: 0.15rem 0.5rem; border-radius: 99px; background: var(--bg-gray); }
+    .note-top { background: #e3f4ec; color: #14603e; }
+    .note-ueberarbeiten { background: #fdeeda; color: #8a4b06; }
+    .note-frueh { background: #eef2f7; color: #4a5661; }
+    .schalter { display: flex; gap: 0.5rem; align-items: baseline; font-size: 0.92rem; }
+    .stand { margin-top: 1.5rem; }
+  </style>
+</BaseLayout>

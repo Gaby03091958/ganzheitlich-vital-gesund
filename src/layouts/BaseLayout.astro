@@ -9,8 +9,9 @@ interface Props {
   description?: string;
   image?: string;      // Open-Graph-Bild (Pfad in /public), optional
   minimalHeader?: boolean;  // true = Kopfzeile ohne Menü (für Landingpages)
+  noindex?: boolean;        // true = Suchmaschinen sollen die Seite nicht aufnehmen
 }
-const { title, description = SITE.description, image, minimalHeader = false } = Astro.props;
+const { title, description = SITE.description, image, minimalHeader = false, noindex = false } = Astro.props;
 const pageTitle = title ? `${title} – ${SITE.name}` : `${SITE.name} – ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? SITE.url).href;
 const ogImage = image ? new URL(image, Astro.site ?? SITE.url).href : undefined;
@@ -44,6 +45,7 @@ const ogImage = image ? new URL(image, Astro.site ?? SITE.url).href : undefined;
     {ogImage && <meta property="og:image" content={ogImage} />}
     <meta name="twitter:card" content="summary_large_image" />
 
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -54,5 +56,41 @@ const ogImage = image ? new URL(image, Astro.site ?? SITE.url).href : undefined;
       <slot />
     </main>
     <Footer />
+
+    <!-- Eigene Besucherstatistik: ohne Cookies, ohne IP-Speicherung.
+         Zählt Seitenaufruf + Herkunft und Klicks auf Partnerlinks.
+         Abschaltbar pro Gerät über localStorage "statistik-aus"
+         (macht die Statistik-Seite automatisch). Auswertung: /statistik/ -->
+    <script is:inline>
+      (function () {
+        try {
+          if (localStorage.getItem('statistik-aus')) return;
+          if (location.pathname.startsWith('/statistik')) return;
+          var senden = function (daten) {
+            navigator.sendBeacon(
+              '/api/zaehl',
+              new Blob([JSON.stringify(daten)], { type: 'application/json' })
+            );
+          };
+          var d = {
+            p: location.pathname,
+            r: document.referrer || '',
+            n: !sessionStorage.getItem('gvg-besuch'),
+          };
+          sessionStorage.setItem('gvg-besuch', '1');
+          var q = new URLSearchParams(location.search);
+          var pin = q.get('pin') || q.get('utm_content');
+          if (pin) d.pin = pin;
+          senden(d);
+          document.addEventListener('click', function (ev) {
+            var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+            if (!a) return;
+            if (/waldkraft\.bio|fourthera\.io/i.test(a.href)) {
+              senden({ k: 1, z: a.href.split('?')[0], p: location.pathname });
+            }
+          });
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>
