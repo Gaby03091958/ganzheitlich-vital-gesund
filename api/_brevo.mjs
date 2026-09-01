@@ -7,8 +7,24 @@ export const BREVO = {
   API: 'https://api.brevo.com/v3',
   SITE: 'https://ganzheitlich-vital-gesund.de',
   LIST_ID: 3, // "Newsletter – Ganzheitlich vital & gesund"
-  TEMPLATE_ID: 1, // "Newsletter Bestätigung"
+  TEMPLATE_ID: 1, // "Newsletter Bestätigung" (Double-Opt-in)
+  FREEBIE_TEMPLATE_ID: 2, // "Freebie – Der 10-Minuten-Check" (Auslieferung nach der Bestätigung)
 };
+
+/**
+ * Woher die Anmeldung kam. Wird als Kontaktmerkmal QUELLE bei Brevo gespeichert
+ * und entscheidet, ob nach der Bestätigung das Freebie verschickt wird.
+ * Bewusst eine feste Liste – so landet nichts Beliebiges aus dem Formular in Brevo.
+ */
+export const QUELLEN = {
+  FREEBIE_HUND: '10-minuten-check',
+};
+
+/** Prüft den Wert aus dem Formular gegen die erlaubten Quellen. */
+export function quelleAusFormular(wert) {
+  const q = String(wert || '').trim();
+  return Object.values(QUELLEN).includes(q) ? q : '';
+}
 
 /** Ruft die Brevo-API auf und gibt die rohe Response zurück. */
 export function brevo(pfad, { method = 'GET', body } = {}) {

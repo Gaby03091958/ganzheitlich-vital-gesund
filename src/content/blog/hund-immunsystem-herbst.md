@@ -85,6 +85,9 @@ Dein Hund braucht im Herbst keinen Vorrat an Wundermitteln – er braucht ein tr
   <p class="cta__ad">Werbung · Partnerlink</p>
 </div>
 
+
+**Wo das hier hingehört:** Gelenke, Darm, Haut und Alter hängen enger zusammen, als es einzelne Artikel zeigen können. Die Reihenfolge, in der es sinnvoll ist, steht in [Natürliche Hundegesundheit: Wo du anfängst](/blog/hundegesundheit-wo-anfangen/).
+
 <small>Dieser Beitrag ersetzt keine tierärztliche Beratung. Ergänzungsfuttermittel ersetzen weder Impfungen noch Behandlungen. Bei anhaltendem Husten, Fieber, Apathie oder Atemnot lass deinen Hund bitte umgehend tierärztlich untersuchen.</small>
 
 <!-- TITELBILD: Mittelgroßer Hund (z. B. Labrador oder Mischling) auf einem nassen, laubbedeckten Waldweg im Herbst, leichter Nebel, warmes gedämpftes Licht, der Hund schaut aufmerksam zur Kamera; quer, ca. 1200×630 -->

@@ -4,7 +4,7 @@
 // wandert die Adresse in die Verteilerliste und der Zeitpunkt der Bestätigung
 // wird als Nachweis gespeichert.
 
-import { BREVO, brevo, heute, leiteWeiter } from './_brevo.mjs';
+import { BREVO, brevo, heute, leiteWeiter, QUELLEN } from './_brevo.mjs';
 
 export default async function handler(req, res) {
   const email = String(req.query?.e || '').trim().toLowerCase();
@@ -48,6 +48,29 @@ export default async function handler(req, res) {
     if (!aktualisiert.ok && aktualisiert.status !== 204) {
       console.error('Bestätigung fehlgeschlagen', aktualisiert.status, await aktualisiert.text());
       return leiteWeiter(res, '/newsletter-link-ungueltig/');
+    }
+
+    // Wer über die Freebie-Seite gekommen ist, bekommt den 10-Minuten-Check
+    // jetzt per Mail – zusätzlich zum Download-Knopf auf der Bestätigungsseite.
+    // Schlägt das fehl, ist die Anmeldung trotzdem gültig: Der Fehler wird nur
+    // protokolliert, die Besucherin landet normal auf der Bestätigungsseite.
+    if (attribute.QUELLE === QUELLEN.FREEBIE_HUND) {
+      try {
+        const vorname = String(attribute.VORNAME || '').trim();
+        const freebie = await brevo('/smtp/email', {
+          method: 'POST',
+          body: {
+            to: [{ email, ...(vorname ? { name: vorname } : {}) }],
+            templateId: BREVO.FREEBIE_TEMPLATE_ID,
+            params: { vorname, anrede: vorname ? `Hallo ${vorname}` : 'Hallo' },
+          },
+        });
+        if (!freebie.ok) {
+          console.error('Freebie-Mail fehlgeschlagen', freebie.status, await freebie.text());
+        }
+      } catch (fehler) {
+        console.error('Freebie-Mail fehlgeschlagen:', fehler);
+      }
     }
 
     return leiteWeiter(res, '/newsletter-bestaetigt/');

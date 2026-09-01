@@ -3,6 +3,7 @@ title: "Warum Wasser in Cremes ein Problem ist – und was viele Hersteller vers
 description: "Die meisten Cremes bestehen zum Großteil aus Wasser. Warum das Konservierungsmittel nötig macht, Wirkstoffe verdünnt und über hormonell wirksame Stoffe wie Parabene sogar unseren Hormonhaushalt belasten kann – und wofür wasserfreie Pflege die bessere Wahl ist."
 pubDate: 2026-06-04
 category: "wasserfreie-kosmetik"
+affiliate: true
 heroAlt: "Offener Cremetiegel mit cremiger Naturkosmetik und rosa Hibiskusblüten"
 heroImage: "/bilder/cremetiegel.jpg"
 ---
@@ -76,6 +77,13 @@ Wasser in Cremes ist kein Pflegewirkstoff – es ist günstiger Füllstoff, der 
 
 Genau deshalb setze ich auf **wasserfreie Pflege in Heilqualität**: konzentriert, ehrlich und ohne unnötige Zusätze – nur das, was deine Haut wirklich nährt.
 
-> Du möchtest wasserfreie Pflege ausprobieren, ohne selbst zu rühren? Dann kann ich dir eine Creme ganz besonders empfehlen.
+<div class="cta">
+  <p class="cta__eyebrow">Meine Empfehlung</p>
+  <h3 class="cta__title">Wasserfreie Pflege von Fourth Era</h3>
+  <p>Wenn du wasserfreie Pflege ausprobieren möchtest, ohne selbst zu rühren: Ich empfehle dir <strong>Fourth Era</strong>. Nach Herstellerangaben stecken dort 100&nbsp;% aktive Wirkstoffe drin &ndash; kein Wasser, keine Konservierungsstoffe. Also genau das, worum es in diesem Artikel geht.</p>
+  <p><a class="btn" href="https://fourthera.io/register_affiliate/?ref=gabydirk" target="_blank" rel="sponsored noopener">Zu Fourth Era &ndash; kostenlos anmelden &rarr;</a></p>
+  <p class="cta__code">Kurz zum Ablauf: Der Knopf f&uuml;hrt zur <strong>kostenlosen Anmeldung</strong>, bei der ich als Empfehlerin hinterlegt bin. Danach kannst du im Shop bestellen. Umsehen darfst du dich auch ohne Konto &ndash; es entstehen keine Kosten und keine Verpflichtung.</p>
+  <p class="cta__ad">Werbung &middot; Empfehlungslink. Wenn insgesamt drei Empfohlene dort etwas kaufen, bekomme ich ein Produkt geschenkt. F&uuml;r dich &auml;ndert sich am Preis nichts.</p>
+</div>
 
 *Mehr über meinen Weg zu wasserfreier Kosmetik liest du auf der Seite [Über mich](/ueber-mich/).*

@@ -3,6 +3,7 @@ title: "Wasserfreie Creme: selbst machen oder fertig kaufen – was lohnt sich w
 description: "Lohnt sich das Selbstrühren von wasserfreier Creme, oder ist die fertige Variante die bessere Wahl? Ein ehrlicher Vergleich von Aufwand, Kosten, Haltbarkeit und Ergebnis."
 pubDate: 2026-06-03
 category: "wasserfreie-kosmetik"
+affiliate: true
 heroAlt: "Offener Cremetiegel mit weißer Creme und rosa Blüten auf hellem Holz"
 heroImage: "/bilder/cremetiegel-2.jpg"
 ---
@@ -48,5 +49,14 @@ Für viele rechnet sich das. Für andere ist es genau der Punkt, an dem sie merk
 **Die fertige Creme passt zu dir, wenn** du wenig Zeit hast, verlässliche Qualität willst, dir die Zutaten-Beschaffung sparen möchtest – oder einfach sichergehen willst, dass das Ergebnis jedes Mal stimmt.
 
 > Selbermachen ist ein schönes Hobby. Aber eine gute Creme zu benutzen sollte kein Projekt sein – sondern einfach gut tun.
+
+<div class="cta">
+  <p class="cta__eyebrow">Meine Empfehlung</p>
+  <h3 class="cta__title">Wasserfreie Pflege von Fourth Era</h3>
+  <p>Wenn du wasserfreie Pflege ausprobieren möchtest, ohne selbst zu rühren: Ich empfehle dir <strong>Fourth Era</strong>. Nach Herstellerangaben stecken dort 100&nbsp;% aktive Wirkstoffe drin &ndash; kein Wasser, keine Konservierungsstoffe. Also genau das, worum es in diesem Artikel geht.</p>
+  <p><a class="btn" href="https://fourthera.io/register_affiliate/?ref=gabydirk" target="_blank" rel="sponsored noopener">Zu Fourth Era &ndash; kostenlos anmelden &rarr;</a></p>
+  <p class="cta__code">Kurz zum Ablauf: Der Knopf f&uuml;hrt zur <strong>kostenlosen Anmeldung</strong>, bei der ich als Empfehlerin hinterlegt bin. Danach kannst du im Shop bestellen. Umsehen darfst du dich auch ohne Konto &ndash; es entstehen keine Kosten und keine Verpflichtung.</p>
+  <p class="cta__ad">Werbung &middot; Empfehlungslink. Wenn insgesamt drei Empfohlene dort etwas kaufen, bekomme ich ein Produkt geschenkt. F&uuml;r dich &auml;ndert sich am Preis nichts.</p>
+</div>
 
 *Du möchtest es trotzdem selbst probieren? Dann taste dich mit hochwertigen, gut ausgewählten Zutaten langsam heran – und sei bei den ersten Versuchen geduldig mit dir.*

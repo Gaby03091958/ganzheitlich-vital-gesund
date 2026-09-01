@@ -7,7 +7,16 @@
 //
 // Nötige Umgebungsvariable bei Vercel: BREVO_API_KEY
 
-import { BREVO, brevo, felder, heute, jsonOderWeiterleitung, seitenAdresse } from './_brevo.mjs';
+import {
+  BREVO,
+  brevo,
+  felder,
+  heute,
+  jsonOderWeiterleitung,
+  quelleAusFormular,
+  QUELLEN,
+  seitenAdresse,
+} from './_brevo.mjs';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -21,6 +30,8 @@ export default async function handler(req, res) {
   const email = String(data.email || '').trim().toLowerCase();
   // Der Vorname ist freiwillig; er dient nur der Anrede in den Mails.
   const vorname = String(data.vorname || '').trim().slice(0, 60);
+  // Von welcher Seite kam die Anmeldung? Steuert das Freebie nach der Bestätigung.
+  const quelle = quelleAusFormular(data.quelle);
 
   // Bots füllen das versteckte Feld aus – wir tun so, als hätte es geklappt.
   if (String(data['bot-field'] || '').trim()) return antwort.ok();
@@ -56,6 +67,7 @@ export default async function handler(req, res) {
           // Nur setzen, wenn wirklich einer eingetragen wurde – sonst würde ein
           // leeres Feld einen früher gespeicherten Vornamen überschreiben.
           ...(vorname ? { VORNAME: vorname } : {}),
+          ...(quelle ? { QUELLE: quelle } : {}),
         },
       },
     });
@@ -79,6 +91,8 @@ export default async function handler(req, res) {
           bestaetigungsUrl: url.toString(),
           vorname,
           anrede: vorname ? `Hallo ${vorname}` : 'Hallo',
+          // Die Vorlage blendet damit den Hinweis auf den 10-Minuten-Check ein.
+          freebie: quelle === QUELLEN.FREEBIE_HUND,
         },
       },
     });

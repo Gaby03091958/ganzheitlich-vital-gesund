@@ -1,0 +1,261 @@
+---
+// Landingpage für das Freebie „Der 10-Minuten-Check" (Lead-Magnet für den Newsletter).
+// Ablauf: Formular → api/newsletter → Brevo-Bestätigungsmail → Klick im Postfach →
+// /newsletter-bestaetigt/ – dort steht der Download-Knopf für das PDF.
+// Das PDF selbst liegt unter public/downloads/ und wird mit scripts/freebie-pdf/ gebaut.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
+
+const inhalt = [
+  {
+    titel: '12 Beobachtungspunkte in vier Bereichen',
+    text: 'Bewegung und Gelenke, Maul und Verdauung, Haut, Fell und Ohren, dazu Schlaf, Nacht und Verhalten – je drei Punkte. Zu jedem Punkt steht da, worauf du schaust – und woran du merkst, dass es wirklich eine Veränderung ist.',
+  },
+  {
+    titel: 'Eine klare Auswertung: Was deine Kreuze bedeuten',
+    text: 'Kein Kreuz, ein Kreuz zum ersten Mal, dasselbe Kreuz zum zweiten Mal – für jeden Fall steht da, was jetzt zu tun ist. Dazu die Zeichen, die keinen Aufschub dulden.',
+  },
+  {
+    titel: 'Ein Beobachtungsbogen für sechs Monate',
+    text: 'Zum Ausdrucken und an den Futterschrank hängen. Der Wert entsteht beim zweiten Mal, wenn du vergleichen kannst.',
+  },
+  {
+    titel: 'Der eine Satz für den Tierarztbesuch',
+    text: 'Aus „irgendwie ist er komisch" wird eine Beobachtung mit Zeitpunkt und Verlauf. Das verändert das Gespräch.',
+  },
+];
+---
+
+<BaseLayout
+  title="Der 10-Minuten-Check für deinen Hund – kostenloser Beobachtungsbogen"
+  description="12 leise Veränderungen, die dein Hund dir zeigt, lange bevor sie jemand eine Diagnose nennt. Kostenloser Beobachtungsbogen zum Ausdrucken – einmal im Monat, zehn Minuten."
+  image="/bilder/freebie-mockup.jpg"
+  minimalHeader
+>
+  <section class="page-intro freebie__kopf">
+    <div class="container freebie__kopf-inner">
+      <div class="freebie__kopf-text">
+        <p class="eyebrow">Kostenloser Beobachtungsbogen</p>
+        <h1>Der 10-Minuten-Check für deinen Hund</h1>
+        <p>
+          12 leise Veränderungen, die dein Hund dir zeigt – lange bevor sie jemand
+          eine Diagnose nennt.
+        </p>
+        <a class="btn freebie__kopf-btn" href="#anmelden">Jetzt kostenlos holen</a>
+      </div>
+      <img
+        class="freebie__kopf-bild"
+        src="/bilder/hund-wiese.jpg"
+        width="1000"
+        height="500"
+        loading="eager"
+        alt="Ein aufmerksamer Schäferhund liegt entspannt in einer Wiese voller Löwenzahn."
+      />
+    </div>
+  </section>
+
+  <div class="container freebie">
+    <div class="freebie__main">
+      <div class="prose">
+        <p>
+          Dein Hund kann dir nicht sagen, dass etwas zwickt. Er zeigt es dir – aber
+          leise, und meist so langsam, dass du es im Alltag nicht bemerkst. Nicht
+          weil du unaufmerksam bist, sondern weil du ihn <strong>jeden Tag</strong>
+          siehst. Genau das macht blind für Veränderungen.
+        </p>
+        <p>
+          Deshalb ist der Vergleichsmaßstab in diesem Bogen nicht „der normale Hund".
+          Der Maßstab ist <strong>dein Hund vor drei Monaten</strong>. Einmal im
+          Monat, zehn Minuten, ein Stift – danach weißt du, ob wirklich etwas anders
+          ist oder ob du dir nur Sorgen machst.
+        </p>
+      </div>
+
+      <h2 class="freebie__h2">Was drinsteht</h2>
+      <ul class="freebie__liste">
+        {inhalt.map((punkt) => (
+          <li>
+            <strong>{punkt.titel}</strong>
+            <span>{punkt.text}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div class="freebie__form" id="anmelden">
+        <NewsletterSignup
+          id="freebie"
+          quelle="10-minuten-check"
+          titel="Schick mir den 10-Minuten-Check"
+          text="Trag dich ein, bestätige kurz die Mail in deinem Postfach – dann kannst du das PDF direkt herunterladen. Danach bekommst du etwa zweimal im Monat einen Impuls zu natürlicher Tiergesundheit."
+          knopf="PDF anfordern"
+        />
+      </div>
+
+      <div class="prose freebie__klein">
+        <h2>Für wen ist das?</h2>
+        <p>
+          Für dich, wenn dein Hund noch weitgehend fit ist und du früh etwas tun
+          möchtest, ohne gleich zu dramatisieren. Und für dich, wenn du bei jedem
+          zweiten Video im Netz denkst: „Muss ich jetzt auch noch darauf achten?"
+        </p>
+        <h2>Und wenn es mir nicht gefällt?</h2>
+        <p>
+          Dann meldest du dich mit einem Klick am Ende jeder E-Mail wieder ab. Das
+          PDF darfst du trotzdem behalten und gern weitergeben.
+        </p>
+        <p class="freebie__hinweis">
+          <strong>Wichtig:</strong> Der Bogen stellt keine Diagnose und ersetzt keinen
+          Tierarztbesuch. Er hilft dir, Veränderungen früh zu bemerken und sie konkret
+          zu beschreiben. Im PDF findest du <strong>keine Werbelinks</strong>. Wie ich
+          auf dem Blog mit Partnerprogrammen umgehe, steht auf der Seite
+          <a href="/transparenz/">Transparenz</a>.
+        </p>
+      </div>
+    </div>
+
+    <aside class="freebie__karte">
+      <img
+        class="freebie__cover"
+        src="/bilder/freebie-mockup.jpg"
+        width="1200"
+        height="1500"
+        loading="eager"
+        alt="Der 10-Minuten-Check: Titelblatt, ein Beobachtungsbogen mit Kästchen zum Ankreuzen und die Auswertungsseite, aufgefächert nebeneinander."
+      />
+      <ul class="freebie__fakten">
+        <li>9 Seiten PDF</li>
+        <li>Zum Ausdrucken</li>
+        <li>Kostenlos</li>
+      </ul>
+      <a class="btn freebie__btn" href="#anmelden">Jetzt kostenlos holen</a>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  /* Kopfbereich: Text links, Hundefoto rechts */
+  .freebie__kopf-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+  }
+  .freebie__kopf-text p:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+  .freebie__kopf-btn {
+    display: inline-block;
+  }
+  .freebie__kopf-bild {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .freebie {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    align-items: start;
+  }
+  .freebie__h2 {
+    font-family: var(--font-head);
+    font-size: 1.4rem;
+    color: var(--ink);
+    margin: 2.2rem 0 1rem;
+  }
+  .freebie__liste {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+  }
+  .freebie__liste li {
+    background: var(--bg-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem 1.2rem;
+  }
+  .freebie__liste strong {
+    display: block;
+    font-family: var(--font-head);
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .freebie__liste span {
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+  .freebie__form {
+    margin: 2.5rem 0;
+    scroll-margin-top: 90px;
+  }
+  .freebie__klein h2 {
+    font-size: 1.2rem;
+  }
+  .freebie__hinweis {
+    font-size: 0.88rem;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Rechte Spalte: angedeutetes Titelbild des PDFs */
+  .freebie__karte {
+    position: sticky;
+    top: 90px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+  }
+  .freebie__cover {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .freebie__fakten {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .freebie__fakten li {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--muted);
+    background: var(--bg-gray);
+    border-radius: 999px;
+    padding: 0.3em 0.8em;
+  }
+  .freebie__btn {
+    display: block;
+    text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    .freebie__kopf-inner {
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+    }
+    .freebie {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .freebie__karte {
+      position: static;
+      order: -1;
+      max-width: 340px;
+    }
+  }
+</style>

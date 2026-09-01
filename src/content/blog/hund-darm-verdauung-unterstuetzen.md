@@ -97,6 +97,9 @@ Ein gesunder Hundedarm braucht vor allem Verlässlichkeit: ein Futter, das passt
   <p class="cta__ad">Werbung · Partnerlink</p>
 </div>
 
+
+**Wo das hier hingehört:** Gelenke, Darm, Haut und Alter hängen enger zusammen, als es einzelne Artikel zeigen können. Die Reihenfolge, in der es sinnvoll ist, steht in [Natürliche Hundegesundheit: Wo du anfängst](/blog/hundegesundheit-wo-anfangen/).
+
 <small>Dieser Beitrag ersetzt keine tierärztliche Beratung. Bei blutigem Durchfall, anhaltendem Erbrechen, Apathie, aufgeblähtem Bauch oder wiederkehrenden Verdauungsproblemen lass deinen Hund bitte tierärztlich untersuchen.</small>
 
 <!-- TITELBILD: Entspannter mittelgroßer Hund liegt seitlich auf einer Decke im warmen Tageslicht, eine Hand streichelt sanft seinen Bauch; ruhige, natürliche Wohnzimmer- oder Gartenszene, quer, ca. 1200×630 -->

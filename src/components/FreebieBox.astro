@@ -1,0 +1,178 @@
+---
+// Hinweiskasten auf das Freebie „Der 10-Minuten-Check" (Landingpage /10-minuten-check/).
+// Drei Größen:
+//   variant="artikel" – breiter Kasten unter Tiergesundheits-Artikeln (Standard)
+//   variant="widget"  – schmale Fassung für die Sidebar
+//   variant="band"    – volle Breite für die Startseite
+interface Props {
+  variant?: 'artikel' | 'widget' | 'band';
+}
+const { variant = 'artikel' } = Astro.props;
+const titel = 'Der 10-Minuten-Check für deinen Hund';
+const text =
+  '12 leise Veränderungen, die dein Hund dir zeigt – lange bevor sie jemand eine Diagnose nennt. Kostenloser Beobachtungsbogen zum Ausdrucken.';
+---
+
+{variant === 'widget' && (
+  <div class="freebie-box freebie-box--widget">
+    <p class="freebie-box__eyebrow">Kostenlos</p>
+    <h3 class="freebie-box__titel">Der 10-Minuten-Check</h3>
+    <p class="freebie-box__text">
+      Zwölf leise Veränderungen, die dein Hund dir zeigt. Beobachtungsbogen zum Ausdrucken.
+    </p>
+    <a class="btn freebie-box__btn" href="/10-minuten-check/">Kostenlos holen</a>
+  </div>
+)}
+
+{variant === 'artikel' && (
+  <div class="freebie-box freebie-box--artikel">
+    <div class="freebie-box__inhalt">
+      <p class="freebie-box__eyebrow">Kostenloser Beobachtungsbogen</p>
+      <h3 class="freebie-box__titel">{titel}</h3>
+      <p class="freebie-box__text">{text}</p>
+      <a class="btn freebie-box__btn" href="/10-minuten-check/">Jetzt kostenlos holen</a>
+    </div>
+    <div class="freebie-box__cover" aria-hidden="true">
+      <span class="freebie-box__cover-eyebrow">Kostenlos</span>
+      <span class="freebie-box__cover-titel">Der 10-Minuten-Check</span>
+      <span class="freebie-box__cover-marke">Ganzheitlich vital &amp; gesund</span>
+    </div>
+  </div>
+)}
+
+{variant === 'band' && (
+  <section class="freebie-band">
+    <div class="container freebie-band__inner">
+      <div>
+        <p class="freebie-box__eyebrow">Kostenloser Beobachtungsbogen</p>
+        <h2 class="freebie-band__titel">{titel}</h2>
+        <p class="freebie-band__text">{text}</p>
+      </div>
+      <a class="btn freebie-box__btn" href="/10-minuten-check/">Jetzt kostenlos holen</a>
+    </div>
+  </section>
+)}
+
+<style>
+  .freebie-box__eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.4rem;
+  }
+  .freebie-box__titel {
+    font-family: var(--font-head);
+    color: var(--ink);
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+  .freebie-box__text {
+    color: var(--text);
+    margin: 0 0 1.1rem;
+  }
+  .freebie-box__btn {
+    display: inline-block;
+  }
+
+  /* Unter dem Artikel */
+  .freebie-box--artikel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 140px;
+    gap: 1.8rem;
+    align-items: center;
+    background: var(--bg-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1.8rem;
+    margin: 2.5rem 0;
+  }
+  .freebie-box--artikel .freebie-box__titel {
+    font-size: 1.35rem;
+  }
+  .freebie-box__cover {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-top: 6px solid var(--accent);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    padding: 0.9rem 0.8rem;
+    aspect-ratio: 1 / 1.414;
+  }
+  .freebie-box__cover-eyebrow {
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .freebie-box__cover-titel {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.15;
+    color: var(--ink);
+  }
+  .freebie-box__cover-marke {
+    margin-top: auto;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.55rem;
+    color: var(--muted);
+  }
+
+  /* In der Sidebar */
+  .freebie-box--widget .freebie-box__titel {
+    font-size: 1.05rem;
+  }
+  .freebie-box--widget .freebie-box__text {
+    font-size: 0.9rem;
+  }
+  .freebie-box--widget .freebie-box__btn {
+    display: block;
+    text-align: center;
+  }
+
+  /* Band auf der Startseite */
+  .freebie-band {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 2.5rem 0;
+    margin: 1rem 0 2rem;
+  }
+  .freebie-band__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .freebie-band__titel {
+    font-family: var(--font-head);
+    font-size: 1.6rem;
+    color: var(--ink);
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+  .freebie-band__text {
+    color: var(--text);
+    margin: 0;
+    max-width: 60ch;
+  }
+
+  @media (max-width: 620px) {
+    .freebie-box--artikel {
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
+    .freebie-box__cover {
+      max-width: 130px;
+      order: -1;
+    }
+  }
+</style>

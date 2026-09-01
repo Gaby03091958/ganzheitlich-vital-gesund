@@ -76,6 +76,9 @@ Erst eingrenzen, dann ergänzen: Parasitenschutz prüfen, Pfoten spülen, Decken
   <p class="cta__ad">Werbung · Partnerlink</p>
 </div>
 
+
+**Wo das hier hingehört:** Gelenke, Darm, Haut und Alter hängen enger zusammen, als es einzelne Artikel zeigen können. Die Reihenfolge, in der es sinnvoll ist, steht in [Natürliche Hundegesundheit: Wo du anfängst](/blog/hundegesundheit-wo-anfangen/).
+
 <small>Dieser Beitrag ersetzt keine tierärztliche Beratung. Bei anhaltendem Juckreiz, offenen Stellen, Haarausfall oder Ohrenentzündungen lass deinen Hund bitte tierärztlich untersuchen.</small>
 
 <!-- TITELBILD: Hund (z. B. Golden Retriever oder Mischling) kratzt sich mit der Hinterpfote am Hals, sitzend auf einer herbstlichen Wiese mit warmem Morgenlicht, natürliche Aufnahme ohne Studio-Look, quer, ca. 1200×630 -->

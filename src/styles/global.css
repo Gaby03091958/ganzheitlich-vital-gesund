@@ -136,6 +136,14 @@ hr {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
 }
+
+/* Landingpage-Kopfzeile: nur das Logo, mittig – kein Menü zum Wegklicken. */
+.site-header--minimal .site-header__inner {
+  justify-content: center;
+}
+.site-header--minimal .brand {
+  cursor: default;
+}
 .brand {
   display: flex;
   align-items: center;

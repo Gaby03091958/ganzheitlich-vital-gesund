@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Sidebar from '../components/Sidebar.astro';
+import FreebieBox from '../components/FreebieBox.astro';
 import PostCard from '../components/PostCard.astro';
 import ImagePlaceholder from '../components/ImagePlaceholder.astro';
 import { SITE } from '../consts';
@@ -35,6 +36,8 @@ const latest = posts.slice(0, 4);
       </div>
     </div>
   </section>
+
+  <FreebieBox variant="band" />
 
   <div class="container layout">
     <div class="layout__main">

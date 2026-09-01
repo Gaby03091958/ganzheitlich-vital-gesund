@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout
   title="Anmeldung bestätigt"
-  description="Deine Newsletter-Anmeldung ist bestätigt – schön, dass du dabei bist!"
+  description="Deine Newsletter-Anmeldung ist bestätigt – hier bekommst du den 10-Minuten-Check als PDF."
 >
   <section class="page-intro">
     <div class="container"><p class="eyebrow">Newsletter</p><h1>Du bist dabei! 🌿</h1></div>
@@ -15,6 +15,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         natürliche Impulse für dich und deine Tiere direkt ins Postfach –
         sanftes Entgiften, Naturkosmetik und ganzheitliche Tiergesundheit.
       </p>
+    </div>
+
+    <!-- Freebie-Auslieferung: Wer sich über /10-minuten-check/ angemeldet hat,
+         landet nach dem Bestätigungsklick hier und holt sich das PDF ab. -->
+    <div class="download">
+      <p class="download__eyebrow">Dein Geschenk</p>
+      <h2 class="download__titel">Der 10-Minuten-Check für deinen Hund</h2>
+      <p class="download__text">
+        12 leise Veränderungen, die dein Hund dir zeigt – lange bevor sie jemand
+        eine Diagnose nennt. 9 Seiten zum Ausdrucken, mit Beobachtungsbogen für
+        sechs Monate.
+      </p>
+      <a class="btn" href="/downloads/10-minuten-check-hund.pdf" download>
+        PDF herunterladen
+      </a>
+      <p class="download__klein">
+        Der Bogen stellt keine Diagnose und ersetzt keinen Tierarztbesuch.
+      </p>
+    </div>
+
+    <div class="prose">
       <p>
         Abmelden kannst du dich jederzeit mit einem Klick am Ende jeder E-Mail.
       </p>
@@ -22,3 +43,36 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .download {
+    background: var(--bg-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1.8rem;
+    margin: 2rem 0;
+  }
+  .download__eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.4rem;
+  }
+  .download__titel {
+    font-family: var(--font-head);
+    font-size: 1.35rem;
+    color: var(--ink);
+    margin: 0 0 0.6rem;
+  }
+  .download__text {
+    color: var(--text);
+    margin: 0 0 1.2rem;
+  }
+  .download__klein {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 1rem 0 0;
+  }
+</style>

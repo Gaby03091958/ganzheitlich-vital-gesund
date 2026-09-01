@@ -82,6 +82,9 @@ Der Herbst-Fellwechsel ist keine Baustelle, sondern ein Zeichen, dass der Körpe
   <p class="cta__ad">Werbung · Partnerlink</p>
 </div>
 
+
+**Wo das hier hingehört:** Gelenke, Darm, Haut und Alter hängen enger zusammen, als es einzelne Artikel zeigen können. Die Reihenfolge, in der es sinnvoll ist, steht in [Natürliche Hundegesundheit: Wo du anfängst](/blog/hundegesundheit-wo-anfangen/).
+
 <small>Dieser Beitrag ersetzt keine tierärztliche Beratung. Bei kahlen Stellen, Juckreiz, Hautveränderungen oder wenn sich Trinkverhalten, Gewicht oder Verhalten deines Hundes verändern, lass ihn bitte tierärztlich untersuchen.</small>
 
 <!-- TITELBILD: Hund mit dichtem Fell (z. B. Schäferhund oder Golden Retriever) wird draußen im Herbstlaub gebürstet, daneben eine Handvoll ausgebürsteter heller Unterwolle; warmes Herbstlicht, quer, ca. 1200×630 -->

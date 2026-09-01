@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import AuthorBox from '../components/AuthorBox.astro';
 import ImagePlaceholder from '../components/ImagePlaceholder.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
+import FreebieBox from '../components/FreebieBox.astro';
 import { getCategory } from '../categories';
 import { AUTHOR } from '../consts';
 
@@ -17,6 +18,10 @@ interface Props {
 }
 const { title, description, pubDate, category, heroAlt, heroImage, affiliate } = Astro.props;
 const cat = getCategory(category);
+// Bei Tiergesundheit steht am Artikelende das Freebie statt der allgemeinen
+// Newsletter-Anmeldung – es ist das konkretere Angebot für dieselbe Leserin
+// und führt über die Bestätigungsstrecke ohnehin in den Newsletter.
+const zeigeFreebie = category === 'tiergesundheit';
 const dateStr = pubDate.toLocaleDateString('de-DE', {
   day: '2-digit', month: 'long', year: 'numeric',
 });
@@ -44,11 +49,16 @@ const dateStr = pubDate.toLocaleDateString('de-DE', {
         <slot />
       </div>
 
-      <NewsletterSignup />
+      {zeigeFreebie ? <FreebieBox variant="artikel" /> : <NewsletterSignup />}
     </article>
 
     <aside class="layout__aside">
       <AuthorBox />
+      {zeigeFreebie && (
+        <div class="widget">
+          <FreebieBox variant="widget" />
+        </div>
+      )}
     </aside>
   </div>
 </BaseLayout>

@@ -1,10 +1,15 @@
 ---
 import AuthorBox from './AuthorBox.astro';
 import NewsletterSignup from './NewsletterSignup.astro';
+import FreebieBox from './FreebieBox.astro';
 import { CATEGORIES } from '../categories';
 ---
 <aside class="layout__aside">
   <AuthorBox />
+
+  <div class="widget">
+    <FreebieBox variant="widget" />
+  </div>
 
   <div class="widget">
     <h3 class="widget__title">Themen</h3>

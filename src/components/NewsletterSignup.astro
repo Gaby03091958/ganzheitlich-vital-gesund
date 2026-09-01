@@ -5,21 +5,31 @@
 // Bestätigungsmail aus. Ohne Bestätigung passiert nichts.
 interface Props {
   compact?: boolean;
+  titel?: string;       // überschreibt die Standard-Überschrift (z. B. auf der Freebie-Seite)
+  text?: string;        // überschreibt den Einleitungstext
+  knopf?: string;       // Beschriftung des Absende-Buttons
+  id?: string;          // eigene Kennung, falls mehrere Formulare auf einer Seite stehen
+  quelle?: string;      // woher die Anmeldung kam (z. B. '10-minuten-check')
 }
-const { compact = false } = Astro.props;
-const id = compact ? 'c' : 'a';
+const {
+  compact = false,
+  titel = 'Natürliche Impulse ins Postfach',
+  text = 'Rezepte, sanfte Entgiftungs-Tipps und natürliche Tiergesundheit – etwa zweimal im Monat, jederzeit abbestellbar.',
+  knopf = 'Anmelden',
+  id: eigeneId,
+  quelle,
+} = Astro.props;
+const id = eigeneId ?? (compact ? 'c' : 'a');
 ---
 <div class:list={['newsletter', { 'newsletter--compact': compact }]}>
   {!compact && <p class="newsletter__eyebrow">Newsletter</p>}
-  <h3 class="newsletter__title">Natürliche Impulse ins Postfach</h3>
-  <p class="newsletter__text">
-    Rezepte, sanfte Entgiftungs-Tipps und natürliche Tiergesundheit – etwa
-    zweimal im Monat, jederzeit abbestellbar.
-  </p>
+  <h3 class="newsletter__title">{titel}</h3>
+  <p class="newsletter__text">{text}</p>
   <form method="POST" action="/api/newsletter" class="newsletter__form js-newsletter">
     <p class="visually-hidden" aria-hidden="true">
       <label>Bitte nicht ausfüllen: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
     </p>
+    {quelle && <input type="hidden" name="quelle" value={quelle} />}
     <div class="newsletter__row">
       <label class="visually-hidden" for={`nl-vorname-${id}`}>Vorname (freiwillig)</label>
       <input
@@ -41,7 +51,7 @@ const id = compact ? 'c' : 'a';
         autocomplete="email"
         required
       />
-      <button class="btn" type="submit">Anmelden</button>
+      <button class="btn" type="submit">{knopf}</button>
     </div>
     <p class="newsletter__status" role="status" aria-live="polite" hidden></p>
     <p class="newsletter__consent">
