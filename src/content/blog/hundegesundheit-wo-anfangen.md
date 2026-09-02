@@ -3,6 +3,7 @@ title: "Natürliche Hundegesundheit: Wo du anfängst, wenn du nicht alles auspro
 description: "Gelenke, Darm, Haut, Fellwechsel, Alter – jeder Ratgeber sagt etwas anderes. Hier findest du die Reihenfolge, in der es sinnvoll ist, und den passenden Einstieg zu jedem Thema."
 pubDate: 2026-08-26
 category: "tiergesundheit"
+heroImage: "/bilder/hund-frau-wiese.jpg"
 heroAlt: "Frau sitzt auf einer Wiese neben ihrem Hund und schaut ihn aufmerksam an"
 ---
 
