@@ -430,6 +430,14 @@ img.img-ph--round { object-fit: cover; object-position: center; display: block; 
   margin: 0.8em 0 0;
 }
 .affiliate-note a { color: var(--muted); text-decoration: underline; }
+.ki-note {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border, #e5e5e5);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.ki-note a { color: var(--muted); text-decoration: underline; }
 
 /* ---------- Newsletter-Anmeldung ---------- */
 .newsletter {

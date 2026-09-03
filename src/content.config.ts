@@ -17,6 +17,10 @@ const blog = defineCollection({
     // true, wenn der Artikel Affiliate-/Werbelinks enthält
     // (zeigt automatisch den Pflicht-Hinweis am Artikelanfang)
     affiliate: z.boolean().default(false),
+    // true, wenn der Artikel mit KI-Unterstützung entstanden ist und ohne
+    // Gabys redaktionelle Prüfung veröffentlicht wurde (seit 03.09.2026):
+    // zeigt den Transparenz-Hinweis am Artikelende (Art. 50 EU AI Act)
+    ki: z.boolean().default(false),
   }),
 });
 

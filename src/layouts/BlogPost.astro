@@ -15,8 +15,9 @@ interface Props {
   heroAlt?: string;
   heroImage?: string;
   affiliate?: boolean;
+  ki?: boolean;
 }
-const { title, description, pubDate, category, heroAlt, heroImage, affiliate } = Astro.props;
+const { title, description, pubDate, category, heroAlt, heroImage, affiliate, ki } = Astro.props;
 const cat = getCategory(category);
 // Bei Tiergesundheit steht am Artikelende das Freebie statt der allgemeinen
 // Newsletter-Anmeldung – es ist das konkretere Angebot für dieselbe Leserin
@@ -48,6 +49,14 @@ const dateStr = pubDate.toLocaleDateString('de-DE', {
       <div class="prose">
         <slot />
       </div>
+
+      {ki && (
+        <p class="ki-note">
+          Transparenz: Dieser Artikel wurde mit Unterstützung künstlicher Intelligenz
+          erstellt. Was das bedeutet, erfährst du auf der Seite
+          <a href="/transparenz/">Transparenz</a>.
+        </p>
+      )}
 
       {zeigeFreebie ? <FreebieBox variant="artikel" /> : <NewsletterSignup />}
     </article>
