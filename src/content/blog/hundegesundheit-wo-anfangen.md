@@ -35,6 +35,10 @@ Hier zeigen sich Veränderungen am frühesten, und hier wird am meisten zu spät
 
 → [Gelenkprobleme beim Hund natürlich unterstützen](/blog/hundegelenke-natuerlich-unterstuetzen/)
 
+Wenn es nasskalt wird, zeigt sich früher, was sonst verborgen bleibt – und genau das macht den Herbst zum guten Beobachtungszeitpunkt:
+
+→ [Hundegelenke bei Kälte: Was der Herbst dir jetzt schon zeigt](/blog/hund-gelenke-kaelte-herbst/)
+
 ### 2. Darm und Verdauung
 
 Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weicher Kot, Gluckern, Grasfressen – vieles davon ist harmlos, manches nicht, und der Unterschied liegt in der Dauer.
@@ -51,11 +55,19 @@ Zweimal im Jahr kommt der Fellwechsel dazu. Der ist normal, kostet den Körper a
 
 → [Fellwechsel im Herbst: So unterstützt du deinen Hund](/blog/hund-fellwechsel-herbst/)
 
+Zur Haut gehören auch die Pfoten – im Winter der Körperteil, der am meisten aushalten muss:
+
+→ [Pfotenpflege im Winter: Streusalz, Schnee und rissige Ballen](/blog/hund-pfotenpflege-winter/)
+
 ### 4. Abwehrkräfte und Jahreszeit
 
 Nasskalte Monate fordern jeden Hund anders. Bevor irgendetwas zugefüttert wird, lohnt der Blick auf das, was der Alltag schon hergibt.
 
 → [Das Immunsystem deines Hundes gut durch den Herbst begleiten](/blog/hund-immunsystem-herbst/)
+
+Zur Jahreszeit gehört auch, was am Jahresende auf viele Hunde zukommt. Wer erst zwischen den Jahren anfängt, ist zu spät dran:
+
+→ [Silvesterangst beim Hund: 5 Schritte, die du jetzt im Herbst schon gehen kannst](/blog/hund-silvesterangst-vorbereitung/)
 
 ### 5. Das Älterwerden
 
