@@ -3,8 +3,8 @@ title: "Pfotenpflege im Winter: Die einfache Routine bei Streusalz, Schnee und r
 description: "Streusalz, Splitt, Eisklumpen zwischen den Zehen: Was der Winter mit den Pfoten deines Hundes macht, wie du sie in zwei Minuten pflegst und wann Risse in die Praxis gehören."
 pubDate: 2026-09-06
 category: "tiergesundheit"
-heroImage: "/bilder/hund-wiese.jpg"
-heroAlt: "Schäferhund liegt entspannt auf einer Wiese im Freien"
+heroImage: "/bilder/hund-pfotenpflege-winter.jpg"
+heroAlt: "Nahaufnahme einer Hundepfote, die von einer Hand gehalten wird – die dunklen Ballen sind gut zu erkennen"
 affiliate: true
 ki: true
 ---

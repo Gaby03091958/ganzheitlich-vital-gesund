@@ -39,6 +39,10 @@ Wenn es nasskalt wird, zeigt sich früher, was sonst verborgen bleibt – und ge
 
 → [Hundegelenke bei Kälte: Was der Herbst dir jetzt schon zeigt](/blog/hund-gelenke-kaelte-herbst/)
 
+Und der Punkt, der Gelenke, Kreislauf und Ausdauer zugleich betrifft – ohne dass er einen Cent kostet:
+
+→ [Winterspeck beim Hund: warum er sich unbemerkt ansammelt](/blog/hund-winterspeck-gewicht/)
+
 ### 2. Darm und Verdauung
 
 Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weicher Kot, Gluckern, Grasfressen – vieles davon ist harmlos, manches nicht, und der Unterschied liegt in der Dauer.
@@ -59,6 +63,10 @@ Zur Haut gehören auch die Pfoten – im Winter der Körperteil, der am meisten 
 
 → [Pfotenpflege im Winter: Streusalz, Schnee und rissige Ballen](/blog/hund-pfotenpflege-winter/)
 
+Drinnen kommt im Winter die trockene Heizungsluft dazu – ein Grund für Schuppen, den viele übersehen:
+
+→ [Trockene Heizungsluft: wenn Haut und Fell im Winter leiden](/blog/hund-heizungsluft-haut-winter/)
+
 ### 4. Abwehrkräfte und Jahreszeit
 
 Nasskalte Monate fordern jeden Hund anders. Bevor irgendetwas zugefüttert wird, lohnt der Blick auf das, was der Alltag schon hergibt.
@@ -74,6 +82,12 @@ Zur Jahreszeit gehört auch, was am Jahresende auf viele Hunde zukommt. Wer erst
 Kein eigener Bereich, sondern eine Zeitachse, die durch alle anderen läuft. Was mit sieben beginnt, ist selten dramatisch – aber es ist der Zeitpunkt, an dem Beobachten mehr wert wird als Reagieren.
 
 → [Ab wann ist mein Hund ein Senior – und was ändert sich dann wirklich?](/blog/hund-senior-ab-wann/)
+
+### Und bevor du etwas ergänzt
+
+Irgendwann steht in jedem dieser Bereiche die Frage im Raum, ob ein Zusatzfutter sinnvoll ist. Dafür gibt es fünf Fragen, die dir die Entscheidung abnehmen – und manchmal ist die ehrlichste Antwort: nichts davon.
+
+→ [5 ehrliche Fragen, bevor du deinem Hund etwas ergänzt](/blog/hund-fragen-vor-nahrungsergaenzung/)
 
 ## Wie du merkst, dass sich wirklich etwas verändert
 
