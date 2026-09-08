@@ -43,6 +43,10 @@ Und der Punkt, der Gelenke, Kreislauf und Ausdauer zugleich betrifft – ohne da
 
 → [Winterspeck beim Hund: warum er sich unbemerkt ansammelt](/blog/hund-winterspeck-gewicht/)
 
+Und weil sich das Gewicht meistens nicht über den Napf verschiebt, sondern über die kleinen Belohnungen nebenbei:
+
+→ [Leckerlis ohne Reue: worauf du bei Snacks achten kannst](/blog/hund-leckerlis-gesund/)
+
 ### 2. Darm und Verdauung
 
 Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weicher Kot, Gluckern, Grasfressen – vieles davon ist harmlos, manches nicht, und der Unterschied liegt in der Dauer.
@@ -94,6 +98,14 @@ Irgendwann steht in jedem dieser Bereiche die Frage im Raum, ob ein Zusatzfutter
 Das ist die eigentliche Kunst, und sie hat nichts mit Produkten zu tun. Du siehst deinen Hund jeden Tag – genau deshalb entgehen dir langsame Veränderungen. Der Vergleichsmaßstab darf nicht „der normale Hund" sein, sondern **dein Hund vor drei Monaten**.
 
 Dafür brauchst du zwei Dinge: einen festen Termin im Monat und einen Zettel. Beides zusammen macht aus einem diffusen „Irgendwie ist er anders" eine Beobachtung mit Datum und Verlauf – und damit etwas, mit dem auch deine Tierärztin arbeiten kann.
+
+Wie sich das in einen Alltag einbauen lässt, der ohnehin schon voll ist – zehn Handgriffe, die nebenbei passieren:
+
+→ [Der Hundealltag als Vorsorge: 10 kleine Gewohnheiten](/blog/hund-alltag-gewohnheiten/)
+
+Einer dieser Handgriffe verdient einen eigenen Artikel, weil er am häufigsten übersehen wird und Hunde Schmerzen im Maul kaum zeigen:
+
+→ [Zahnpflege beim Hund: wichtiger, als die meisten denken](/blog/hund-zahnpflege/)
 
 ## Wann es nicht mehr um Unterstützung geht
 
