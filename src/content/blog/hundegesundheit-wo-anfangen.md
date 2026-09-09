@@ -39,6 +39,10 @@ Wenn es nasskalt wird, zeigt sich früher, was sonst verborgen bleibt – und ge
 
 → [Hundegelenke bei Kälte: Was der Herbst dir jetzt schon zeigt](/blog/hund-gelenke-kaelte-herbst/)
 
+Wie viel Bewegung ein Hund überhaupt braucht, hängt dabei stärker vom Alter und vom Typ ab als von der Uhr:
+
+→ [Wie viel Bewegung braucht mein Hund wirklich?](/blog/hund-bewegung-wieviel/)
+
 Und der Punkt, der Gelenke, Kreislauf und Ausdauer zugleich betrifft – ohne dass er einen Cent kostet:
 
 → [Winterspeck beim Hund: warum er sich unbemerkt ansammelt](/blog/hund-winterspeck-gewicht/)
@@ -46,6 +50,10 @@ Und der Punkt, der Gelenke, Kreislauf und Ausdauer zugleich betrifft – ohne da
 Und weil sich das Gewicht meistens nicht über den Napf verschiebt, sondern über die kleinen Belohnungen nebenbei:
 
 → [Leckerlis ohne Reue: worauf du bei Snacks achten kannst](/blog/hund-leckerlis-gesund/)
+
+Und wenn du beim Hauptfutter selbst einordnen willst, was auf der Packung steht:
+
+→ [Etikett lesen beim Hundefutter: 7 Begriffe, die du kennen solltest](/blog/hund-futter-etikett/)
 
 ### 2. Darm und Verdauung
 
@@ -106,6 +114,10 @@ Wie sich das in einen Alltag einbauen lässt, der ohnehin schon voll ist – zeh
 Einer dieser Handgriffe verdient einen eigenen Artikel, weil er am häufigsten übersehen wird und Hunde Schmerzen im Maul kaum zeigen:
 
 → [Zahnpflege beim Hund: wichtiger, als die meisten denken](/blog/hund-zahnpflege/)
+
+Zu den langsamen Veränderungen gehört auch, wie entspannt ein Hund durch seinen Alltag geht. Die Zeichen dafür sind leise:
+
+→ [Stress beim Hund erkennen: die leisen Signale](/blog/hund-stress-erkennen/)
 
 ## Wann es nicht mehr um Unterstützung geht
 
