@@ -22,3 +22,24 @@ Zuordnung Thema → Datei: `outputs/wochenplan/2026-09-08-woche.md`
 ## Titelbild Pfotenpflege (von Gaby, 07.09.2026)
 
 `hund-pfotenpflege-winter.jpg` — KI-erzeugt, mit EU-Symbol und Wasserzeichen im Bild.
+
+## Titelbilder Woche 14.–20.09.2026 (21 Stück)
+
+Von Gaby am 09.09.2026 selbst erstellt (KI-generiert, mit EU-Symbol „AI" im Bild).
+Originale als PNG 1600×1000 auf ihrem Schreibtisch im Ordner „Pins vom 14.-20.09",
+hier als JPG (Qualität 82) abgelegt:
+
+hund-nahrungsergaenzung · hund-fellpflege-felltyp · hund-gewitter-feuerwerk ·
+hund-uebergewicht-erkennen · hund-hausapotheke · hund-graues-kinn · hund-omega-3 ·
+hund-pfotenbalsam · hund-dunkelheit-sichtbarkeit · hund-zecken-floehe-wuermer ·
+hund-langsamer-werden · hund-mundgeruch · hund-impfen · hund-kot-anzeiger ·
+hund-schnueffelspaziergang · hund-schlafplatz · hund-kraeuter · hund-augenpflege ·
+hund-napf-check · hund-nicht-fressen · hund-riecht-komisch
+
+**Nachbearbeitet am 09.09.2026 (Claude):** Bei acht Bildern lagen links und rechts farbige
+Balken, weil das Motiv schmaler war als die Bildfläche. Die Balken wurden weggeschnitten
+(hund-omega-3, hund-dunkelheit-sichtbarkeit, hund-zecken-floehe-wuermer, hund-impfen,
+hund-kot-anzeiger, hund-schlafplatz, hund-kraeuter, hund-augenpflege). Der Ausschnitt ist
+16:10 und bewusst so gelegt, dass das EU-Symbol „AI" und das Wasserzeichen erhalten bleiben,
+auch nachdem die Website oben und unten je 5 % für das 16:9-Titelbild beschneidet.
+Die unbeschnittenen Originale liegen weiter auf Gabys Schreibtisch im Ordner „Pins vom 14.-20.09".
