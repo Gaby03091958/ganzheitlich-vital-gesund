@@ -55,6 +55,10 @@ Und wenn du beim Hauptfutter selbst einordnen willst, was auf der Packung steht:
 
 → [Etikett lesen beim Hundefutter: 7 Begriffe, die du kennen solltest](/blog/hund-futter-etikett/)
 
+Und wenn du Abwechslung in den Napf bringen möchtest, ohne dabei Kalorien draufzupacken:
+
+→ [Gemüse für Hunde: Was in den Napf darf und wie du es klug einführst](/blog/hund-gemuese/)
+
 ### 2. Darm und Verdauung
 
 Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weicher Kot, Gluckern, Grasfressen – vieles davon ist harmlos, manches nicht, und der Unterschied liegt in der Dauer.
@@ -115,9 +119,17 @@ Einer dieser Handgriffe verdient einen eigenen Artikel, weil er am häufigsten �
 
 → [Zahnpflege beim Hund: wichtiger, als die meisten denken](/blog/hund-zahnpflege/)
 
+Ähnlich unauffällig sind die Ohren – bis sie es plötzlich nicht mehr sind. Hier ist vor allem wichtig zu wissen, wann du selbst etwas tun kannst und wann eben nicht:
+
+→ [Ohren reinigen beim Hund: wann es wirklich nötig ist, wie und womit](/blog/hund-ohren-reinigen/)
+
 Zu den langsamen Veränderungen gehört auch, wie entspannt ein Hund durch seinen Alltag geht. Die Zeichen dafür sind leise:
 
 → [Stress beim Hund erkennen: die leisen Signale](/blog/hund-stress-erkennen/)
+
+Einmal im Jahr schaut jemand mit Fachwissen deinen Hund komplett an – und genau dieser Termin ist die beste Gelegenheit, deine Beobachtungen loszuwerden:
+
+→ [Tierarzt-Check beim Hund: was untersucht wird und 7 kluge Fragen](/blog/hund-tierarzt-check/)
 
 ## Wann es nicht mehr um Unterstützung geht
 
