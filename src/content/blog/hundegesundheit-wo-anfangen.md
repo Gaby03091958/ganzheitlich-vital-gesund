@@ -131,6 +131,18 @@ Einmal im Jahr schaut jemand mit Fachwissen deinen Hund komplett an – und gena
 
 → [Tierarzt-Check beim Hund: was untersucht wird und 7 kluge Fragen](/blog/hund-tierarzt-check/)
 
+Auch die Pflege, vor der sich die meisten drücken, gehört hierher – meist aus Sorge, etwas falsch zu machen:
+
+→ [Krallen schneiden beim Hund: die einfache Anleitung ohne Drama](/blog/hund-krallen-schneiden/)
+
+Beim Futter ist nicht nur wichtig, *was* im Napf landet, sondern auch, wie schnell sich etwas ändert:
+
+→ [Futterumstellung beim Hund: der sanfte 7-Tage-Plan](/blog/hund-futterumstellung/)
+
+Und wenn dein Hund älter wird, verschiebt sich der Schwerpunkt von Beobachten zu Erhalten – vor allem bei der Muskulatur, die die Gelenke stützt:
+
+→ [Muskelaufbau beim älteren Hund: 6 sanfte Übungen für zu Hause](/blog/hund-muskelaufbau-senior/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
