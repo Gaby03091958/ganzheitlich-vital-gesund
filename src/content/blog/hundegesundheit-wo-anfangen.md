@@ -143,6 +143,18 @@ Und wenn dein Hund älter wird, verschiebt sich der Schwerpunkt von Beobachten z
 
 → [Muskelaufbau beim älteren Hund: 6 sanfte Übungen für zu Hause](/blog/hund-muskelaufbau-senior/)
 
+Und was die Gelenke am meisten entlastet, passiert nicht auf dem Spaziergang, sondern zu Hause – beim Abspringen und Abrutschen:
+
+→ [Treppen, Sofa, Auto: 7 kleine Hilfen, die Hundegelenke im Alltag schonen](/blog/hund-alltagshilfen-gelenke/)
+
+Zum Erhalten gehört auch die Gegenseite der Bewegung. Ruhe entsteht in einem vollen Familienalltag nämlich nicht von allein:
+
+→ [Ruherituale für Hunde: warum Schlaf die unterschätzte Vorsorge ist](/blog/hund-ruherituale/)
+
+Bleibt die Frage, mit der alles anfängt: Woran siehst du eigentlich, ob es deinem Hund gerade gut geht? Fachleute lesen dafür ein paar Felder systematisch ab – das lässt sich zu Hause lernen:
+
+→ [Geht es deinem Hund wirklich gut? So schaust du hin wie deine Tierärztin](/blog/hund-wohlbefinden-erkennen/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
