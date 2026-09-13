@@ -155,6 +155,18 @@ Bleibt die Frage, mit der alles anfängt: Woran siehst du eigentlich, ob es dein
 
 → [Geht es deinem Hund wirklich gut? So schaust du hin wie deine Tierärztin](/blog/hund-wohlbefinden-erkennen/)
 
+Eine dieser Beobachtungen ist so wichtig, dass sie einen eigenen Artikel verdient – und sie ist eine der wenigen, die du zu Hause wirklich messen kannst:
+
+→ [Trinkt mein Hund genug? Was normal ist und wann du hinschauen solltest](/blog/hund-trinkmenge/)
+
+Manche Fragen stellt man sich dagegen jahrelang, ohne je eine klare Antwort zu bekommen. Diese hier gehört dazu:
+
+→ [Mein Hund frisst Gras: Warum das meist normal ist – und wann nicht](/blog/hund-grasfressen/)
+
+Und schließlich das, was für viele Hunde den größten Unterschied im Alltag macht – ruhig allein bleiben zu können:
+
+→ [Alleinbleiben beim Hund: Schritt für Schritt und ohne Druck üben](/blog/hund-alleinbleiben/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
