@@ -3,7 +3,7 @@ title: "Trockene Heizungsluft beim Hund: 5 einfache Wege, wie Haut und Fell ents
 description: "Schuppen, stumpfes Fell, Kratzen ohne Parasiten? Warum Heizungsluft die Hundehaut austrocknet, was du im Wohnraum tun kannst – und wann es in die Praxis gehört."
 pubDate: 2026-09-07
 category: "tiergesundheit"
-heroImage: "/bilder/hund-haut-juckreiz.jpg"
+heroImage: "/bilder/hund-heizungsluft.jpg"
 heroAlt: "Heller Hund kratzt sich mit der Hinterpfote hinter dem Ohr – Haut und Fell im Blick"
 affiliate: true
 ki: true

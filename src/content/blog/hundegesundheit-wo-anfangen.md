@@ -167,6 +167,18 @@ Und schließlich das, was für viele Hunde den größten Unterschied im Alltag m
 
 → [Alleinbleiben beim Hund: Schritt für Schritt und ohne Druck üben](/blog/hund-alleinbleiben/)
 
+Bei kaum einem Thema wird so viel gestritten wie bei der Fütterung – dabei gibt es keine Sieger-Variante, sondern nur die, die zu deinem Hund und deinem Alltag passt:
+
+→ [Trockenfutter, Nassfutter oder BARF? Orientierung ohne Glaubenskrieg](/blog/hund-futterarten-vergleich/)
+
+Und wenn die Abende früher dunkel werden, entscheidet ein Detail darüber, ob dein Hund wirklich gesehen wird – viele verwechseln es:
+
+→ [Hund im Dunkeln sicher unterwegs: Was wirklich sichtbar macht](/blog/hund-dunkelheit-sichtbarkeit/)
+
+Und eine Routine, die ganz nebenbei zur besten Vorsorge wird, weil du dabei jede Woche den ganzen Hund unter den Händen hast:
+
+→ [Hund richtig bürsten: Was Kurzhaar, Langhaar und Unterwolle brauchen](/blog/hund-fellpflege-felltyp/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:

@@ -3,7 +3,7 @@ title: "5 ehrliche Fragen, bevor du deinem Hund etwas ergänzt – und wann Wegl
 description: "Noch ein Pulver, noch ein Öl? Fünf einfache Prüffragen, mit denen du vor dem Kauf klar entscheidest – und dir den nächsten Schrankhüter ersparst."
 pubDate: 2026-09-07
 category: "tiergesundheit"
-heroImage: "/bilder/hund-frau-wiese.jpg"
+heroImage: "/bilder/hund-ergaenzen-fragen.jpg"
 heroAlt: "Frau sitzt draußen auf einer Wiese neben ihrem Hund und schaut ihn aufmerksam an"
 affiliate: true
 ki: true

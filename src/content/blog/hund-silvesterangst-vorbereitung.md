@@ -3,7 +3,7 @@ title: "Silvesterangst beim Hund: 5 einfache Schritte, die du jetzt im Herbst sc
 description: "Wer erst am 30. Dezember anfängt, kommt zu spät. Warum die Vorbereitung auf Silvester im Herbst beginnt – und was du deinem Hund jetzt in Ruhe beibringen kannst."
 pubDate: 2026-09-06
 category: "tiergesundheit"
-heroImage: "/bilder/hund-silvesterangst.jpg"
+heroImage: "/bilder/hund-silvesterangst-hoehle.jpg"
 heroAlt: "Hund liegt entspannt in einer Höhle aus Decken, eine Frau sitzt ruhig daneben und hat eine Hand auf seinem Rücken"
 affiliate: false
 ki: true

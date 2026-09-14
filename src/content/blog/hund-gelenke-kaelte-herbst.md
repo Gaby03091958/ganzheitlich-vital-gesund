@@ -3,7 +3,7 @@ title: "Hundegelenke bei Kälte: Was der Herbst dir jetzt schon zeigt – und 5 
 description: "Dein Hund steht an nasskalten Tagen langsamer auf und will kürzere Runden? Warum der Herbst früh zeigt, was im Winter kommt – und was du jetzt sinnvoll anpasst."
 pubDate: 2026-09-06
 category: "tiergesundheit"
-heroImage: "/bilder/hund-senior.jpg"
+heroImage: "/bilder/hund-gelenke-kaelte.jpg"
 heroAlt: "Älterer schwarzer Hund mit grauer Schnauze steht aufmerksam auf einer herbstlichen Wiese"
 affiliate: true
 ki: true

@@ -3,7 +3,7 @@ title: "Winterspeck beim Hund: Warum er sich unbemerkt ansammelt – und 4 einfa
 description: "Kürzere Runden, mehr Leckerlis: Warum Hunde im Winter fast unbemerkt zunehmen, wie du den Körperzustand mit den Händen prüfst und was realistisch ist."
 pubDate: 2026-09-07
 category: "tiergesundheit"
-heroImage: "/bilder/hund-wiese.jpg"
+heroImage: "/bilder/hund-winterspeck.jpg"
 heroAlt: "Schäferhund liegt entspannt draußen auf einer Wiese"
 affiliate: false
 ki: true
