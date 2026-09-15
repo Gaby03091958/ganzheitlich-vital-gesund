@@ -179,6 +179,18 @@ Und eine Routine, die ganz nebenbei zur besten Vorsorge wird, weil du dabei jede
 
 → [Hund richtig bürsten: Was Kurzhaar, Langhaar und Unterwolle brauchen](/blog/hund-fellpflege-felltyp/)
 
+Wenn ein paar Kilo zu viel auf den Gelenken liegen, ist der schwierige Teil nicht das Erkennen, sondern das Umsetzen – ohne dass dein Hund hungert oder du zur Spielverderberin wirst:
+
+→ [Wie dein Hund sanft abnimmt, ohne zu hungern: 7 einfache Schritte](/blog/hund-abnehmen-sanft/)
+
+Und für den Tag, an dem doch etwas passiert: Was zu Hause bereitliegen sollte, damit du überbrücken kannst, bis ihr in der Praxis seid:
+
+→ [Hausapotheke für den Hund: 15 Dinge, die wirklich hineingehören](/blog/hund-hausapotheke/)
+
+Irgendwann entdeckst du das erste graue Haar am Kinn. Das ist kein Alarm – aber ein guter Anlass, ein paar Dinge im Alltag mitwachsen zu lassen:
+
+→ [Die ersten grauen Haare am Hundekinn: was sich ab 7 wirklich verändert](/blog/hund-graues-kinn/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
