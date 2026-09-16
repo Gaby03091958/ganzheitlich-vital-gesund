@@ -4,7 +4,7 @@ description: "Raue Ballen nach dem Spaziergang – und die Frage, ob du Balsam k
 pubDate: 2026-09-16
 category: "tiergesundheit"
 heroImage: "/bilder/hund-pfotenbalsam.jpg"
-heroAlt: "Kleine Tiegel mit Balsam, daneben Bienenwachs und Sheabutter, und eine Hundepfote, die in einer Hand liegt"
+heroAlt: "Frau hält die Pfote eines entspannt liegenden Golden Retrievers in der Hand, davor ein offener Tiegel Balsam, eine Schale Bienenwachs und eine Honigwabe"
 affiliate: true
 ki: true
 ---
