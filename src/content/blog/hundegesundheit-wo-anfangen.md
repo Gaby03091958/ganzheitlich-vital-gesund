@@ -191,6 +191,18 @@ Irgendwann entdeckst du das erste graue Haar am Kinn. Das ist kein Alarm – abe
 
 → [Die ersten grauen Haare am Hundekinn: was sich ab 7 wirklich verändert](/blog/hund-graues-kinn/)
 
+Bei kaum einer Ergänzung wird so selbstverständlich zugegriffen wie bei Öl – dabei lohnt vorher ein Blick auf die Zutatenliste des Futters:
+
+→ [Omega-3 für Hunde: was wirklich dahintersteckt – und wie du es klug einsetzt](/blog/hund-omega-3/)
+
+Und wenn die Ballen rau werden, ist die Frage nicht nur, welcher Balsam – sondern ob es überhaupt einer sein muss:
+
+→ [Pfotenbalsam selbst gemacht? Was wirklich sinnvoll ist – und was du besser lässt](/blog/hund-pfotenbalsam/)
+
+Bei Gewitter, Feuerwerk oder Staubsauger hält sich ein Satz hartnäckig, der vielen ein schlechtes Gewissen macht – zu Unrecht:
+
+→ [Darf ich meinen Hund trösten, wenn er Angst hat?](/blog/hund-troesten-angst/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
