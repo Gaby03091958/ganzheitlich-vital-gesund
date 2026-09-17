@@ -203,6 +203,18 @@ Bei Gewitter, Feuerwerk oder Staubsauger hält sich ein Satz hartnäckig, der vi
 
 → [Darf ich meinen Hund trösten, wenn er Angst hat?](/blog/hund-troesten-angst/)
 
+Kokosöl, Bernstein, Knoblauch: Bei Zecken, Flöhen und Würmern wird viel versprochen. Ein ehrlicher Überblick, was davon trägt – und welche Handgriffe wirklich zählen:
+
+→ [Zecken, Flöhe, Würmer beim Hund: was natürliche Mittel wirklich können](/blog/hund-zecken-floehe-wuermer/)
+
+Wenn dein Hund mitten auf der Runde einfach stehen bleibt, ist das keine Sturheit, sondern eine Mitteilung – und meistens steckt mehr dahinter als das Alter:
+
+→ [Wenn dein Hund stehen bleibt und nicht weiter will](/blog/hund-stehen-bleiben/)
+
+„Hundeatem halt" – dieser Satz kostet viele Hunde Jahre mit einem kranken Maul. Was der Atem deines Hundes dir verrät:
+
+→ [Mundgeruch beim Hund: harmlos oder Hinweis?](/blog/hund-mundgeruch/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
