@@ -43,6 +43,10 @@ Wie viel Bewegung ein Hund überhaupt braucht, hängt dabei stärker vom Alter u
 
 → [Wie viel Bewegung braucht mein Hund wirklich?](/blog/hund-bewegung-wieviel/)
 
+Und die Art von Bewegung, die am meisten auslastet und die Gelenke am wenigsten belastet – gerade für unruhige und ältere Hunde:
+
+→ [Der Schnüffelspaziergang: die einfache Idee, die deinen Hund wirklich entspannt](/blog/hund-schnueffelspaziergang/)
+
 Und der Punkt, der Gelenke, Kreislauf und Ausdauer zugleich betrifft – ohne dass er einen Cent kostet:
 
 → [Winterspeck beim Hund: warum er sich unbemerkt ansammelt](/blog/hund-winterspeck-gewicht/)
@@ -131,6 +135,10 @@ Einmal im Jahr schaut jemand mit Fachwissen deinen Hund komplett an – und gena
 
 → [Tierarzt-Check beim Hund: was untersucht wird und 7 kluge Fragen](/blog/hund-tierarzt-check/)
 
+Bei diesem Termin steht fast immer auch das Thema im Raum, bei dem online am lautesten gestritten wird – dabei geht es vor allem darum, zwei Gruppen auseinanderzuhalten:
+
+→ [Impfen beim Hund: was Pflicht ist, was Ermessen](/blog/hund-impfen/)
+
 Auch die Pflege, vor der sich die meisten drücken, gehört hierher – meist aus Sorge, etwas falsch zu machen:
 
 → [Krallen schneiden beim Hund: die einfache Anleitung ohne Drama](/blog/hund-krallen-schneiden/)
@@ -214,6 +222,10 @@ Wenn dein Hund mitten auf der Runde einfach stehen bleibt, ist das keine Sturhei
 „Hundeatem halt" – dieser Satz kostet viele Hunde Jahre mit einem kranken Maul. Was der Atem deines Hundes dir verrät:
 
 → [Mundgeruch beim Hund: harmlos oder Hinweis?](/blog/hund-mundgeruch/)
+
+Und die Beobachtung, die du ohnehin täglich in der Hand hast – nur meistens mit abgewandtem Blick:
+
+→ [Hundekot als Gesundheitsanzeiger: was Farbe und Form dir wirklich verraten](/blog/hund-kot-anzeiger/)
 
 ## Wann es nicht mehr um Unterstützung geht
 
