@@ -63,6 +63,10 @@ Und wenn du Abwechslung in den Napf bringen möchtest, ohne dabei Kalorien drauf
 
 → [Gemüse für Hunde: Was in den Napf darf und wie du es klug einführst](/blog/hund-gemuese/)
 
+Was fürs Gemüse gilt, gilt genauso fürs Kräuterbeet – nur ist dort die Nein-Liste länger, und der häufigste Irrtum steht in fast jeder Küche:
+
+→ [Kräuter für Hunde: welche aus dem Garten unbedenklich sind – und welche nicht](/blog/hund-kraeuter/)
+
 ### 2. Darm und Verdauung
 
 Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weicher Kot, Gluckern, Grasfressen – vieles davon ist harmlos, manches nicht, und der Unterschied liegt in der Dauer.
@@ -127,6 +131,10 @@ Einer dieser Handgriffe verdient einen eigenen Artikel, weil er am häufigsten �
 
 → [Ohren reinigen beim Hund: wann es wirklich nötig ist, wie und womit](/blog/hund-ohren-reinigen/)
 
+Für die Augen gilt dasselbe Prinzip, nur mit einer wichtigeren Grenze: Am Auge ist der Spielraum für Eigenbehandlung noch kleiner.
+
+→ [Augenpflege beim Hund: Tränenspuren, Verklebungen und wann du hinschauen solltest](/blog/hund-augenpflege/)
+
 Zu den langsamen Veränderungen gehört auch, wie entspannt ein Hund durch seinen Alltag geht. Die Zeichen dafür sind leise:
 
 → [Stress beim Hund erkennen: die leisen Signale](/blog/hund-stress-erkennen/)
@@ -158,6 +166,10 @@ Und was die Gelenke am meisten entlastet, passiert nicht auf dem Spaziergang, so
 Zum Erhalten gehört auch die Gegenseite der Bewegung. Ruhe entsteht in einem vollen Familienalltag nämlich nicht von allein:
 
 → [Ruherituale für Hunde: warum Schlaf die unterschätzte Vorsorge ist](/blog/hund-ruherituale/)
+
+Und wenn die Ruhezeiten stimmen, lohnt der zweite Blick auf das, worauf dein Hund dabei eigentlich liegt:
+
+→ [Das richtige Hundebett: was Gelenke und Rücken wirklich brauchen](/blog/hund-schlafplatz/)
 
 Bleibt die Frage, mit der alles anfängt: Woran siehst du eigentlich, ob es deinem Hund gerade gut geht? Fachleute lesen dafür ein paar Felder systematisch ab – das lässt sich zu Hause lernen:
 
