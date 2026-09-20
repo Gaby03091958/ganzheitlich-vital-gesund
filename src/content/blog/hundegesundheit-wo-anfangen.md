@@ -67,17 +67,29 @@ Was fürs Gemüse gilt, gilt genauso fürs Kräuterbeet – nur ist dort die Nei
 
 → [Kräuter für Hunde: welche aus dem Garten unbedenklich sind – und welche nicht](/blog/hund-kraeuter/)
 
+Und ganz am Anfang der Kette steht das Gefäß selbst, aus dem gefressen und getrunken wird – unscheinbar, aber mit direkter Wirkung auf Hygiene und Haut:
+
+→ [Der Napf-Check: Material, Höhe, Hygiene – kleine Dinge mit großer Wirkung](/blog/hund-napf-check/)
+
 ### 2. Darm und Verdauung
 
 Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weicher Kot, Gluckern, Grasfressen – vieles davon ist harmlos, manches nicht, und der Unterschied liegt in der Dauer.
 
 → [Weicher Kot, Gluckern, Grasfressen: den Darm sanft unterstützen](/blog/hund-darm-verdauung-unterstuetzen/)
 
+Appetit ist dabei einer der ehrlichsten Gradmesser – und der Grund, warum ein Hund plötzlich nicht mehr frisst, ist öfter harmlos als gedacht:
+
+→ [Mein Hund will nicht fressen: Anzeichen klug deuten, ohne in Panik zu geraten](/blog/hund-will-nicht-fressen/)
+
 ### 3. Haut und Fell
 
 Haut ist die Anzeigetafel für vieles, was tiefer liegt. Deshalb ist Juckreiz auch keine Diagnose, sondern ein Symptom – und die Frage ist immer, wovon.
 
 → [Wenn dein Hund sich ständig kratzt: Haut und Fell ganzheitlich unterstützen](/blog/hund-haut-fell-juckreiz/)
+
+Auch der Geruch deines Hundes gehört zu den Anzeigetafeln – und verrät oft mehr als das Auge:
+
+→ [Mein Hund riecht komisch: 5 mögliche Ursachen und was du zuerst prüfst](/blog/hund-riecht-komisch/)
 
 Zweimal im Jahr kommt der Fellwechsel dazu. Der ist normal, kostet den Körper aber ordentlich Substanz:
 
