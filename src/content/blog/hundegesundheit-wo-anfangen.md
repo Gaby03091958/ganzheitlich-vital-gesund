@@ -251,6 +251,18 @@ Und die Beobachtung, die du ohnehin täglich in der Hand hast – nur meistens m
 
 → [Hundekot als Gesundheitsanzeiger: was Farbe und Form dir wirklich verraten](/blog/hund-kot-anzeiger/)
 
+Manchmal ist die wichtigste Beobachtung die, die gar nicht laut ist. Hunde zeigen Schmerz fast nie als Geräusch, sondern als leise Veränderung – und genau deshalb lohnt sich ein genauerer Blick:
+
+→ [Hunde verbergen Schmerzen: die leisen Signale, die du wirklich erkennen kannst](/blog/hund-schmerzen-erkennen/)
+
+Eine gute Gelegenheit für genau diesen genaueren Blick ist eine ruhige halbe Stunde, die nach Verwöhnung aussieht, aber vor allem eine Gesundheitskontrolle ist:
+
+→ [Wellness-Tag für deinen Hund: So gelingt eine ruhige Auszeit zu Hause](/blog/hund-wellness-tag/)
+
+Und weil der Herbst den Boden unter Eichen und Kastanienbäumen plötzlich voller macht, lohnt sich jetzt ein zweiter Blick auf das, was dein Hund unterwegs aufnimmt:
+
+→ [Eicheln und Kastanien: Worauf du beim Herbstspaziergang mit deinem Hund achten kannst](/blog/hund-eicheln-kastanien/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
