@@ -263,6 +263,18 @@ Und weil der Herbst den Boden unter Eichen und Kastanienbäumen plötzlich volle
 
 → [Eicheln und Kastanien: Worauf du beim Herbstspaziergang mit deinem Hund achten kannst](/blog/hund-eicheln-kastanien/)
 
+Zur selben Jahreszeit gehört noch ein zweiter, viel kleinerer Herbstplagegeist, der ebenfalls an Pfoten und Bauch juckt:
+
+→ [Grasmilben beim Hund: Woran du sie erkennst und was du jetzt einfach tun kannst](/blog/hund-grasmilben/)
+
+Die meisten Themen hier haben Zeit. Es gibt aber eine Handvoll Situationen, in denen das nicht gilt – gut zu kennen, bevor sie eintreten:
+
+→ [Erste Hilfe beim Hund: die 5 Situationen, in denen Sekunden zählen](/blog/hund-erste-hilfe/)
+
+Und weil Fütterung sich nicht einmal festlegen lässt, sondern über das ganze Hundeleben mitwächst:
+
+→ [Vom Junghund zum Senior: Wie sich der Nährstoffbedarf wirklich verändert](/blog/hund-naehrstoffe-lebensalter/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
