@@ -81,6 +81,10 @@ Appetit ist dabei einer der ehrlichsten Gradmesser – und der Grund, warum ein 
 
 → [Mein Hund will nicht fressen: Anzeichen klug deuten, ohne in Panik zu geraten](/blog/hund-will-nicht-fressen/)
 
+Etwas anderes ist es, wenn dein Hund weiterhin frisst, aber plötzlich wählerisch aussortiert – das ist keine Fressverweigerung, sondern ein eigenes Beobachtungsfeld:
+
+→ [Hund frisst plötzlich wählerisch: harmlos oder ein leiser Hinweis?](/blog/hund-waehlerisch-frisst/)
+
 ### 3. Haut und Fell
 
 Haut ist die Anzeigetafel für vieles, was tiefer liegt. Deshalb ist Juckreiz auch keine Diagnose, sondern ein Symptom – und die Frage ist immer, wovon.
@@ -98,6 +102,10 @@ Zweimal im Jahr kommt der Fellwechsel dazu. Der ist normal, kostet den Körper a
 Zur Haut gehören auch die Pfoten – im Winter der Körperteil, der am meisten aushalten muss:
 
 → [Pfotenpflege im Winter: Streusalz, Schnee und rissige Ballen](/blog/hund-pfotenpflege-winter/)
+
+Schon vorher, im nassen Herbst, fängt diese Belastung an – nur heißt der Gegner hier nicht Streusalz, sondern Matsch:
+
+→ [Matsch und nasse Pfoten: Die 5-Minuten-Routine ganz ohne Chemie](/blog/hund-matsch-pfoten/)
 
 Drinnen kommt im Winter die trockene Heizungsluft dazu – ein Grund für Schuppen, den viele übersehen:
 
@@ -174,6 +182,10 @@ Und wenn dein Hund älter wird, verschiebt sich der Schwerpunkt von Beobachten z
 Und was die Gelenke am meisten entlastet, passiert nicht auf dem Spaziergang, sondern zu Hause – beim Abspringen und Abrutschen:
 
 → [Treppen, Sofa, Auto: 7 kleine Hilfen, die Hundegelenke im Alltag schonen](/blog/hund-alltagshilfen-gelenke/)
+
+Eine Bewegung, die dabei besonders oft falsch läuft, machst du jeden Tag mit den eigenen Armen – beim Hochheben:
+
+→ [Hund richtig hochheben: Die einfache Technik für Rücken und Gelenke](/blog/hund-richtig-hochheben/)
 
 Zum Erhalten gehört auch die Gegenseite der Bewegung. Ruhe entsteht in einem vollen Familienalltag nämlich nicht von allein:
 
