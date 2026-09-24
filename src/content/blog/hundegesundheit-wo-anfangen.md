@@ -77,6 +77,10 @@ Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weic
 
 → [Weicher Kot, Gluckern, Grasfressen: den Darm sanft unterstützen](/blog/hund-darm-verdauung-unterstuetzen/)
 
+Ein Symptom daraus verdient einen eigenen Blick, weil es fast jeder kennt und trotzdem selten bespricht:
+
+→ [Blähungen beim Hund: die häufigsten Ursachen – und was einfach hilft](/blog/hund-blaehungen/)
+
 Appetit ist dabei einer der ehrlichsten Gradmesser – und der Grund, warum ein Hund plötzlich nicht mehr frisst, ist öfter harmlos als gedacht:
 
 → [Mein Hund will nicht fressen: Anzeichen klug deuten, ohne in Panik zu geraten](/blog/hund-will-nicht-fressen/)
@@ -90,6 +94,10 @@ Etwas anderes ist es, wenn dein Hund weiterhin frisst, aber plötzlich wähleris
 Haut ist die Anzeigetafel für vieles, was tiefer liegt. Deshalb ist Juckreiz auch keine Diagnose, sondern ein Symptom – und die Frage ist immer, wovon.
 
 → [Wenn dein Hund sich ständig kratzt: Haut und Fell ganzheitlich unterstützen](/blog/hund-haut-fell-juckreiz/)
+
+Wiederkehrender Juckreiz zur gleichen Jahreszeit hat oft einen eigenen Namen – und der lohnt einen genaueren Blick:
+
+→ [Pollenallergie beim Hund: 7 Anzeichen, die du im Frühjahr kennst](/blog/hund-allergien-pollen/)
 
 Auch der Geruch deines Hundes gehört zu den Anzeigetafeln – und verrät oft mehr als das Auge:
 
@@ -270,6 +278,10 @@ Manchmal ist die wichtigste Beobachtung die, die gar nicht laut ist. Hunde zeige
 Eine gute Gelegenheit für genau diesen genaueren Blick ist eine ruhige halbe Stunde, die nach Verwöhnung aussieht, aber vor allem eine Gesundheitskontrolle ist:
 
 → [Wellness-Tag für deinen Hund: So gelingt eine ruhige Auszeit zu Hause](/blog/hund-wellness-tag/)
+
+Ein fester Baustein für genau so einen ruhigen Moment sind die eigenen Hände – sanft eingesetzt, verrät eine Massage oft mehr als ein Blick von außen:
+
+→ [Hundemassage: 5 einfache Griffe, die deinen Hund spürbar entspannen](/blog/hund-massage/)
 
 Und weil der Herbst den Boden unter Eichen und Kastanienbäumen plötzlich voller macht, lohnt sich jetzt ein zweiter Blick auf das, was dein Hund unterwegs aufnimmt:
 
