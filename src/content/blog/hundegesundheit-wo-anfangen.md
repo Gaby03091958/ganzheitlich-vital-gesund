@@ -47,6 +47,10 @@ Und die Art von Bewegung, die am meisten auslastet und die Gelenke am wenigsten 
 
 → [Der Schnüffelspaziergang: die einfache Idee, die deinen Hund wirklich entspannt](/blog/hund-schnueffelspaziergang/)
 
+Auch beim Spielen selbst gibt es einen Unterschied zwischen auspowernd und gelenkschonend – Ball und Stöckchen sind dabei nicht so harmlos, wie sie wirken:
+
+→ [Gelenkfreundlich spielen: Was Ball, Zerrspiel und Stöckchen wirklich mit den Gelenken machen](/blog/hund-gelenkfreundlich-spielen/)
+
 Und der Punkt, der Gelenke, Kreislauf und Ausdauer zugleich betrifft – ohne dass er einen Cent kostet:
 
 → [Winterspeck beim Hund: warum er sich unbemerkt ansammelt](/blog/hund-winterspeck-gewicht/)
@@ -107,6 +111,10 @@ Zweimal im Jahr kommt der Fellwechsel dazu. Der ist normal, kostet den Körper a
 
 → [Fellwechsel im Herbst: So unterstützt du deinen Hund](/blog/hund-fellwechsel-herbst/)
 
+Im Frühjahr läuft derselbe Prozess noch einmal ab – nur ausgeprägter, weil diesmal die komplette Unterwolle abgeworfen wird:
+
+→ [Fellwechsel im Frühjahr: Warum er länger dauert als im Herbst](/blog/hund-fellwechsel-fruehjahr/)
+
 Zur Haut gehören auch die Pfoten – im Winter der Körperteil, der am meisten aushalten muss:
 
 → [Pfotenpflege im Winter: Streusalz, Schnee und rissige Ballen](/blog/hund-pfotenpflege-winter/)
@@ -114,6 +122,10 @@ Zur Haut gehören auch die Pfoten – im Winter der Körperteil, der am meisten 
 Schon vorher, im nassen Herbst, fängt diese Belastung an – nur heißt der Gegner hier nicht Streusalz, sondern Matsch:
 
 → [Matsch und nasse Pfoten: Die 5-Minuten-Routine ganz ohne Chemie](/blog/hund-matsch-pfoten/)
+
+Ständiges Lecken an einer Pfote ist noch einmal ein eigenes Thema – die Ursachen reichen von harmlos bis abklärungsbedürftig:
+
+→ [Dein Hund leckt ständig die Pfoten? Die 7 häufigsten Ursachen](/blog/hund-pfoten-lecken/)
 
 Drinnen kommt im Winter die trockene Heizungsluft dazu – ein Grund für Schuppen, den viele übersehen:
 
@@ -129,11 +141,19 @@ Zur Jahreszeit gehört auch, was am Jahresende auf viele Hunde zukommt. Wer erst
 
 → [Silvesterangst beim Hund: 5 Schritte, die du jetzt im Herbst schon gehen kannst](/blog/hund-silvesterangst-vorbereitung/)
 
+Auch der Jahreszeitenwechsel selbst kann sich bemerkbar machen – nicht als Krankheit, sondern als spürbare Flaute:
+
+→ [Frühjahrsmüdigkeit beim Hund: Gibt es das wirklich?](/blog/hund-fruehjahrsmuedigkeit/)
+
 ### 5. Das Älterwerden
 
 Kein eigener Bereich, sondern eine Zeitachse, die durch alle anderen läuft. Was mit sieben beginnt, ist selten dramatisch – aber es ist der Zeitpunkt, an dem Beobachten mehr wert wird als Reagieren.
 
 → [Ab wann ist mein Hund ein Senior – und was ändert sich dann wirklich?](/blog/hund-senior-ab-wann/)
+
+Eine der Veränderungen, die am meisten an die Substanz geht, weil sie den Schlaf betrifft – von deinem Hund und von dir:
+
+→ [Wenn der alte Hund nachts unruhig wird: was dahinterstecken kann](/blog/hund-senior-nachts-unruhig/)
 
 ### Und bevor du etwas ergänzt
 
@@ -166,6 +186,10 @@ Für die Augen gilt dasselbe Prinzip, nur mit einer wichtigeren Grenze: Am Auge 
 Zu den langsamen Veränderungen gehört auch, wie entspannt ein Hund durch seinen Alltag geht. Die Zeichen dafür sind leise:
 
 → [Stress beim Hund erkennen: die leisen Signale](/blog/hund-stress-erkennen/)
+
+Auch die Atmung gehört zu den Signalen, die sich leicht mitbeobachten lassen – meistens harmlos, aber mit klaren Grenzen, ab wann genauer hingeschaut werden sollte:
+
+→ [Der Hund hechelt viel: wann das normal ist und wann nicht](/blog/hund-hecheln/)
 
 Einmal im Jahr schaut jemand mit Fachwissen deinen Hund komplett an – und genau dieser Termin ist die beste Gelegenheit, deine Beobachtungen loszuwerden:
 
