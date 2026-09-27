@@ -323,6 +323,18 @@ Und weil Fütterung sich nicht einmal festlegen lässt, sondern über das ganze 
 
 → [Vom Junghund zum Senior: Wie sich der Nährstoffbedarf wirklich verändert](/blog/hund-naehrstoffe-lebensalter/)
 
+Nach dem Winter kommt fast automatisch die Versuchung, gleich wieder volles Programm zu spazieren – dabei zahlt sich hier besonders Geduld aus:
+
+→ [In 4 Wochen wieder fit: So baust du deinen Hund nach dem Winter sanft auf](/blog/hund-bewegung-nach-winter/)
+
+Manches, was zu Hause ganz selbstverständlich zum Einsatz kommt, gehört gar nicht in die Nähe von Hund oder Katze:
+
+→ [Ätherische Öle und Hunde: Was du wissen solltest, bevor du den Diffuser anstellst](/blog/hund-aetherische-oele/)
+
+Und eine der einfachsten Kontrollen überhaupt braucht nicht einmal einen Termin:
+
+→ [Hund zu Hause wiegen: So klappt es in 3 Minuten mit deiner Personenwaage](/blog/hund-wiegen-zuhause/)
+
 ## Wann es nicht mehr um Unterstützung geht
 
 Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört dein Hund, wenn:
