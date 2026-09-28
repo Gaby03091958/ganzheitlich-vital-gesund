@@ -75,6 +75,14 @@ Und ganz am Anfang der Kette steht das Gefäß selbst, aus dem gefressen und get
 
 → [Der Napf-Check: Material, Höhe, Hygiene – kleine Dinge mit großer Wirkung](/blog/hund-napf-check/)
 
+Manchmal zeigt sich ein Gelenkthema zuerst gar nicht beim Laufen, sondern bei einem einzelnen, kurzen Moment auf der Runde:
+
+→ [Wenn dein Hund humpelt: Was du beobachtest, bevor du in die Praxis fährst](/blog/hund-humpeln/)
+
+Und noch bevor überhaupt ein Symptom da ist, entscheidet ein unscheinbares Ausrüstungsstück mit, wie viel Belastung Hals und Rücken beim Spazieren abbekommen:
+
+→ [Geschirr oder Halsband? Was für Hals und Rücken deines Hundes besser ist](/blog/hund-geschirr-halsband/)
+
 ### 2. Darm und Verdauung
 
 Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weicher Kot, Gluckern, Grasfressen – vieles davon ist harmlos, manches nicht, und der Unterschied liegt in der Dauer.
@@ -92,6 +100,10 @@ Appetit ist dabei einer der ehrlichsten Gradmesser – und der Grund, warum ein 
 Etwas anderes ist es, wenn dein Hund weiterhin frisst, aber plötzlich wählerisch aussortiert – das ist keine Fressverweigerung, sondern ein eigenes Beobachtungsfeld:
 
 → [Hund frisst plötzlich wählerisch: harmlos oder ein leiser Hinweis?](/blog/hund-waehlerisch-frisst/)
+
+Ein Thema, über das kaum jemand gern spricht, das aber direkt mit der Kotkonsistenz zusammenhängt:
+
+→ [Analdrüsen beim Hund: das unangenehme Thema, das jede Halterin kennen sollte](/blog/hund-analdruesen/)
 
 ### 3. Haut und Fell
 
