@@ -83,6 +83,14 @@ Und noch bevor überhaupt ein Symptom da ist, entscheidet ein unscheinbares Ausr
 
 → [Geschirr oder Halsband? Was für Hals und Rücken deines Hundes besser ist](/blog/hund-geschirr-halsband/)
 
+Zwei ganz alltägliche Situationen zeigen dabei oft am schnellsten, wie gut dein Hund gerade zurechtkommt – ein Zittern, das mehr als nur Kälte ist:
+
+→ [Wenn dein Hund zittert: die harmlosen und die ernsten Gründe](/blog/hund-zittern/)
+
+Und eine Fahrt im Auto, bei der es um zwei ganz verschiedene Dinge zugleich geht: Sicherung und Gewöhnung:
+
+→ [Der Hund im Auto: sicher unterwegs – und was gegen Reiseübelkeit hilft](/blog/hund-auto-reisen/)
+
 ### 2. Darm und Verdauung
 
 Der Bereich, der am meisten Alltag kostet und am wenigsten besprochen wird. Weicher Kot, Gluckern, Grasfressen – vieles davon ist harmlos, manches nicht, und der Unterschied liegt in der Dauer.
@@ -186,6 +194,10 @@ Wie sich das in einen Alltag einbauen lässt, der ohnehin schon voll ist – zeh
 Einer dieser Handgriffe verdient einen eigenen Artikel, weil er am häufigsten übersehen wird und Hunde Schmerzen im Maul kaum zeigen:
 
 → [Zahnpflege beim Hund: wichtiger, als die meisten denken](/blog/hund-zahnpflege/)
+
+Was dabei ganz nebenbei mithilft und gleichzeitig beschäftigt und entspannt – wenn es zum Kautyp deines Hundes passt:
+
+→ [Kauen als Beschäftigung: was guttut und was gefährlich werden kann](/blog/hund-kauen/)
 
 Ähnlich unauffällig sind die Ohren – bis sie es plötzlich nicht mehr sind. Hier ist vor allem wichtig zu wissen, wann du selbst etwas tun kannst und wann eben nicht:
 
