@@ -1,18 +1,17 @@
 // Besucherstatistik, Schritt 1: Zählen.
 //
 // Nimmt die kleinen Meldungen entgegen, die jede Seite beim Aufruf schickt
-// (und beim Klick auf einen Partnerlink), und legt sie als Mini-Datei im
-// privaten Blob-Speicher ab. Bewusst ohne Cookies und ohne IP-Adresse –
-// gespeichert wird nur: Seite, Herkunft, Land, Zeitpunkt.
+// (und beim Klick auf einen Partnerlink), und rechnet sie direkt in die
+// Tagessumme ein (statistik/tage.json im privaten GitHub-Repo gaby-daten).
+// Bewusst ohne Cookies und ohne IP-Adresse – gespeichert werden nur Zähler
+// je Seite, Herkunft, Land und Tag, keine Einzel-Besuche.
 //
 // Die Auswertung übernimmt api/statistik.mjs.
 
-import { put } from '@vercel/blob';
+import { schreibenMitRetry } from './_github.mjs';
+import { TAGE_PFAD, einrechnen, heuteAthen, leererTag } from './_statistik-kern.mjs';
 
-/** Datum (JJJJ-MM-TT) in Gabys Zeitzone – so enden die Tage nicht um 2 Uhr nachts. */
-export function heuteAthen(zeitpunkt = new Date()) {
-  return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Athens' }).format(zeitpunkt);
-}
+export { heuteAthen };
 
 // Suchmaschinen und Vorschau-Roboter nicht mitzählen.
 const ROBOTER = /bot|crawl|spider|slurp|preview|fetch|monitor|lighthouse|headless|curl|wget|python|scan/i;
@@ -37,8 +36,8 @@ export default async function handler(req, res) {
 
   if (req.method !== 'POST') return res.end();
   if (ROBOTER.test(String(req.headers['user-agent'] || ''))) return res.end();
-  if (!process.env.BLOB_READ_WRITE_TOKEN) {
-    console.error('BLOB_READ_WRITE_TOKEN fehlt – Zählung übersprungen.');
+  if (!process.env.GITHUB_DATEN_TOKEN) {
+    console.error('GITHUB_DATEN_TOKEN fehlt – Zählung übersprungen.');
     return res.end();
   }
 
@@ -65,16 +64,18 @@ export default async function handler(req, res) {
           ...(daten.pin ? { pin: kurz(daten.pin, 60).replace(/[^\wäöüß-]/gi, '') } : {}),
         };
 
-    eintrag.t = new Date().toISOString();
     eintrag.land = kurz(req.headers['x-vercel-ip-country'], 2);
 
     const tag = heuteAthen();
-    const name = `e/${tag}/${Date.now()}-${Math.random().toString(36).slice(2, 8)}.json`;
-    await put(name, JSON.stringify(eintrag), {
-      access: 'private',
-      addRandomSuffix: false,
-      contentType: 'application/json',
-    });
+    await schreibenMitRetry(
+      TAGE_PFAD,
+      (tage) => {
+        const alle = tage || {};
+        alle[tag] = einrechnen(alle[tag] || leererTag(), eintrag);
+        return alle;
+      },
+      `Zählung ${tag}`
+    );
   } catch (fehler) {
     console.error('Zählung fehlgeschlagen:', fehler);
   }
