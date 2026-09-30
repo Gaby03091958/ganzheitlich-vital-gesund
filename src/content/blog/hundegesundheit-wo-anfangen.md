@@ -113,6 +113,14 @@ Ein Thema, über das kaum jemand gern spricht, das aber direkt mit der Kotkonsis
 
 → [Analdrüsen beim Hund: das unangenehme Thema, das jede Halterin kennen sollte](/blog/hund-analdruesen/)
 
+Genauso unangenehm, aber sehr verbreitet – und oft eher eine Verhaltens- als eine Verdauungsfrage:
+
+→ [Wenn dein Hund Kot frisst: mögliche Ursachen und was im Alltag wirklich hilft](/blog/hund-kot-fressen/)
+
+Und was unterwegs über den Darm entscheiden kann, ohne dass du es merkst – der Schluck aus der Pfütze:
+
+→ [Trinken aus Pfützen: harmlos oder Risiko? Was du wirklich wissen solltest](/blog/hund-pfuetze-trinken/)
+
 ### 3. Haut und Fell
 
 Haut ist die Anzeigetafel für vieles, was tiefer liegt. Deshalb ist Juckreiz auch keine Diagnose, sondern ein Symptom – und die Frage ist immer, wovon.
@@ -370,6 +378,10 @@ Alles auf dieser Seite ist Begleitung, keine Behandlung. In die Praxis gehört d
 - dein Bauchgefühl es sagt – auch ohne dass etwas davon zutrifft
 
 Ein Termin zu viel ist besser als einer zu spät. Und ein Praxisteam ärgert sich nicht über einen Fehlalarm.
+
+Fällt dir genau dieser Schritt schwer, weil dein Hund schon vor der Praxistür zittert? Das lässt sich üben:
+
+→ [Angst vor der Tierarztpraxis: wie du deinem Hund den Termin leichter machst](/blog/hund-tierarzt-angst/)
 
 <small>Dieser Beitrag ersetzt keine tierärztliche Beratung und beschreibt keine Heilwirkungen. Er ordnet ein, was du selbst beobachten und im Alltag verändern kannst.</small>
 
