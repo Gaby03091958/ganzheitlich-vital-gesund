@@ -189,6 +189,10 @@ Irgendwann steht in jedem dieser Bereiche die Frage im Raum, ob ein Zusatzfutter
 
 → [5 ehrliche Fragen, bevor du deinem Hund etwas ergänzt](/blog/hund-fragen-vor-nahrungsergaenzung/)
 
+Wie du diese Fragen am Beispiel eines Trendthemas anwendest – und woran du seriöse Anbieter erkennst:
+
+→ [Vitalpilze für Hunde: was dahintersteckt und wie du seriös auswählst](/blog/hund-vitalpilze/)
+
 ## Wie du merkst, dass sich wirklich etwas verändert
 
 Das ist die eigentliche Kunst, und sie hat nichts mit Produkten zu tun. Du siehst deinen Hund jeden Tag – genau deshalb entgehen dir langsame Veränderungen. Der Vergleichsmaßstab darf nicht „der normale Hund" sein, sondern **dein Hund vor drei Monaten**.
@@ -202,6 +206,10 @@ Wie sich das in einen Alltag einbauen lässt, der ohnehin schon voll ist – zeh
 Einer dieser Handgriffe verdient einen eigenen Artikel, weil er am häufigsten übersehen wird und Hunde Schmerzen im Maul kaum zeigen:
 
 → [Zahnpflege beim Hund: wichtiger, als die meisten denken](/blog/hund-zahnpflege/)
+
+Beim älteren Hund kommt etwas Wichtiges dazu – zu erkennen, wann aus Pflege ein Fall für die Praxis wird:
+
+→ [Zahnprobleme beim älteren Hund: 12 leise Anzeichen, die du kennen solltest](/blog/hund-zaehne-senior/)
 
 Was dabei ganz nebenbei mithilft und gleichzeitig beschäftigt und entspannt – wenn es zum Kautyp deines Hundes passt:
 
@@ -218,6 +226,10 @@ Für die Augen gilt dasselbe Prinzip, nur mit einer wichtigeren Grenze: Am Auge 
 Zu den langsamen Veränderungen gehört auch, wie entspannt ein Hund durch seinen Alltag geht. Die Zeichen dafür sind leise:
 
 → [Stress beim Hund erkennen: die leisen Signale](/blog/hund-stress-erkennen/)
+
+In Familien mit Kindern oder Enkeln entscheidet sich viel davon an ein paar einfachen Regeln:
+
+→ [Hund und Kind: 6 einfache Ruheregeln, von denen beide profitieren](/blog/hund-und-kind/)
 
 Auch die Atmung gehört zu den Signalen, die sich leicht mitbeobachten lassen – meistens harmlos, aber mit klaren Grenzen, ab wann genauer hingeschaut werden sollte:
 
