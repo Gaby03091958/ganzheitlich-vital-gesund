@@ -101,6 +101,10 @@ Ein Symptom daraus verdient einen eigenen Blick, weil es fast jeder kennt und tr
 
 → [Blähungen beim Hund: die häufigsten Ursachen – und was einfach hilft](/blog/hund-blaehungen/)
 
+Manchmal beginnt das Bauchgrummeln schon am Napf – nämlich dann, wenn das Futter in Sekunden verschwunden ist:
+
+→ [Dein Hund schlingt sein Futter? 7 einfache Tipps für mehr Ruhe am Napf](/blog/hund-schlingen/)
+
 Appetit ist dabei einer der ehrlichsten Gradmesser – und der Grund, warum ein Hund plötzlich nicht mehr frisst, ist öfter harmlos als gedacht:
 
 → [Mein Hund will nicht fressen: Anzeichen klug deuten, ohne in Panik zu geraten](/blog/hund-will-nicht-fressen/)
@@ -182,6 +186,10 @@ Kein eigener Bereich, sondern eine Zeitachse, die durch alle anderen läuft. Was
 Eine der Veränderungen, die am meisten an die Substanz geht, weil sie den Schlaf betrifft – von deinem Hund und von dir:
 
 → [Wenn der alte Hund nachts unruhig wird: was dahinterstecken kann](/blog/hund-senior-nachts-unruhig/)
+
+Und wenn dein Senior tagsüber manchmal wie verloren im Raum steht, hilft ein ruhiger Blick darauf, was dahinterstecken kann:
+
+→ [Wenn der alte Hund verwirrt wirkt: erste Anzeichen richtig einordnen](/blog/hund-senior-verwirrt/)
 
 ### Und bevor du etwas ergänzt
 
@@ -266,6 +274,10 @@ Eine Bewegung, die dabei besonders oft falsch läuft, machst du jeden Tag mit de
 Zum Erhalten gehört auch die Gegenseite der Bewegung. Ruhe entsteht in einem vollen Familienalltag nämlich nicht von allein:
 
 → [Ruherituale für Hunde: warum Schlaf die unterschätzte Vorsorge ist](/blog/hund-ruherituale/)
+
+Ganz am Anfang eines Hundelebens ist Schlaf sogar noch wichtiger – und wird am häufigsten unterschätzt:
+
+→ [Wie viel Schlaf braucht ein Welpe wirklich? Ruhe, Rhythmus und Übermüdung verstehen](/blog/hund-welpe-schlaf/)
 
 Und wenn die Ruhezeiten stimmen, lohnt der zweite Blick auf das, worauf dein Hund dabei eigentlich liegt:
 
