@@ -75,6 +75,10 @@ Und ganz am Anfang der Kette steht das Gefäß selbst, aus dem gefressen und get
 
 → [Der Napf-Check: Material, Höhe, Hygiene – kleine Dinge mit großer Wirkung](/blog/hund-napf-check/)
 
+Wer dabei gleich weitermachen will: Decken, Körbchen, Spielzeug und Zubehör lassen sich einmal im Jahr in einem Rutsch auffrischen – hundefreundlich und ohne Duftwolke:
+
+→ [Frühjahrsputz im Hundehaushalt: So frischst du Decken, Näpfe und Spielzeug einfach auf](/blog/hund-fruehjahrsputz/)
+
 Manchmal zeigt sich ein Gelenkthema zuerst gar nicht beim Laufen, sondern bei einem einzelnen, kurzen Moment auf der Runde:
 
 → [Wenn dein Hund humpelt: Was du beobachtest, bevor du in die Praxis fährst](/blog/hund-humpeln/)
@@ -374,6 +378,14 @@ Zur selben Jahreszeit gehört noch ein zweiter, viel kleinerer Herbstplagegeist,
 Die meisten Themen hier haben Zeit. Es gibt aber eine Handvoll Situationen, in denen das nicht gilt – gut zu kennen, bevor sie eintreten:
 
 → [Erste Hilfe beim Hund: die 5 Situationen, in denen Sekunden zählen](/blog/hund-erste-hilfe/)
+
+Zu diesen Situationen gehört auch die, vor der sich viele Halterinnen am meisten fürchten – mit einem klaren Plan verliert sie viel von ihrem Schrecken:
+
+→ [Giftköder: Wie du ruhig reagierst und was im Alltag wirklich hilft](/blog/hund-giftkoeder/)
+
+Und weil Feiertage eigene Stolperfallen mitbringen, lohnt ein Blick in die Osterwoche – Schokolade, Birkenzucker und Frühlingsblumen inklusive:
+
+→ [Ostern mit Hund: 7 Dinge, die du vor dem Fest wissen solltest](/blog/hund-ostern/)
 
 Und weil Fütterung sich nicht einmal festlegen lässt, sondern über das ganze Hundeleben mitwächst:
 
