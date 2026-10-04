@@ -239,6 +239,10 @@ Zu den langsamen Veränderungen gehört auch, wie entspannt ein Hund durch seine
 
 → [Stress beim Hund erkennen: die leisen Signale](/blog/hund-stress-erkennen/)
 
+Bei Hündinnen gibt es eine Veränderung, die viele Halterinnen erst einmal verunsichert – meist ist sie normal, manchmal braucht sie Begleitung:
+
+→ [Scheinträchtigkeit beim Hund: was normal ist und wann Hilfe sinnvoll ist](/blog/hund-scheintraechtigkeit/)
+
 In Familien mit Kindern oder Enkeln entscheidet sich viel davon an ein paar einfachen Regeln:
 
 → [Hund und Kind: 6 einfache Ruheregeln, von denen beide profitieren](/blog/hund-und-kind/)
@@ -394,6 +398,14 @@ Und weil Fütterung sich nicht einmal festlegen lässt, sondern über das ganze 
 Nach dem Winter kommt fast automatisch die Versuchung, gleich wieder volles Programm zu spazieren – dabei zahlt sich hier besonders Geduld aus:
 
 → [In 4 Wochen wieder fit: So baust du deinen Hund nach dem Winter sanft auf](/blog/hund-bewegung-nach-winter/)
+
+Zu den ersten warmen Tagen gehört bei vielen Hunden auch der erste Sprung ins Wasser – nur ist das Wasser dann noch deutlich kälter als die Luft:
+
+→ [Der erste Badetag im Frühjahr: Was kaltes Wasser für deinen Hund bedeutet](/blog/hund-baden-fruehjahr/)
+
+Und auch der Boden unter den Pfoten verändert sich im Frühjahr – Dünger auf Wiesen und Feldern, Salzreste am Wegrand:
+
+→ [Gedüngte Wiesen und Streusalz-Reste: So schützt du die Pfoten deines Hundes im Frühjahr](/blog/hund-wiese-duenger/)
 
 Manches, was zu Hause ganz selbstverständlich zum Einsatz kommt, gehört gar nicht in die Nähe von Hund oder Katze:
 
