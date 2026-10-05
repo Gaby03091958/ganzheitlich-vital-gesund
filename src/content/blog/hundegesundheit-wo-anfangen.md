@@ -155,6 +155,10 @@ Zur Haut gehören auch die Pfoten – im Winter der Körperteil, der am meisten 
 
 → [Pfotenpflege im Winter: Streusalz, Schnee und rissige Ballen](/blog/hund-pfotenpflege-winter/)
 
+Ob für Salz, Eis oder heißen Asphalt Schuhe nötig sind, ist eine eigene Frage – meistens lautet die ehrliche Antwort: nein, aber es gibt Ausnahmen:
+
+→ [Hundeschuhe und Pfotenschutz: Wann sie wirklich sinnvoll sind – und wann nicht](/blog/hund-hundeschuhe-pfotenschutz/)
+
 Schon vorher, im nassen Herbst, fängt diese Belastung an – nur heißt der Gegner hier nicht Streusalz, sondern Matsch:
 
 → [Matsch und nasse Pfoten: Die 5-Minuten-Routine ganz ohne Chemie](/blog/hund-matsch-pfoten/)
@@ -176,6 +180,10 @@ Nasskalte Monate fordern jeden Hund anders. Bevor irgendetwas zugefüttert wird,
 Zur Jahreszeit gehört auch, was am Jahresende auf viele Hunde zukommt. Wer erst zwischen den Jahren anfängt, ist zu spät dran:
 
 → [Silvesterangst beim Hund: 5 Schritte, die du jetzt im Herbst schon gehen kannst](/blog/hund-silvesterangst-vorbereitung/)
+
+Und wenn die Angst nach dem Jahreswechsel nicht einfach verfliegt, braucht dein Hund in den Wochen danach noch einmal Begleitung:
+
+→ [Silvester ist vorbei, die Angst nicht: So gibst du deinem Hund Sicherheit zurück](/blog/hund-silvester-nachbereitung/)
 
 Auch der Jahreszeitenwechsel selbst kann sich bemerkbar machen – nicht als Krankheit, sondern als spürbare Flaute:
 
@@ -346,6 +354,10 @@ Bei Gewitter, Feuerwerk oder Staubsauger hält sich ein Satz hartnäckig, der vi
 Kokosöl, Bernstein, Knoblauch: Bei Zecken, Flöhen und Würmern wird viel versprochen. Ein ehrlicher Überblick, was davon trägt – und welche Handgriffe wirklich zählen:
 
 → [Zecken, Flöhe, Würmer beim Hund: was natürliche Mittel wirklich können](/blog/hund-zecken-floehe-wuermer/)
+
+Zecken machen übrigens keine Herbstpause – schon ab etwa 7 °C sind sie unterwegs:
+
+→ [Zecken beim Hund im Herbst: 5 Handgriffe, die jetzt noch zählen](/blog/hund-zeckenschutz-herbst/)
 
 Wenn dein Hund mitten auf der Runde einfach stehen bleibt, ist das keine Sturheit, sondern eine Mitteilung – und meistens steckt mehr dahinter als das Alter:
 
