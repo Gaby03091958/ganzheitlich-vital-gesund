@@ -203,6 +203,10 @@ Und wenn dein Senior tagsüber manchmal wie verloren im Raum steht, hilft ein ru
 
 → [Wenn der alte Hund verwirrt wirkt: erste Anzeichen richtig einordnen](/blog/hund-senior-verwirrt/)
 
+Auch die Sinne verändern sich mit den Jahren. Wenn er nicht mehr auf Zuruf kommt, ist das oft keine Sturheit:
+
+→ [Wenn der Hund nicht mehr auf Zuruf kommt: Gehör im Alter prüfen](/blog/hund-gehoer-im-alter/)
+
 ### Und bevor du etwas ergänzt
 
 Irgendwann steht in jedem dieser Bereiche die Frage im Raum, ob ein Zusatzfutter sinnvoll ist. Dafür gibt es fünf Fragen, die dir die Entscheidung abnehmen – und manchmal ist die ehrlichste Antwort: nichts davon.
@@ -246,6 +250,14 @@ Für die Augen gilt dasselbe Prinzip, nur mit einer wichtigeren Grenze: Am Auge 
 Zu den langsamen Veränderungen gehört auch, wie entspannt ein Hund durch seinen Alltag geht. Die Zeichen dafür sind leise:
 
 → [Stress beim Hund erkennen: die leisen Signale](/blog/hund-stress-erkennen/)
+
+Stress zeigt sich oft dort, wo dein Hund nicht ausweichen kann – an der Leine, wenn ein anderer Hund entgegenkommt:
+
+→ [Hundebegegnungen an der Leine: Stress vermeiden statt Konflikte lösen](/blog/hund-begegnungen-leine/)
+
+Und manchmal ist das, was nach „zu viel“ klingt, einfach Sprache – Bellen hat fast immer einen Grund, den man herausfinden kann:
+
+→ [Der Hund bellt viel: Ursachen verstehen statt nur abstellen](/blog/hund-bellen-ursachen/)
 
 Bei Hündinnen gibt es eine Veränderung, die viele Halterinnen erst einmal verunsichert – meist ist sie normal, manchmal braucht sie Begleitung:
 
