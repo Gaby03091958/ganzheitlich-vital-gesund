@@ -47,6 +47,10 @@ Und die Art von Bewegung, die am meisten auslastet und die Gelenke am wenigsten 
 
 → [Der Schnüffelspaziergang: die einfache Idee, die deinen Hund wirklich entspannt](/blog/hund-schnueffelspaziergang/)
 
+Und für Regentage und dunkle Abende: Kopfarbeit in der Wohnung, ganz ohne Zubehör:
+
+→ [Beschäftigung ohne Ausrüstung: 7 einfache Ideen für die geistige Auslastung deines Hundes zu Hause](/blog/hund-beschaeftigung-ohne-ausruestung/)
+
 Auch beim Spielen selbst gibt es einen Unterschied zwischen auspowernd und gelenkschonend – Ball und Stöckchen sind dabei nicht so harmlos, wie sie wirken:
 
 → [Gelenkfreundlich spielen: Was Ball, Zerrspiel und Stöckchen wirklich mit den Gelenken machen](/blog/hund-gelenkfreundlich-spielen/)
@@ -138,6 +142,10 @@ Haut ist die Anzeigetafel für vieles, was tiefer liegt. Deshalb ist Juckreiz au
 Wiederkehrender Juckreiz zur gleichen Jahreszeit hat oft einen eigenen Namen – und der lohnt einen genaueren Blick:
 
 → [Pollenallergie beim Hund: 7 Anzeichen, die du im Frühjahr kennst](/blog/hund-allergien-pollen/)
+
+Helle, kurzhaarige Hunde haben eine Hautfrage, an die kaum jemand denkt – die Sonne:
+
+→ [Sonnenbrand beim Hund: Warum helle Hunde mehr Aufmerksamkeit brauchen, als du denkst](/blog/hund-sonnenbrand-helles-fell/)
 
 Auch der Geruch deines Hundes gehört zu den Anzeigetafeln – und verrät oft mehr als das Auge:
 
@@ -270,6 +278,10 @@ In Familien mit Kindern oder Enkeln entscheidet sich viel davon an ein paar einf
 Auch die Atmung gehört zu den Signalen, die sich leicht mitbeobachten lassen – meistens harmlos, aber mit klaren Grenzen, ab wann genauer hingeschaut werden sollte:
 
 → [Der Hund hechelt viel: wann das normal ist und wann nicht](/blog/hund-hecheln/)
+
+Dasselbe gilt für Niesen und das schnorchelnde Rückwärtsniesen, das beim ersten Mal so erschreckend klingt:
+
+→ [Rückwärtsniesen beim Hund: Was harmlos ist und wann du es abklären lässt](/blog/hund-rueckwaerts-niesen/)
 
 Einmal im Jahr schaut jemand mit Fachwissen deinen Hund komplett an – und genau dieser Termin ist die beste Gelegenheit, deine Beobachtungen loszuwerden:
 
