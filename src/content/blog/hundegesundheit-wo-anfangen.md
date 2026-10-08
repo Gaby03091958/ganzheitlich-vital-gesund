@@ -263,6 +263,12 @@ Stress zeigt sich oft dort, wo dein Hund nicht ausweichen kann – an der Leine,
 
 → [Hundebegegnungen an der Leine: Stress vermeiden statt Konflikte lösen](/blog/hund-begegnungen-leine/)
 
+Wie entspannt ihr unterwegs seid, hängt auch an der Leine selbst – an ihrer Länge und daran, ob dein Hund zieht:
+
+→ [Die richtige Leinenlänge für deinen Hund: Flexileine, Schleppleine & Co. im Alltag](/blog/hund-leinenlaenge/)
+
+→ [Dein Hund zieht an der Leine? So behältst du Hals und Gelenke im Blick](/blog/hund-zieht-an-der-leine/)
+
 Und manchmal ist das, was nach „zu viel“ klingt, einfach Sprache – Bellen hat fast immer einen Grund, den man herausfinden kann:
 
 → [Der Hund bellt viel: Ursachen verstehen statt nur abstellen](/blog/hund-bellen-ursachen/)
@@ -282,6 +288,10 @@ Auch die Atmung gehört zu den Signalen, die sich leicht mitbeobachten lassen �
 Dasselbe gilt für Niesen und das schnorchelnde Rückwärtsniesen, das beim ersten Mal so erschreckend klingt:
 
 → [Rückwärtsniesen beim Hund: Was harmlos ist und wann du es abklären lässt](/blog/hund-rueckwaerts-niesen/)
+
+Und auch nachts verrät die Atmung etwas – das meiste Schnarchen ist harmlos, manches lohnt einen zweiten Blick:
+
+→ [Dein Hund schnarcht? Wann es einfach niedlich ist und wann ein Hinweis](/blog/hund-schnarchen/)
 
 Einmal im Jahr schaut jemand mit Fachwissen deinen Hund komplett an – und genau dieser Termin ist die beste Gelegenheit, deine Beobachtungen loszuwerden:
 
