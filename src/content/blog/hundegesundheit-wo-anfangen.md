@@ -51,6 +51,10 @@ Und für Regentage und dunkle Abende: Kopfarbeit in der Wohnung, ganz ohne Zubeh
 
 → [Beschäftigung ohne Ausrüstung: 7 einfache Ideen für die geistige Auslastung deines Hundes zu Hause](/blog/hund-beschaeftigung-ohne-ausruestung/)
 
+Wer gern in der Küche steht, kann seinem Hund auch selbst etwas backen – mit den richtigen Zutaten:
+
+→ [Hundekekse selbst backen: So wählst du die Zutaten clever aus – mit einfachem Grundrezept](/blog/hund-hundekekse-backen/)
+
 Auch beim Spielen selbst gibt es einen Unterschied zwischen auspowernd und gelenkschonend – Ball und Stöckchen sind dabei nicht so harmlos, wie sie wirken:
 
 → [Gelenkfreundlich spielen: Was Ball, Zerrspiel und Stöckchen wirklich mit den Gelenken machen](/blog/hund-gelenkfreundlich-spielen/)
@@ -146,6 +150,14 @@ Wiederkehrender Juckreiz zur gleichen Jahreszeit hat oft einen eigenen Namen –
 Helle, kurzhaarige Hunde haben eine Hautfrage, an die kaum jemand denkt – die Sonne:
 
 → [Sonnenbrand beim Hund: Warum helle Hunde mehr Aufmerksamkeit brauchen, als du denkst](/blog/hund-sonnenbrand-helles-fell/)
+
+Auch das Bürsten selbst gehört zur Hautpflege – und es klappt besser, wenn dein Hund es mag:
+
+→ [Dein Hund mag nicht gebürstet werden? So klappt die Fellpflege ohne Kampf](/blog/hund-buersten-ohne-kampf/)
+
+Und die Pfoten tragen alles, was der Boden mitbringt – Hitze im Sommer, Kälte und Streusalz im Winter:
+
+→ [Barfuß über Asphalt: Was Hitze und Kälte von unten mit den Pfoten deines Hundes machen](/blog/hund-pfoten-asphalt/)
 
 Auch der Geruch deines Hundes gehört zu den Anzeigetafeln – und verrät oft mehr als das Auge:
 
