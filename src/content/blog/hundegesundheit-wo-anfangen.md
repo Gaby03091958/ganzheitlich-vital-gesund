@@ -259,6 +259,10 @@ Was dabei ganz nebenbei mithilft und gleichzeitig beschäftigt und entspannt –
 
 → [Kauen als Beschäftigung: was guttut und was gefährlich werden kann](/blog/hund-kauen/)
 
+Und wenn aus dem Kauen ein Abschlucken wird, etwa bei Ästen oder Steinen, lohnt ein genauerer Blick:
+
+→ [Dein Hund frisst Steine oder Holz? Ehrlich erklärt: harmlos oder ernst zu nehmen](/blog/hund-frisst-steine-holz/)
+
 Ähnlich unauffällig sind die Ohren – bis sie es plötzlich nicht mehr sind. Hier ist vor allem wichtig zu wissen, wann du selbst etwas tun kannst und wann eben nicht:
 
 → [Ohren reinigen beim Hund: wann es wirklich nötig ist, wie und womit](/blog/hund-ohren-reinigen/)
@@ -270,6 +274,14 @@ Für die Augen gilt dasselbe Prinzip, nur mit einer wichtigeren Grenze: Am Auge 
 Zu den langsamen Veränderungen gehört auch, wie entspannt ein Hund durch seinen Alltag geht. Die Zeichen dafür sind leise:
 
 → [Stress beim Hund erkennen: die leisen Signale](/blog/hund-stress-erkennen/)
+
+Auch ein Hund, der plötzlich mehr Nähe sucht als sonst, zeigt dir oft, dass sich etwas verändert hat:
+
+→ [Dein Hund ist plötzlich anhänglicher? Was wirklich dahinterstecken kann](/blog/hund-ploetzlich-anhaenglich/)
+
+Leben mehrere Hunde zusammen, hängt die Entspannung stark davon ab, wie Futter, Liegeplätze und Ruhe verteilt sind:
+
+→ [Mehrere Hunde, ein Zuhause: einfache Wege zu fairen Ressourcen und echter Ruhe](/blog/hund-mehrhundehaushalt/)
 
 Stress zeigt sich oft dort, wo dein Hund nicht ausweichen kann – an der Leine, wenn ein anderer Hund entgegenkommt:
 
